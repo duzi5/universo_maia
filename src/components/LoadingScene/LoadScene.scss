@@ -1,0 +1,57 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Chelsea+Market&family=Covered+By+Your+Grace&family=Eczar:wght@400;500;600;700;800&family=Kablammo&family=Kranky&family=Lacquer&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Major+Mono+Display&family=Monoton&family=Noto+Sans+Linear+B&family=Ribeye&family=Rubik+Distressed&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Ruslan+Display&family=Ultra&display=swap');
+@import '../../App.scss';
+
+
+.scene1{
+    background-color: black;
+    color: whitesmoke;
+    min-width: 100vw;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    overflow: hidden;
+   
+    h5 {
+        font-size: 7vh;
+        font-family: 'Libre Barcode 128 Text';
+        padding: 25%;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        align-items: center;
+        line-height: 120%;
+        text-align: center;
+
+        z-index: 10;
+            font-weight: 300;
+    }
+
+}
+// .spinner{
+//     border:5px solid rgb(160, 119, 236);
+//     border-radius: 50%;
+//     border-top: 7px solid rgb(51, 155, 253);
+//     width: 40px;
+//     height: 40px;
+// }
+
+.spinner {
+    img{
+        width: 600px;
+        height: auto;    
+        opacity: 0;    
+    }
+}
+
+canvas{ 
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}

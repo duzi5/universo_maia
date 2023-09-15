@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.36 232.45">
+  <defs>
+    <radialGradient id="Gradiente_sem_nome_97" data-name="Gradiente sem nome 97" cx="724.91" cy="-393.88" fx="724.91" fy="-393.88" r="22.79" gradientTransform="translate(745.12 562.36) rotate(-122.9) scale(1.03 1.02) skewX(-1.54)" gradientUnits="userSpaceOnUse">
+      <stop offset=".04" stop-color="#533174"/>
+      <stop offset=".19" stop-color="#4f2e6e"/>
+      <stop offset=".39" stop-color="#43275e"/>
+      <stop offset=".61" stop-color="#311b43"/>
+      <stop offset=".79" stop-color="#1e0f28"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_96" data-name="Gradiente sem nome 96" cx="674.58" cy="-316.09" fx="674.58" fy="-316.09" r="42.06" gradientTransform="translate(711.75 563.84) rotate(-121.18) scale(1.03 1.02) skewX(-1.58)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#533174"/>
+      <stop offset=".15" stop-color="#4f2e6e"/>
+      <stop offset=".35" stop-color="#43275e"/>
+      <stop offset=".57" stop-color="#311b43"/>
+      <stop offset=".75" stop-color="#1e0f28"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_102" data-name="Gradiente sem nome 102" cx="978.16" cy="-339.11" fx="978.16" fy="-339.11" r="42.56" gradientTransform="translate(1071.5 524.92) rotate(-139.82) scale(1.03 1.01) skewX(-.88)" gradientUnits="userSpaceOnUse">
+      <stop offset=".28" stop-color="#1e0f28"/>
+      <stop offset=".94" stop-color="#533174"/>
+    </radialGradient>
+    <linearGradient id="Gradiente_sem_nome_389" data-name="Gradiente sem nome 389" x1="3095.62" y1="-2097.29" x2="3108.55" y2="-2097.29" gradientTransform="translate(2823.93 -2377.52) rotate(171.4)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4e9a92"/>
+      <stop offset=".6" stop-color="#5cab66"/>
+      <stop offset="1" stop-color="#65b54f"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_389-2" data-name="Gradiente sem nome 389" x1="3096.71" y1="-2097.35" x2="3103.66" y2="-2097.35" xlink:href="#Gradiente_sem_nome_389"/>
+    <radialGradient id="Gradiente_sem_nome_96-2" data-name="Gradiente sem nome 96" cx="3488.26" cy="-1612.2" fx="3488.26" fy="-1612.2" r="25.36" gradientTransform="translate(832.71 -3664.12) rotate(75.63) scale(1.02 -1.02) skewX(1.66)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-2" data-name="Gradiente sem nome 102" cx="4060.44" cy="-649.42" fx="4060.44" fy="-649.42" r="25.86" gradientTransform="translate(1120.08 -3875.11) rotate(94.91) scale(1.01 -1.03) skewX(1.08)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_571" data-name="Gradiente sem nome 571" cx="671.96" cy="156.64" fx="660.65" fy="164.45" r="13.74" gradientTransform="translate(-583.89 -709.68) rotate(67.42) scale(1.6 -1.49) skewX(2.12)" gradientUnits="userSpaceOnUse">
+      <stop offset=".54" stop-color="#ea4e49"/>
+      <stop offset=".61" stop-color="#dc4e4e"/>
+      <stop offset=".74" stop-color="#b74e5c"/>
+      <stop offset=".91" stop-color="#7d4e72"/>
+      <stop offset="1" stop-color="#5c4f7f"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_571-2" data-name="Gradiente sem nome 571" cx="1365.26" cy="21.7" fx="1365.26" fy="21.7" r="40.41" gradientTransform="translate(999.69 2168.04) rotate(-116.31) scale(1.6 1.48) skewX(-1.55)" xlink:href="#Gradiente_sem_nome_571"/>
+    <radialGradient id="Gradiente_sem_nome_96-3" data-name="Gradiente sem nome 96" cx="647.6" cy="207.69" fx="647.6" fy="207.69" r="25.36" gradientTransform="translate(-613.86 -671.92) rotate(65.8) scale(1.6 -1.48) skewX(1.87)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-3" data-name="Gradiente sem nome 102" cx="782.26" cy="147.41" fx="782.26" fy="147.41" r="25.86" gradientTransform="translate(-262.01 -1057.2) rotate(83.68) scale(1.57 -1.51) skewX(4.07)" xlink:href="#Gradiente_sem_nome_102"/>
+    <linearGradient id="Gradiente_sem_nome_385" data-name="Gradiente sem nome 385" x1="-365.31" y1="-1085.43" x2="-342.55" y2="-1085.43" gradientTransform="translate(1065.19 -218.98) rotate(-90.57) scale(1.02 .92) skewX(-3.35)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a35816"/>
+      <stop offset=".18" stop-color="#9f5d19"/>
+      <stop offset=".41" stop-color="#946d22"/>
+      <stop offset=".66" stop-color="#838732"/>
+      <stop offset=".93" stop-color="#6baa48"/>
+      <stop offset="1" stop-color="#65b54f"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_sem_nome_385-2" data-name="Gradiente sem nome 385" x1="1574.08" y1="-1329.92" x2="1582.86" y2="-1329.92" gradientTransform="translate(2120.62 -168.43) rotate(-147)" xlink:href="#Gradiente_sem_nome_385"/>
+    <radialGradient id="Gradiente_sem_nome_96-4" data-name="Gradiente sem nome 96" cx="-400.14" cy="-1023.69" fx="-400.14" fy="-1023.69" r="25.36" gradientTransform="translate(1052.24 -201.33) rotate(-90.28) scale(1.02 .93) skewX(-5.96)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-4" data-name="Gradiente sem nome 102" cx="192.09" cy="-1357.83" fx="192.09" fy="-1357.83" r="25.86" gradientTransform="translate(1352.75 -24.71) rotate(-107.02) scale(1.05 .91) skewX(-1.67)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_315" data-name="Gradiente sem nome 315" cx="724.01" cy="-340.93" fx="724.01" fy="-340.93" r="14.93" gradientTransform="translate(647.96 549.94) rotate(-116.31) scale(1.02) skewX(-1.66)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a35c53"/>
+      <stop offset=".14" stop-color="#9d5c53"/>
+      <stop offset=".32" stop-color="#8e5c55"/>
+      <stop offset=".51" stop-color="#755d57"/>
+      <stop offset=".72" stop-color="#525f5b"/>
+      <stop offset=".94" stop-color="#25615f"/>
+      <stop offset="1" stop-color="#176261"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_316" data-name="Gradiente sem nome 316" cx="667.48" cy="-356.46" fx="667.48" fy="-356.46" r="27.34" gradientTransform="translate(647.96 549.94) rotate(-116.31) scale(1.02) skewX(-1.66)" gradientUnits="userSpaceOnUse">
+      <stop offset=".3" stop-color="#a35c53"/>
+      <stop offset=".4" stop-color="#9d5c53"/>
+      <stop offset=".53" stop-color="#8e5c55"/>
+      <stop offset=".66" stop-color="#755d57"/>
+      <stop offset=".81" stop-color="#525f5b"/>
+      <stop offset=".96" stop-color="#25615f"/>
+      <stop offset="1" stop-color="#176261"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_96-5" data-name="Gradiente sem nome 96" cx="353.72" cy="-176.41" fx="353.72" fy="-176.41" r="42.06" gradientTransform="translate(299.69 442.18) rotate(-97.25) scale(1.01 1.03) skewX(-1.53)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-5" data-name="Gradiente sem nome 102" cx="629.32" cy="-311.4" fx="629.32" fy="-311.4" r="42.56" gradientTransform="translate(647.96 549.94) rotate(-116.31) scale(1.02) skewX(-1.66)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_313" data-name="Gradiente sem nome 313" cx="2675.32" cy="-3209.99" fx="2675.32" fy="-3209.99" r="20.2" gradientTransform="translate(252.03 -3988.24) rotate(42.1) scale(1.03 -1.01) skewX(.97)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a11449"/>
+      <stop offset=".14" stop-color="#9b1649"/>
+      <stop offset=".32" stop-color="#8c1f4c"/>
+      <stop offset=".52" stop-color="#732d50"/>
+      <stop offset=".73" stop-color="#504157"/>
+      <stop offset=".94" stop-color="#235a5e"/>
+      <stop offset="1" stop-color="#176261"/>
+    </radialGradient>
+    <radialGradient id="Gradiente_sem_nome_313-2" data-name="Gradiente sem nome 313" cx="4492.78" cy="-1690.19" fx="4492.78" fy="-1690.19" r="10.43" gradientTransform="translate(2689.18 -3860.39) rotate(143.52) scale(1.01 1.03) skewX(1.44)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_96-6" data-name="Gradiente sem nome 96" cx="2541.2" cy="-3198.16" fx="2541.2" fy="-3198.16" r="37.29" gradientTransform="translate(244.47 -3956.46) rotate(40.4) scale(1.03 -1.01) skewX(.89)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-6" data-name="Gradiente sem nome 102" cx="3680.81" cy="-2457.2" fx="3680.81" fy="-2457.2" r="37.79" gradientTransform="translate(349.08 -4294.91) rotate(59.04) scale(1.03 -1.02) skewX(1.59)" xlink:href="#Gradiente_sem_nome_102"/>
+    <linearGradient id="Gradiente_sem_nome_385-3" data-name="Gradiente sem nome 385" x1="2189.93" y1="1113.34" x2="2213.35" y2="1113.34" gradientTransform="translate(-1943.01 -1096.03) rotate(57.15) scale(1.02 -.92) skewX(-3.35)" xlink:href="#Gradiente_sem_nome_385"/>
+    <linearGradient id="Gradiente_sem_nome_385-4" data-name="Gradiente sem nome 385" x1="1260.1" y1="1850.88" x2="1268.57" y2="1850.88" gradientTransform="translate(-1089.9 -1719.47) rotate(113.58) scale(1 -1)" xlink:href="#Gradiente_sem_nome_385"/>
+    <radialGradient id="Gradiente_sem_nome_96-7" data-name="Gradiente sem nome 96" cx="2192.71" cy="1143.3" fx="2192.71" fy="1143.3" r="25.36" gradientTransform="translate(-2050.3 -1073.76) rotate(54.84) scale(1.05 -.93) skewX(-2.35)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-7" data-name="Gradiente sem nome 102" cx="1938.98" cy="1534.76" fx="1938.98" fy="1534.76" r="25.86" gradientTransform="translate(-1896.47 -1378.65) rotate(71.65) scale(1.05 -.93) skewX(1.74)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_313-3" data-name="Gradiente sem nome 313" cx="966.81" cy="-222.89" fx="966.81" fy="-222.89" r="14.71" gradientTransform="translate(611.18 966.26) rotate(-110.75) scale(1.02) skewX(-1.7)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_313-4" data-name="Gradiente sem nome 313" cx="1859.45" cy="519.53" fx="1859.45" fy="519.53" r="7.59" gradientTransform="translate(1430.67 -1267.52) rotate(150.69) scale(1.02 -1.03) skewX(-1.62)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_96-8" data-name="Gradiente sem nome 96" cx="929.79" cy="-177.61" fx="929.79" fy="-177.61" r="27.15" gradientTransform="translate(578.08 960.77) rotate(-109.01) scale(1.02) skewX(-1.7)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-8" data-name="Gradiente sem nome 102" cx="1174.45" cy="-125.14" fx="1174.45" fy="-125.14" r="27.65" gradientTransform="translate(939.8 997.66) rotate(-127.85) scale(1.03 1.01) skewX(-1.39)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_97-2" data-name="Gradiente sem nome 97" cx="748.95" cy="-11.55" fx="748.95" fy="-11.55" r="22.79" gradientTransform="translate(439.33 780.47) rotate(-105.55) scale(1.02 -1.02) skewX(1.68)" xlink:href="#Gradiente_sem_nome_97"/>
+    <radialGradient id="Gradiente_sem_nome_96-9" data-name="Gradiente sem nome 96" cx="710.21" cy="65.33" fx="710.21" fy="65.33" r="42.06" gradientTransform="translate(463.3 758.12) rotate(-107.3) scale(1.02 -1.02) skewX(1.69)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-9" data-name="Gradiente sem nome 102" cx="887.78" cy="33.15" fx="887.78" fy="33.15" r="42.56" gradientTransform="translate(187.55 983.39) rotate(-88.07) scale(1.01 -1.03) skewX(1.21)" xlink:href="#Gradiente_sem_nome_102"/>
+    <linearGradient id="Gradiente_sem_nome_389-3" data-name="Gradiente sem nome 389" x1="2703.22" y1="-1911.23" x2="2715.79" y2="-1911.23" gradientTransform="translate(-3102.24 279.13) rotate(-38.24) scale(1 -1)" xlink:href="#Gradiente_sem_nome_389"/>
+    <linearGradient id="Gradiente_sem_nome_389-4" data-name="Gradiente sem nome 389" x1="2704.32" y1="-1911.28" x2="2710.81" y2="-1911.28" gradientTransform="translate(-3102.24 279.13) rotate(-38.24) scale(1 -1)" xlink:href="#Gradiente_sem_nome_389"/>
+    <radialGradient id="Gradiente_sem_nome_96-10" data-name="Gradiente sem nome 96" cx="3343.64" cy="-1257.48" fx="3343.64" fy="-1257.48" r="25.36" gradientTransform="translate(-2829.76 -2050.52) rotate(55.94) scale(1.03 1.01) skewX(-1.51)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-10" data-name="Gradiente sem nome 102" cx="3808.29" cy="-361.04" fx="3808.29" fy="-361.04" r="25.86" gradientTransform="translate(-3186.62 -1993.67) rotate(37.35) scale(1.04 1.01) skewX(-.73)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_571-3" data-name="Gradiente sem nome 571" cx="610.32" cy="412.04" fx="599.01" fy="419.85" r="13.74" gradientTransform="translate(382.96 -1020.64) rotate(64.05) scale(1.6 1.48) skewX(-1.01)" xlink:href="#Gradiente_sem_nome_571"/>
+    <radialGradient id="Gradiente_sem_nome_571-4" data-name="Gradiente sem nome 571" cx="1408.86" cy="280.79" fx="1408.86" fy="280.79" r="40.41" gradientTransform="translate(1484.31 2057.55) rotate(-112.22) scale(1.6 -1.48) skewX(1.58)" xlink:href="#Gradiente_sem_nome_571"/>
+    <radialGradient id="Gradiente_sem_nome_96-11" data-name="Gradiente sem nome 96" cx="593.74" cy="464.84" fx="593.74" fy="464.84" r="25.36" gradientTransform="translate(432.14 -1015.79) rotate(65.67) scale(1.6 1.48) skewX(-1.26)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-11" data-name="Gradiente sem nome 102" cx="647.68" cy="373.05" fx="647.68" fy="373.05" r="25.86" gradientTransform="translate(-101.18 -1033.08) rotate(48.1) scale(1.6 1.48) skewX(1.48)" xlink:href="#Gradiente_sem_nome_102"/>
+    <linearGradient id="Gradiente_sem_nome_385-5" data-name="Gradiente sem nome 385" x1="-106.54" y1="-689.02" x2="-83.2" y2="-689.02" gradientTransform="translate(-324.65 472.6) rotate(-136.27) scale(1.02 -.92) skewX(-3.35)" xlink:href="#Gradiente_sem_nome_385"/>
+    <linearGradient id="Gradiente_sem_nome_385-6" data-name="Gradiente sem nome 385" x1="1403.73" y1="-927.98" x2="1412.45" y2="-927.98" gradientTransform="translate(-1009.69 1277.09) rotate(-79.84) scale(1 -1)" xlink:href="#Gradiente_sem_nome_385"/>
+    <radialGradient id="Gradiente_sem_nome_96-12" data-name="Gradiente sem nome 96" cx="-148.44" cy="-679.82" fx="-148.44" fy="-679.82" r="25.36" gradientTransform="translate(-350.71 472.91) rotate(-137.71) scale(1.05 -.91) skewX(-3.94)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-12" data-name="Gradiente sem nome 102" cx="318.23" cy="-950.79" fx="318.23" fy="-950.79" r="25.86" gradientTransform="translate(-422.25 804.2) rotate(-121.46) scale(1.06 -.9) skewX(1.15)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_315-2" data-name="Gradiente sem nome 315" cx="792.19" cy="36.03" fx="792.19" fy="36.03" r="14.93" gradientTransform="translate(496.39 703.94) rotate(-112.22) scale(1.02 -1.02) skewX(1.7)" xlink:href="#Gradiente_sem_nome_315"/>
+    <radialGradient id="Gradiente_sem_nome_316-2" data-name="Gradiente sem nome 316" cx="735.67" cy="20.5" fx="735.67" fy="20.5" r="27.34" gradientTransform="translate(496.39 703.94) rotate(-112.22) scale(1.02 -1.02) skewX(1.7)" xlink:href="#Gradiente_sem_nome_316"/>
+    <radialGradient id="Gradiente_sem_nome_96-13" data-name="Gradiente sem nome 96" cx="540.83" cy="157.87" fx="540.83" fy="157.87" r="42.06" gradientTransform="translate(652.91 386.33) rotate(-131) scale(1.03 -1.01) skewX(1.28)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-13" data-name="Gradiente sem nome 102" cx="697.5" cy="65.56" fx="697.5" fy="65.56" r="42.56" gradientTransform="translate(496.39 703.94) rotate(-112.22) scale(1.02 -1.02) skewX(1.7)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_313-5" data-name="Gradiente sem nome 313" cx="2752.89" cy="-2834.85" fx="2752.89" fy="-2834.85" r="20.2" gradientTransform="translate(-2678.48 -2678.93) rotate(89.93) scale(1.01 1.03) skewX(-1.29)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_313-6" data-name="Gradiente sem nome 313" cx="4109.83" cy="-1700.03" fx="4109.83" fy="-1700.03" r="10.43" gradientTransform="translate(-4249.23 -884.86) rotate(-8.86) scale(1.03 -1.02) skewX(-1.57)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_96-14" data-name="Gradiente sem nome 96" cx="2630.13" cy="-2825.55" fx="2630.13" fy="-2825.55" r="37.29" gradientTransform="translate(-2649.17 -2662.48) rotate(91.7) scale(1.01 1.03) skewX(-1.22)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-14" data-name="Gradiente sem nome 102" cx="3643.69" cy="-2075.93" fx="3643.69" fy="-2075.93" r="37.79" gradientTransform="translate(-2977.75 -2820.84) rotate(72.48) scale(1.02) skewX(-1.69)" xlink:href="#Gradiente_sem_nome_102"/>
+    <linearGradient id="Gradiente_sem_nome_385-7" data-name="Gradiente sem nome 385" x1="2208.88" y1="1585.13" x2="2231.94" y2="1585.13" gradientTransform="translate(1093.18 -2321.73) rotate(76.01) scale(1.02 .92) skewX(-3.35)" xlink:href="#Gradiente_sem_nome_385"/>
+    <linearGradient id="Gradiente_sem_nome_385-8" data-name="Gradiente sem nome 385" x1="893.63" y1="2083.07" x2="902.39" y2="2083.07" gradientTransform="translate(54.86 -2125.84) rotate(19.57)" xlink:href="#Gradiente_sem_nome_385"/>
+    <radialGradient id="Gradiente_sem_nome_96-15" data-name="Gradiente sem nome 96" cx="2210.91" cy="1559.28" fx="2210.91" fy="1559.28" r="25.36" gradientTransform="translate(1110.04 -2296.63) rotate(76.75) scale(1.04 .94) skewX(-5.17)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-15" data-name="Gradiente sem nome 102" cx="1820.87" cy="1934.04" fx="1820.87" fy="1934.04" r="25.86" gradientTransform="translate(773.27 -2397.56) rotate(59.85) scale(1.06 .93) skewX(-1.18)" xlink:href="#Gradiente_sem_nome_102"/>
+    <radialGradient id="Gradiente_sem_nome_313-7" data-name="Gradiente sem nome 313" cx="1071.27" cy="145.67" fx="1071.27" fy="145.67" r="14.71" gradientTransform="translate(837.67 963.08) rotate(-117.77) scale(1.03 -1.02) skewX(1.64)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_313-8" data-name="Gradiente sem nome 313" cx="1478.22" cy="482.05" fx="1478.22" fy="482.05" r="7.59" gradientTransform="translate(-1419.23 8.28) rotate(-15.89) scale(1.02) skewX(1.68)" xlink:href="#Gradiente_sem_nome_313"/>
+    <radialGradient id="Gradiente_sem_nome_96-16" data-name="Gradiente sem nome 96" cx="1045.4" cy="187.61" fx="1045.4" fy="187.61" r="27.15" gradientTransform="translate(856.15 936.16) rotate(-119.49) scale(1.03 -1.02) skewX(1.62)" xlink:href="#Gradiente_sem_nome_96"/>
+    <radialGradient id="Gradiente_sem_nome_102-16" data-name="Gradiente sem nome 102" cx="1164.96" cy="257.82" fx="1164.96" fy="257.82" r="27.65" gradientTransform="translate(636.64 1214.69) rotate(-100.49) scale(1.02 -1.03) skewX(1.6)" xlink:href="#Gradiente_sem_nome_102"/>
+  </defs>
+  <g id="P1">
+    <g id="borboletaCoguM">
+      <g id="ramoCogu1">
+        <g id="cogu1" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m20.12,157.65c5.5-2.84,2.38-21.74-7.18-32.68-3.73-4.27-5.7-4.18-6.31-4.1-4.66.65-8.48,11.89-5.7,21,3.12,10.23,14.66,18.11,19.18,15.77Z" style="fill: url(#Gradiente_sem_nome_97); stroke-width: 0px;"/>
+            <path d="m7.66,123.24c1.81-.77,8.06,6.99,10.95,15.63,2.31,6.9,2.69,14.98.96,15.45-1.9.52-6.2-8.25-8.25-13.35-2.66-6.58-5.57-16.91-3.66-17.72Z" style="fill: none; stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.11,120.47c-.06-.32-24.53,4.17-55.77,7.3-1.66.17-11.46,1.14-24.37,2.86-12.12,1.62-17.53,2.64-22.13,3.65-9.83,2.16-18.51,4.84-18.45,5.06.06.2,7.37-1.57,11.78-2.57,28.27-6.42,43.06-5.46,82.61-11.56,14.44-2.23,26.37-4.5,26.33-4.73Z" style="fill: url(#Gradiente_sem_nome_96); stroke: url(#Gradiente_sem_nome_102); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu2" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m66.65,149.12c3.63-.97,10.52,8.49,11.14,17.07.24,3.35-.65,4.1-.95,4.31-2.31,1.58-8.87-1.77-11.64-6.84-3.11-5.7-1.53-13.74,1.45-14.54Z" style="fill: url(#Gradiente_sem_nome_389); stroke-width: 0px;"/>
+            <path d="m76.25,169.06c1.12-.39.45-6.26-2.06-11.17-2.01-3.92-5.37-7.58-6.32-7.1-1.05.54.91,6.07,2.24,9.11,1.72,3.92,4.96,9.58,6.15,9.17Z" style="fill: url(#Gradiente_sem_nome_389-2); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m132.39,119.6c.12.17-12.48,8.01-27.41,19.17-.79.59-5.48,4.1-11.84,8.52-5.97,4.15-8.77,5.88-11.21,7.28-5.21,3-10.16,5.31-10.22,5.2-.06-.11,3.89-2.27,6.24-3.6,15.09-8.54,21.09-14.88,40.93-28.07,7.24-4.82,13.42-8.61,13.5-8.49Z" style="fill: url(#Gradiente_sem_nome_96-2); stroke: url(#Gradiente_sem_nome_102-2); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu3" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m48.12,178.88c4.95-2.27,17.68,10.79,21.11,23.82,1.34,5.09.27,6.43-.1,6.81-2.86,2.92-13.31-.81-18.8-8.01-6.17-8.08-6.27-20.76-2.21-22.62Z" style="fill: url(#Gradiente_sem_nome_571); stroke-width: 0px;"/>
+            <path d="m67.86,207.44c1.5-.84-1.2-9.71-6.28-16.71-4.05-5.59-9.98-10.49-11.21-9.54-1.36,1.05,3.1,9.12,5.92,13.5,3.64,5.65,9.98,13.64,11.57,12.75Z" style="fill: url(#Gradiente_sem_nome_571-2); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.16,119.53c.22.23-15.62,14.97-33.84,35.29-.97,1.08-6.68,7.46-14.54,15.61-7.38,7.65-10.9,10.9-14,13.57-6.63,5.72-13.07,10.33-13.2,10.16-.12-.15,4.94-4.32,7.93-6.86,19.22-16.33,26-27.35,50.7-51.84,9.02-8.94,16.8-16.08,16.95-15.92Z" style="fill: url(#Gradiente_sem_nome_96-3); stroke: url(#Gradiente_sem_nome_102-3); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu4" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m70.12,98.76c3.41.52,7.28-9.87,5.85-18.58-.56-3.41-1.51-4.05-1.83-4.22-2.39-1.31-7.37,2.89-8.64,8.34-1.42,6.13,1.81,14.03,4.61,14.46Z" style="fill: url(#Gradiente_sem_nome_385); stroke-width: 0px;"/>
+            <path d="m73.96,77.47c1.07.25,1.83,6.25.76,11.51-.86,4.2-2.97,8.31-3.91,7.94-1.05-.41-.6-6.22-.13-9.45.61-4.17,2.15-10.27,3.28-10Z" style="fill: url(#Gradiente_sem_nome_385-2); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.55,120.27c.06-.18-12.79-6.51-28.45-15.89-.83-.5-5.74-3.44-12.34-7.1-6.19-3.44-9.04-4.83-11.5-5.94-5.26-2.37-10.13-4.08-10.16-3.96-.03.12,3.93,1.8,6.3,2.85,15.19,6.71,21.91,12.35,42.35,23.16,7.46,3.95,13.75,7,13.79,6.87Z" style="fill: url(#Gradiente_sem_nome_96-4); stroke: url(#Gradiente_sem_nome_102-4); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu5" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m12.9,108.16c6.26-.39,11.18-18.74,6.87-32.43-1.68-5.35-3.54-6.05-4.13-6.22-4.57-1.26-12.74,7.39-13.94,16.74-1.35,10.5,6.06,22.22,11.2,21.9Z" style="fill: url(#Gradiente_sem_nome_315); stroke-width: 0px;"/>
+            <path d="m15.61,72.05c1.99.02,4.55,9.53,3.65,18.5-.72,7.16-3.71,14.62-5.49,14.37-1.97-.29-2.31-9.93-2.11-15.36.27-7.01,1.85-17.52,3.94-17.5Z" style="fill: url(#Gradiente_sem_nome_316); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m133.52,119.81c.08-.32-24.38-5.97-54.51-15.56-1.6-.51-11.05-3.52-23.68-7.09-11.86-3.35-17.28-4.58-21.94-5.5-9.97-1.95-19.09-2.98-19.13-2.76-.03.2,7.46,1.51,11.94,2.35,28.76,5.42,42.02,12.17,81.05,22.37,14.25,3.72,26.21,6.41,26.27,6.19Z" style="fill: url(#Gradiente_sem_nome_96-5); stroke: url(#Gradiente_sem_nome_102-5); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu6" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m82.9,211.32c3.42-4.23,19.79,1.48,28.01,11.38,3.21,3.87,2.81,5.53,2.64,6.03-1.33,3.86-11.97,5.3-19.66,1.47-8.63-4.31-13.79-15.4-10.98-18.88Z" style="fill: url(#Gradiente_sem_nome_313); stroke-width: 0px;"/>
+            <path d="m111.6,227.48c.98-1.42-4.94-7.99-12.18-11.84-5.78-3.08-12.93-4.7-13.63-3.31-.77,1.53,6.37,6.61,10.58,9.18,5.45,3.32,14.2,7.47,15.23,5.97Z" style="fill: url(#Gradiente_sem_nome_313-2); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.46,120.26c.28.1-7.68,20.22-15.5,46.31-.42,1.39-2.86,9.57-6.48,20.29-3.4,10.06-5.18,14.5-6.82,18.26-3.51,8.02-7.31,14.98-7.49,14.89-.17-.08,2.59-6.02,4.2-9.62,10.29-23.04,11.81-35.79,23.64-68.47,4.32-11.93,8.27-21.73,8.46-21.66Z" style="fill: url(#Gradiente_sem_nome_96-6); stroke: url(#Gradiente_sem_nome_102-6); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu7" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m91.7,171.41c2.62-2.22,12.11,4.41,16.05,12.42,1.54,3.13,1.1,4.17.93,4.47-1.28,2.34-8.06,1.46-12.38-2.42-4.85-4.36-6.76-12.64-4.61-14.47Z" style="fill: url(#Gradiente_sem_nome_385-3); stroke-width: 0px;"/>
+            <path d="m107.63,187.14c.77-.77-2.13-6.17-6.17-9.99-3.23-3.05-7.48-5.37-8.08-4.56-.66.89,3.18,5.5,5.5,7.94,2.99,3.15,7.94,7.43,8.76,6.61Z" style="fill: url(#Gradiente_sem_nome_385-4); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.38,119.67c.16.12-7.14,12.14-15.05,28.17-.42.85-2.9,5.88-6.4,12.39-3.29,6.11-4.92,8.77-6.38,10.98-3.12,4.74-6.29,8.72-6.39,8.63-.09-.08,2.32-3.57,3.73-5.68,9.09-13.57,11.53-21.79,22.7-41.53,4.08-7.2,7.68-13.04,7.79-12.96Z" style="fill: url(#Gradiente_sem_nome_96-7); stroke: url(#Gradiente_sem_nome_102-7); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu8" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m57.76,128.03c3.89-1.05,4.54-13.33,0-21.48-1.77-3.18-3.03-3.39-3.43-3.42-3.04-.22-7.03,6.32-6.54,12.42.55,6.84,6.77,13.33,9.96,12.47Z" style="fill: url(#Gradiente_sem_nome_313-3); stroke-width: 0px;"/>
+            <path d="m54.66,104.76c1.26-.24,4.13,5.47,4.76,11.28.5,4.64-.38,9.76-1.54,9.83-1.28.07-2.78-6.01-3.37-9.49-.77-4.49-1.17-11.36.15-11.62Z" style="fill: url(#Gradiente_sem_nome_313-4); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m135.2,119.98c0-.21-16.13-.67-36.37-2.9-1.08-.12-7.42-.82-15.85-1.47-7.91-.61-11.48-.7-14.54-.68-6.53.04-12.41.56-12.4.7,0,.13,4.89,0,7.83-.04,18.82-.24,28.06,2.35,53.98,3.82,9.46.54,17.35.71,17.35.56Z" style="fill: url(#Gradiente_sem_nome_96-8); stroke: url(#Gradiente_sem_nome_102-8); stroke-miterlimit: 10;"/>
+        </g>
+      </g>
+      <g id="ramoCogu2">
+        <g id="cogu1-2" data-name="cogu1" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m241.36,66.25c-5.92,1.91-18.14-13.22-19.9-27.39-.69-5.54.73-6.85,1.21-7.22,3.68-2.82,14.83,2.2,19.84,10.38,5.63,9.19,3.71,22.66-1.15,24.22Z" style="fill: url(#Gradiente_sem_nome_97-2); stroke-width: 0px;"/>
+            <path d="m223.76,33.97c-1.82.74-.21,10.42,4.37,18.36,3.66,6.34,9.53,12.13,11.07,11.25,1.69-.98-2.03-9.99-4.49-14.92-3.18-6.36-9.03-15.47-10.95-14.69Z" style="fill: none; stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m135.12,120.62c-.21-.26,19.96-14.32,43.7-34.06,1.26-1.05,8.71-7.24,18.85-15.1,9.52-7.38,14-10.47,17.91-13,8.37-5.41,16.35-9.65,16.47-9.46.11.17-6.24,4.09-10.02,6.49-24.23,15.4-33.61,26.42-65.31,49.93-11.57,8.59-21.46,15.39-21.61,15.2Z" style="fill: url(#Gradiente_sem_nome_96-9); stroke: url(#Gradiente_sem_nome_102-9); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu2-2" data-name="cogu2" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m203.03,92.99c-3.22,1.88-.75,13.18,5.34,19.48,2.38,2.46,3.56,2.35,3.92,2.28,2.78-.53,4.73-7.42,2.77-12.83-2.2-6.08-9.38-10.47-12.03-8.93Z" style="fill: url(#Gradiente_sem_nome_389-3); stroke-width: 0px;"/>
+            <path d="m211.6,113.36c-1.06.52-5.06-3.97-7.07-9.09-1.6-4.09-2.08-8.95-1.06-9.28,1.13-.37,3.98,4.79,5.38,7.8,1.8,3.89,3.88,10.03,2.75,10.58Z" style="fill: url(#Gradiente_sem_nome_389-4); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m135.63,118.82c.05.19,14.63-3.25,33.32-6.07.99-.15,6.86-1.03,14.57-2.46,7.24-1.34,10.46-2.12,13.2-2.86,5.85-1.6,10.98-3.48,10.94-3.6-.04-.12-4.39,1.17-7.01,1.91-16.8,4.72-25.73,4.58-49.33,9.45-8.61,1.78-15.72,3.51-15.69,3.64Z" style="fill: url(#Gradiente_sem_nome_96-10); stroke: url(#Gradiente_sem_nome_102-10); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu3-2" data-name="cogu3" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m238.32,100.38c-5.11,1.91-3.91,19.76,3.64,31.08,2.95,4.42,4.7,4.59,5.24,4.59,4.17,0,8.49-9.88,6.78-18.65-1.91-9.85-11.47-18.6-15.66-17.02Z" style="fill: url(#Gradiente_sem_nome_571-3); stroke-width: 0px;"/>
+            <path d="m246.49,133.75c-1.67.48-6.55-7.48-8.39-15.83-1.47-6.66-1.14-14.17.43-14.38,1.72-.23,4.8,8.41,6.2,13.38,1.8,6.42,3.52,16.32,1.77,16.83Z" style="fill: url(#Gradiente_sem_nome_571-4); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.37,120.01c.03.31,22.05-.69,49.95.45,1.48.06,10.24.42,21.8.5,10.86.07,15.73-.17,19.89-.51,8.88-.72,16.78-2.08,16.75-2.29-.03-.19-6.66.5-10.64.86-25.55,2.29-38.56-.51-74.06.02-12.96.2-23.71.76-23.69.97Z" style="fill: url(#Gradiente_sem_nome_96-11); stroke: url(#Gradiente_sem_nome_102-11); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu4-2" data-name="cogu4" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m162.42,60.95c-1.93,2.74-12.47-1.66-18.11-8.62-2.21-2.72-2.04-3.83-1.95-4.16.64-2.57,7.24-3.19,12.25-.34,5.62,3.2,9.41,10.87,7.82,13.12Z" style="fill: url(#Gradiente_sem_nome_385-5); stroke-width: 0px;"/>
+            <path d="m143.63,49.07c-.54.93,3.49,5.56,8.22,8.41,3.78,2.27,8.34,3.61,8.71,2.69.41-1.01-4.32-4.68-7.09-6.56-3.58-2.43-9.27-5.52-9.84-4.54Z" style="fill: url(#Gradiente_sem_nome_385-6); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.66,120.8c-.18-.08,3.8-13.41,7.4-30.79.19-.92,1.32-6.38,3.05-13.5,1.63-6.69,2.52-9.63,3.36-12.11,1.8-5.31,3.83-9.89,3.95-9.82.11.06-1.32,3.99-2.15,6.36-5.3,15.23-5.62,23.8-11.39,45.5-2.11,7.92-4.1,14.41-4.22,14.36Z" style="fill: url(#Gradiente_sem_nome_96-12); stroke: url(#Gradiente_sem_nome_102-12); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu5-2" data-name="cogu5" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m208.71,27.32c-4.57,4.12-21.88-5-29.33-17.38-2.91-4.84-2.17-6.62-1.89-7.15,2.17-4.06,14.33-3.86,22.25,1.7,8.9,6.25,12.72,19.45,8.97,22.83Z" style="fill: url(#Gradiente_sem_nome_315-2); stroke-width: 0px;"/>
+            <path d="m179.45,4.51c-1.35,1.41,4.12,9.71,11.54,15.22,5.93,4.4,13.64,7.41,14.67,5.98,1.13-1.57-5.96-8.42-10.22-11.99-5.51-4.61-14.57-10.7-15.99-9.21Z" style="fill: url(#Gradiente_sem_nome_316-2); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m135.02,119.75c-.3-.16,12.15-21.16,25.49-48.82.71-1.47,4.89-10.15,10.82-21.44,5.57-10.6,8.34-15.23,10.84-19.13,5.34-8.32,10.81-15.41,11-15.28.17.12-3.96,6.25-6.39,9.97-15.56,23.85-19.51,37.75-38.48,72.07-6.93,12.53-13.07,22.74-13.28,22.63Z" style="fill: url(#Gradiente_sem_nome_96-13); stroke: url(#Gradiente_sem_nome_102-13); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu6-2" data-name="cogu6" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m239.14,146.93c-5.55-.5-12.42,14.87-10.53,27.4.74,4.9,2.27,5.75,2.77,5.98,3.84,1.71,12.22-4.76,14.57-12.77,2.63-8.99-2.26-20.2-6.82-20.61Z" style="fill: url(#Gradiente_sem_nome_313-5); stroke-width: 0px;"/>
+            <path d="m231.77,178.09c-1.75-.28-2.69-8.92-.66-16.63,1.62-6.16,5.28-12.28,6.82-11.81,1.69.51.66,8.98-.27,13.69-1.2,6.09-4.05,15.05-5.89,14.75Z" style="fill: url(#Gradiente_sem_nome_313-6); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.72,120.72c-.11.27,20.61,8.46,45.77,20.83,1.34.66,9.23,4.55,19.84,9.34,9.96,4.5,14.56,6.3,18.53,7.72,8.49,3.03,16.38,5.14,16.43,4.95.05-.17-6.35-2.31-10.17-3.64-24.54-8.56-35.26-16.22-68.17-30.31-12.01-5.15-22.16-9.08-22.24-8.89Z" style="fill: url(#Gradiente_sem_nome_96-14); stroke: url(#Gradiente_sem_nome_102-14); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu7-2" data-name="cogu7" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m202.82,125.78c-3.48.31-4.94,11.5-1.56,19.74,1.32,3.22,2.41,3.62,2.76,3.71,2.65.71,6.62-4.64,6.63-10.33,0-6.38-4.98-13.39-7.84-13.13Z" style="fill: url(#Gradiente_sem_nome_385-7); stroke-width: 0px;"/>
+            <path d="m203.86,147.7c-1.12.01-3.23-5.71-3.36-11.16-.1-4.35,1.04-8.91,2.06-8.78,1.13.15,2,5.99,2.27,9.28.35,4.25.21,10.64-.97,10.65Z" style="fill: url(#Gradiente_sem_nome_385-8); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134.32,120.26c-.02.19,14.1,3.31,31.69,8.73.93.29,6.45,1.99,13.79,4,6.89,1.88,10.02,2.56,12.7,3.05,5.73,1.06,10.92,1.56,10.93,1.43,0-.12-4.29-.82-6.87-1.27-16.52-2.92-24.44-6.84-47.07-12.52-8.26-2.07-15.16-3.55-15.18-3.41Z" style="fill: url(#Gradiente_sem_nome_96-15); stroke: url(#Gradiente_sem_nome_102-15); stroke-miterlimit: 10;"/>
+        </g>
+        <g id="cogu8-2" data-name="cogu8" style="opacity: .8;">
+          <g style="opacity: .5;">
+            <path d="m193.11,72.33c-3.45,2-13.23-5.95-16.31-14.69-1.21-3.42-.5-4.44-.25-4.74,1.92-2.28,9.61-.6,13.91,3.92,4.82,5.07,5.49,13.87,2.65,15.51Z" style="fill: url(#Gradiente_sem_nome_313-7); stroke-width: 0px;"/>
+            <path d="m177.56,54.23c-1.04.71,1.32,6.64,5.3,11.05,3.18,3.53,7.68,6.41,8.52,5.64.93-.85-2.66-6.06-4.9-8.85-2.88-3.61-7.83-8.6-8.93-7.84Z" style="fill: url(#Gradiente_sem_nome_313-8); stroke: #301d47; stroke-miterlimit: 10;"/>
+          </g>
+          <path d="m134,121.05c-.17-.14,10.53-11.76,22.69-27.45.65-.83,4.46-5.76,9.73-12.1,4.95-5.95,7.33-8.52,9.43-10.65,4.5-4.55,8.92-8.31,9.02-8.21.09.09-3.35,3.43-5.38,5.46-13.06,13.01-17.42,21.26-34.04,40.42-6.07,7-11.33,12.63-11.45,12.54Z" style="fill: url(#Gradiente_sem_nome_96-16); stroke: url(#Gradiente_sem_nome_102-16); stroke-miterlimit: 10;"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
