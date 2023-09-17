@@ -4,8 +4,8 @@ import "./LoadScene.scss";
 
 export default () => {
     useEffect(() => {
-        // const tl = gsap.timeline()
-        // tl.from("#initial", {duration: 2, delay: 3, ease: "power1.inOut"})
+        const tl = gsap.timeline()
+            tl.to("#initial", {duration: 2, ease: "elastic", opacity:1})
 
         
         var canvas = document.getElementById('canvas');
@@ -46,7 +46,10 @@ export default () => {
 
     return (
       <div className="scene scene1">
-        <h5 id="initial">Voce esta pronto para viver uma nova realidade?</h5>
+        <div className="conteudo">
+        <div className="spinner"></div>
+        <h5 id="initial">Você está pronto para viver uma nova realidade?</h5>
+        </div>
         <canvas id="canvas"></canvas>
       </div>
     );
