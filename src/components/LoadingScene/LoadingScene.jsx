@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { useEffect } from "react";
 import "./LoadScene.scss";
+import LoadingBar from './LoadingBar';
 
 export default () => {
     useEffect(() => {
@@ -47,8 +48,10 @@ export default () => {
     return (
       <div className="scene scene1">
         <div className="conteudo">
-        <div className="spinner"></div>
-        <h5 id="initial">Você está pronto para viver uma nova realidade?</h5>
+        <div className="spinner">
+        <LoadingBar />ß
+        <h5 id="initial"> Você está pronto para viver uma nova realidade?</h5>
+        </div>
         </div>
         <canvas id="canvas"></canvas>
       </div>

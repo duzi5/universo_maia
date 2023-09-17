@@ -5,7 +5,7 @@
 
 
 .scene1{
-    background-color: rgba(15, 136, 222, 0.39);
+    background-color: rgba(247, 247, 247, 0);
     color: whitesmoke;
     min-width: 100vw;
     max-width: 100vw;
@@ -52,10 +52,8 @@
 }
 .spinner{
     border:5px solid rgb(160, 119, 236);
-
     border-top: 7px solid rgb(51, 155, 253);
-    width: 40px;
-    height: 40px;
+   
 ;
 
 }
@@ -64,7 +62,7 @@
     img{
         width: 600px;
         height: auto;    
-        opacity: 0;    
+
     }
 }
 

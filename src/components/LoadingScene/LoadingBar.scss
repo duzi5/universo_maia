@@ -1,0 +1,27 @@
+.container-loading-bar{ 
+    width: 98%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar{
+    height: 100%;
+    background-color: #ffffff;
+    transition: width 6s ease-in-out;
+}
+
+@keyframes width {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
