@@ -1,6 +1,6 @@
 
-import './App.scss';
-import Header from "./components/Header"
+
+import Header from "./components/Header";
 import LoadingScene from './components/LoadingScene/LoadingScene';
 function App() {
   return (
@@ -12,3 +12,4 @@ function App() {
 }
 
 export default App;
+
