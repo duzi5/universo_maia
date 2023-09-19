@@ -65,27 +65,14 @@
         width: 300px;
     }
 
-}
-.spinner{
-    border:5px solid rgb(160, 119, 236);
-    border-top: 7px solid rgb(51, 155, 253);
-   
-;
-
-}
-
-.spinner {
-    img{
-        width: 600px;
-        height: auto;    
-
+    
+  canvas{ 
+    
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
     }
-}
-
-canvas{ 
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-
+    
 }
