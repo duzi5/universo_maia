@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./LoadingBar.scss";
-const LoadingBar = () => {
+import { gsap } from "gsap";
+
+const LoadingBar = (props) => {
   const [progressState, setProgressState] = useState(0);
 
   useEffect(() => {
@@ -8,9 +10,10 @@ const LoadingBar = () => {
       setProgressState((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
+          props.onProgressComplete()
           return prev;
         }
-        return prev + 1;
+        return prev + 2;
       });
     }, 100);
     return () => clearInterval(interval);
