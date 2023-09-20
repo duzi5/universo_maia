@@ -8,10 +8,11 @@ const LoadingBar = (props) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgressState((prev) => {
+        console.log('progress', prev)
         if (prev >= 100) {
           clearInterval(interval);
           props.onProgressComplete()
-          return prev;
+          return 100;
         }
         return prev + 2;
       });

@@ -13,10 +13,12 @@
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    
+    background-color: black;
+    z-index: 10000;
     .conteudo{ 
         display:flex;
         opacity: 1;
+        background-color: black;
         align-items: center;
         justify-content: center;
         flex-direction: column;

@@ -3,19 +3,20 @@ import { useEffect, useRef } from "react";
 import "./LoadScene.scss";
 import LoadingBar from "./LoadingBar";
 import whitebutterfly from "./borboletaCogu.svg";
-export default () => {
+export default (props) => {
 
 
  
   const scene1Ref = useRef(null)
   function handleProgressComplete(){
-    gsap.to(".scene1", {
+    gsap.to(scene1Ref.current, {
       duration: 2,
       opacity: 0,
       ease: "elastic",
       onComplete: () => {
         scene1Ref.current.style.display = 'none'
         console.log('zzz')
+        props.onEnd()
       }
     });
   }
@@ -63,16 +64,16 @@ export default () => {
     //   requestAnimationFrame(draw);
     // }
 
-    gsap.to(".borboleta1", {
-      duration: 10,
-      ease: "inOut",
-      repeat: -1,
-      scale: 3,
-      opacity: 0.3,
-      x: 200,
-      y: 400,
-      yoyo: true,
-    });
+    // gsap.to(".borboleta1", {
+    //   duration: 10,
+    //   ease: "inOut",
+    //   repeat: -1,
+    //   scale: 3,
+    //   opacity: 0.3,
+    //   x: 200,
+    //   y: 400,
+    //   yoyo: true,
+    // });
     gsap.to("#initial",{ 
         duration: 1,
         ease: "linear",
@@ -88,8 +89,8 @@ export default () => {
       <div className="conteudo">
         <h5 id="initial"> Você está pronto para viver uma nova realidade?</h5>
         <img className="borboleta1" src={whitebutterfly} />
-      <canvas id="canvas"></canvas>
-      <LoadingBar onProgressComplete={() => handleProgressComplete} />
+      {/* <canvas id="canvas"></canvas> */}
+      <LoadingBar onProgressComplete={() => handleProgressComplete()} />
       </div>
     </div>
   );

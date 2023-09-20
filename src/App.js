@@ -6,11 +6,19 @@ import LoadingScene from './components/LoadingScene/LoadingScene';
 import Take02 from './components/Take02/Take02';
 import { gsap } from "gsap";
 
+
 function App() {
 
-  
+  const take02Ref = useRef(null)
 
-  
+  function next() { 
+    gsap.to(take02Ref.current, { 
+            opacity: 1,
+      duration: 1,
+      ease: 'power4.out',
+      delay: 1
+    })
+  }
 
 
 
@@ -23,9 +31,9 @@ function App() {
   
   return (
     <div className="App">
-      <LoadingScene />
+      <LoadingScene  onEnd={()=>next()}/>
       {/* <Header/> */}
-      <Take02 />
+      <Take02 ref={take02Ref} />
     </div>
   );
 }
