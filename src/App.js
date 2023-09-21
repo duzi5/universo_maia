@@ -9,10 +9,10 @@ import { gsap } from "gsap";
 
 function App() {
 
-  const take02Ref = useRef(null)
+ 
 
   function next() { 
-    gsap.to(take02Ref.current, { 
+    gsap.to("#take02", { 
             opacity: 1,
       duration: 1,
       ease: 'power4.out',
@@ -31,9 +31,9 @@ function App() {
   
   return (
     <div className="App">
-      <LoadingScene  onEnd={()=>next()}/>
+      <LoadingScene className="loading" onEnd={()=>next()}/>
       {/* <Header/> */}
-      <Take02 ref={take02Ref} />
+      <Take02 id="take02" />
     </div>
   );
 }

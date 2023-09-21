@@ -75,10 +75,10 @@ const Take02 = () => {
 
     return (
         <div>
-            <FolhasCamada1 />
+            {/* <FolhasCamada1 />
             <FolhasCamada2 />
             <FolhasCamada3 />
-            <Maia />
+            <Maia /> */}
         </div>
     );
 }
