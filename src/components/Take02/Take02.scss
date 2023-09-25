@@ -1,4 +1,61 @@
 svg{ 
    position:absolute;
-    max-width: 100%;
+    max-width: 60%;
+    max-height: 60%;
+    z-index: -3;
+}
+
+
+
+#maia, #P3, #P4, #P5{
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+#maia{ 
+    scale: 1.1;
+}
+
+
+#P3,#P4,#P5 {
+    scale: 2.2;
+}
+
+#P3{
+    position: absolute;
+    bottom: 40vw;
+}
+
+
+
+
+
+.take02{
+    height: 100vh;
+
+    position: relative;
+    min-width: 100vw;
+    border: rgb(215, 20, 221) 4px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.central-msg{ 
+    font-size: 8rem;
+    color: azure;
+    position: absolute;
+    top: 30%;
+    z-index: -4;
+}
+
+#permita{
+    left: 0px;
+}
+#despertar{
+    right: 0px;
+    margin-top: 300px;
 }

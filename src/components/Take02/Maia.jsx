@@ -2,7 +2,14 @@ import React from "react";
 
 const Maia = (props) => {
   return (
-    <svg viewBox="0 0 709 701.66" xmlns="http://www.w3.org/2000/svg">
+
+    
+    
+    
+    
+    
+    
+    <svg id="maia" viewBox="0 0 709 701.66" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient
           id="Gradiente_sem_nome_182"

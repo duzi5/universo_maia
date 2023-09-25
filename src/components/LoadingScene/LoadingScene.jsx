@@ -11,7 +11,6 @@ export default (props) => {
   function handleProgressComplete(){
     gsap.to(scene1Ref.current, {
       duration: 2,
-      opacity: 0,
       ease: "elastic",
       onComplete: () => {
         scene1Ref.current.style.display = 'none'
