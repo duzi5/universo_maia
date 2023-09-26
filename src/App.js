@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <LoadingScene className="loading" />
    
-      <Take02 id="take02" />
+      <Take02 className="take02" />
       <Take03 className="take03"/>
     </div>
   );

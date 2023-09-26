@@ -64,8 +64,7 @@ const Take02 = () => {
     });
     // gsap.to("#maia", {
     //   duration: 3,
-    //   yoyo: true,
-    //   // scale: 1.02,
+    //   yoyo: true
     //   repeat: -1,
     //   ease: "inOut",
     // });
