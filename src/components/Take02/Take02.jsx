@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import BorboletaCogu from "./BorboletaCogu";
 import FolhasCamada1 from "./FolhasCamada1";
 import FolhasCamada2 from "./FolhasCamada2";
@@ -7,6 +9,11 @@ import Maia from "./Maia";
 import "./Take02.scss";
 import { gsap } from "gsap";
 import Take02Teste from "../Take02Teste";
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
 
 const Take02 = () => {
   useEffect(() => {
@@ -55,13 +62,13 @@ const Take02 = () => {
       yoyo: true,
       repeat: -1,
     });
-    gsap.to("#maia", {
-      duration: 3,
-      yoyo: true,
-      // scale: 1.02,
-      repeat: -1,
-      ease: "inOut",
-    });
+    // gsap.to("#maia", {
+    //   duration: 3,
+    //   yoyo: true,
+    //   // scale: 1.02,
+    //   repeat: -1,
+    //   ease: "inOut",
+    // });
     gsap.to("#CAMISA", {
       scale: 1.0005,
       x: -3,
@@ -75,26 +82,30 @@ const Take02 = () => {
     gsap.to("#permita", { 
         duration: 3,
         x: "+=800",
-        scrollTrigger:{
-            trigger: "#permita",
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-            markers: true,
-        },
+        yoyo: true,
+        repeat:-1,
+        // scrollTrigger:{
+        //     trigger: "#permita",
+        //     start: "top center",
+        //     end: "bottom center",
+        //     scrub: true,
+        //     markers: true,
+        // },
         ease:'inOut'
     })
 
     gsap.to("#despertar", { 
         duration: 3,
         x: "-=800",
-        scrollTrigger:{
-            trigger: "#despertar",
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-            markers: true,
-        },
+        yoyo: true,
+        repeat:-1,
+        // scrollTrigger:{
+        //     trigger: "#despertar",
+        //     start: "top center",
+        //     end: "bottom center",
+        //     scrub: true,
+        //     markers: true,
+        // },
         ease:'inOut'
     })
     
@@ -116,7 +127,7 @@ const Take02 = () => {
   }, []);
 
   return (
-    <div className="take02">
+    <div id="take02">
       <h2 id="permita" className="central-msg">
         PERMITA-SE
       </h2>

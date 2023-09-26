@@ -1,47 +1,39 @@
+@import "../LoadingScene/LoadScene.scss";
+
+
 svg{ 
-   position:absolute;
+    position:absolute;
     max-width: 60%;
     max-height: 60%;
     z-index: -3;
 }
 
-
-
 #maia, #P3, #P4, #P5{
     position: absolute;
+    margin: 0 auto;
     bottom: 0;
-
+    
 }
-
 
 #maia{ 
     scale: 1.1;
+    border: 3px solid brown;
 }
 
-
 #P3,#P4,#P5 {
-    scale: 2.2;
+    scale: 1.9;
+
 }
 
 #P3{
     position: absolute;
-    bottom: 40vw;
+    bottom: 50vw;
 }
 
-
-
-
-
-.take02{
-    height: 100vh;
-
-    position: relative;
-    min-width: 100vw;
+#take02{
+   @include uma-tela;
+   position: relative;
     border: rgb(215, 20, 221) 4px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
 .central-msg{ 

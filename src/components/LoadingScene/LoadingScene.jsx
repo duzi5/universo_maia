@@ -15,7 +15,7 @@ export default (props) => {
       onComplete: () => {
         scene1Ref.current.style.display = 'none'
         console.log('zzz')
-        props.onEnd()
+        // props.onEnd()
       }
     });
   }
