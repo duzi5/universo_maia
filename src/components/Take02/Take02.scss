@@ -16,12 +16,15 @@ svg{
 }
 
 #maia{ 
-    scale: 1.1;
+
     border: 3px solid brown;
+    
 }
 
 #P3,#P4,#P5 {
-    scale: 1.9;
+    scale: 2.3;
+    height: auto;
+    transform: translateY(200px);
 
 }
 
