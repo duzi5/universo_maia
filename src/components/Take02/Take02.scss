@@ -1,42 +1,26 @@
 @import "../LoadingScene/LoadScene.scss";
 
 
-svg{ 
-    position:absolute;
-    max-width: 60%;
-    max-height: 60%;
-    z-index: -3;
-}
 
-#maia, #P3, #P4, #P5{
+#maia, #folha1, #folha2, #folha3{
     position: absolute;
     margin: 0 auto;
     bottom: 0;
+    border: green 4px solid;
+
     
 }
-
-#maia{ 
-
-    border: 3px solid brown;
-    
+#maia{
+ scale: 0.4;
+ bottom: 0
 }
 
-#P3,#P4,#P5 {
-    scale: 2.3;
-    height: auto;
-    transform: translateY(200px);
 
-}
-
-#P3{
-    position: absolute;
-    bottom: 50vw;
-}
-
-#take02{
+.take02{
    @include uma-tela;
-   position: relative;
-    border: rgb(215, 20, 221) 4px solid;
+    position: relative;
+    border: solid orchid 5px;
+    overflow-x: hidden;
 }
 
 .central-msg{ 
@@ -44,7 +28,8 @@ svg{
     color: azure;
     position: absolute;
     top: 30%;
-    z-index: -4;
+
+    font-family: 'Chuck';
 }
 
 #permita{
@@ -54,3 +39,8 @@ svg{
     right: 0px;
     margin-top: 300px;
 }
+
+@font-face {
+    font-family: 'Chuck';
+    src: url("../anakefka.ttf");
+ }

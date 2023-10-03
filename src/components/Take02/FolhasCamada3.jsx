@@ -2,7 +2,7 @@ import React from "react";
 
 const FolhasCamada3 = (props) => {
   return (
-    <svg id="P5" viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
+    <svg id="folha3" viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient
           id="Gradiente_sem_nome_272"
