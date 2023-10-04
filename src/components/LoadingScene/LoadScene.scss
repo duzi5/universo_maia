@@ -15,7 +15,7 @@
     max-height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     flex-direction: column;
     background-color: black;
@@ -45,14 +45,13 @@
         font-size: 7vh;
         display: flex;
         justify-content: center;
-        text-transform:lowercase;
         align-items: center;
         line-height: 120%;
         text-align: center;
         z-index: 1000;
         font-weight: 200;
         border-bottom: 0;
-        padding-bottom: 0;
+        padding: 21%;
 
 
     }
@@ -69,6 +68,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+
     }
     .borboleta1{ 
         display: block;

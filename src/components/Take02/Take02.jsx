@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import BorboletaCogu from "./BorboletaCogu";
-import FolhasCamada1 from "./FolhasCamada1";
-import FolhasCamada2 from "./FolhasCamada2";
-import FolhasCamada3 from "./FolhasCamada3";
+import FolhasFrente from "./FolhasFrente";
+import FolhasFundo from "./FolhasFundo";
+import FolhasMeio from "./FolhasMeio";
 import Maia from "./Maia";
 import "./Take02.scss";
 import { gsap } from "gsap";
@@ -133,10 +133,10 @@ const Take02 = () => {
       <h2 id="despertar" className="central-msg">
         DESPERTAR
       </h2>
-      <FolhasCamada1 />
-      <FolhasCamada2 />
-      <FolhasCamada3 />
       <Maia />
+  <FolhasFrente/>
+    <FolhasMeio/>
+    <FolhasFundo/>
       {/* <Take02Teste/> */}
     </div>
   );
