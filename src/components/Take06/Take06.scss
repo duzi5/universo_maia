@@ -1,0 +1,16 @@
+@import "../colors.scss";
+
+
+.take06{
+    background-color: $primary_color;
+    padding: 15%;
+    h2{
+
+        font-size: 67px;
+        font-weight: 300;
+        font-family: 'Barrio', cursive;
+        color: $secundary_color;
+
+        text-align: end;
+    }
+}

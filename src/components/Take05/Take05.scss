@@ -1,0 +1,20 @@
+@import "../colors.scss";
+
+
+.take05{
+    background-color: $secundary_color;
+    h5{
+        color: $primary_color;
+        font-size: 43px;
+        padding: 12%;
+        font-family: 'Major Mono Display', monospace;
+        text-align: center;
+        font-weight: 300;
+    }
+    h3{
+        padding: 3%;
+        font-size: 77px;
+        text-align: center;
+        font-family: 'Major Mono Display', monospace;
+    }
+}

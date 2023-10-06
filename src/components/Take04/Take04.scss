@@ -1,19 +1,17 @@
-@import '../colors.scss';
-
-.take03{
-
+@import "../colors.scss";
+.take04{
     background-color: $primary_color;
     h2{
         font-size: 100px;
         font-family: 'Major Mono Display', monospace;
         color:$secundary_color;
         padding: 10%;
-        
     }
-    h1{
+    strong{
         font-size: 200px;
         font-family: 'Major Mono Display', monospace;
         color: $secundary_color;
         text-align: center;
     }
-}
+
+}  

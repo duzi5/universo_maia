@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import Folhas from "./Folhas";
 import BorboletaCogu from "./BorboletaCogu";
-import FolhasFrente from "./FolhasFrente";
-import FolhasFundo from "./FolhasFundo";
-import FolhasMeio from "./FolhasMeio";
 import Maia from "./Maia";
 import "./Take02.scss";
 import { gsap } from "gsap";
@@ -16,6 +13,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Take02 = () => {
+  const frenteRef = useRef(null);
+  const atrasRef = useRef(null);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+          if (frenteRef.current && atrasRef.current) {
+              frenteRef.current.style.transform = `translate3d(0, ${scrollTop * 0.5}px, 0)`;
+              atrasRef.current.style.transform = `translate3d(0, ${scrollTop * 0.2}px, 0)`;
+          }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
   useEffect(() => {
     gsap.to("#PALPEBRA_BAIXO_1", {
       duration: 3,
@@ -126,19 +141,21 @@ const Take02 = () => {
   }, []);
 
   return (
-    <div id="take02">
+    <div id="take02" className="parallax-container">
       <h2 id="permita" className="central-msg">
         PERMITA-SE
       </h2>
       <h2 id="despertar" className="central-msg">
         DESPERTAR
       </h2>
-      <Maia />
-  <FolhasFrente/>
-    <FolhasMeio/>
-    <FolhasFundo/>
-      {/* <Take02Teste/> */}
-    </div>
+
+        <Folhas/>
+
+
+        <Maia />
+
+
+</div>
   );
 };
 

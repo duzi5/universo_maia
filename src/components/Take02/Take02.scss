@@ -1,46 +1,56 @@
 @import "../LoadingScene/LoadScene.scss";
 
+#folhas {
+  position: absolute;
+  bottom: 0;
+  border: green 4px solid;
+  height: 80vw;
 
-
-#maia, #folha1, #folha2, #folha3{
-    position: absolute;
-    margin: 0 auto;
-    bottom: 0;
-    border: green 4px solid;
-
-    
+  margin-left: auto;
+  margin-right: auto;
 }
-#maia{
- scale: 0.4;
- bottom: 0
-}
+#maia {
+  position: absolute;
 
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 
-.take02{
-   @include uma-tela;
-    position: relative;
-    border: solid orchid 5px;
-    overflow-x: hidden;
+  max-height: 1400px;
 }
 
-.central-msg{ 
-    font-size: 8rem;
-    color: azure;
-    position: absolute;
-    top: 30%;
+#take02 {
+  display: grid;
+  height: 100vh;
 
-    font-family: 'Chuck';
+  place-items: center;
+  border: solid orchid 5px;
+  overflow-x: hidden;
+  position: relative;
 }
 
-#permita{
-    left: 0px;
+.central-msg {
+  font-size: 8rem;
+  color: azure;
+  position: absolute;
+  top: 15%;
+
+  font-family: "Chuck";
 }
-#despertar{
-    right: 0px;
-    margin-top: 300px;
+
+#permita {
+  left: 0px;
+}
+#despertar {
+  right: 0px;
+  margin-top: 300px;
 }
 
 @font-face {
-    font-family: 'Chuck';
-    src: url("../anakefka.ttf");
- }
+  font-family: "Chuck";
+  src: url("../anakefka.ttf");
+}
+
+
+
+
