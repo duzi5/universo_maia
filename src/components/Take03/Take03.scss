@@ -1,7 +1,8 @@
 @import '../colors.scss';
 
 .take03{
-
+    height: fit-content;
+    overflow: hidden;
     background-color: $primary_color;
     h2{
         font-size: 100px;

@@ -1,6 +1,8 @@
 @import "../colors.scss";
 .take04{
     background-color: $primary_color;
+    height: fit-content;
+    overflow-y: hidden;
     h2{
         font-size: 100px;
         font-family: 'Major Mono Display', monospace;
