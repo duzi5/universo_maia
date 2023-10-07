@@ -1,8 +1,11 @@
 import React from 'react';
 import { gsap } from 'gsap';
 
+
+import LocomotiveScroll from 'locomotive-scroll';
 import "./Take04.scss"
 const Take04 = () => {
+    const locomotiveScroll = new LocomotiveScroll();
     const tl = gsap.timeline({ repeat: -1, yoyo: true }); // repetir infinitamente e alternar a animação
 
     // Piscar alterando a opacidade
@@ -14,7 +17,7 @@ const Take04 = () => {
       .to("#voce", { x: "-=10", duration: 0.5 });
     return (
         <div className='take04'>
-              <h2>O QUE VOCÊ FARIA SE VOCÊ PUDESSE SER <strong id="voce">VOCÊ?</strong></h2>
+              <h2 data-scroll data-scroll-speed="0.5" >O QUE VOCÊ FARIA SE VOCÊ PUDESSE SER <strong data-scroll data-scroll-speed="0.4" id="voce">VOCÊ?</strong></h2>
 
 
         </div>

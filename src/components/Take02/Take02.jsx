@@ -36,26 +36,26 @@ const Take02 = () => {
       duration: 3,
       y: 10,
       yoyo: true,
-      repeat: -1,
+     
     });
     gsap.to("#PALPEBRA_CIMA_2", {
       duration: 3,
       y: -10,
       yoyo: true,
-      repeat: -1,
+     
     });
 
     gsap.to("#PALPEBRA_CIMA_2-2", {
       duration: 3,
       y: -10,
       yoyo: true,
-      repeat: -1,
+      
     });
     gsap.to("#PALPEBRA_BAIXO_1-2", {
       duration: 3,
       y: 10,
       yoyo: true,
-      repeat: -1,
+      
     });
 
     gsap.to("#COGU_CENTRAL", {
@@ -97,14 +97,13 @@ const Take02 = () => {
         duration: 3,
         x: "+=800",
         yoyo: true,
-        repeat:-1,
-        // scrollTrigger:{
-        //     trigger: "#permita",
-        //     start: "top center",
-        //     end: "bottom center",
-        //     scrub: true,
-        //     markers: true,
-        // },
+        scrollTrigger:{
+            trigger: "#permita",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+            markers: true,
+        },
         ease:'inOut'
     })
 
@@ -112,14 +111,13 @@ const Take02 = () => {
         duration: 3,
         x: "-=800",
         yoyo: true,
-        repeat:-1,
-        // scrollTrigger:{
-        //     trigger: "#despertar",
-        //     start: "top center",
-        //     end: "bottom center",
-        //     scrub: true,
-        //     markers: true,
-        // },
+        scrollTrigger:{
+            trigger: "#despertar",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+            markers: true,
+        },
         ease:'inOut'
     })
     
@@ -142,17 +140,17 @@ const Take02 = () => {
 
   return (
     <div id="take02" className="parallax-container">
-      <h2 id="permita" className="central-msg">
+      <h2 data-scroll data-scroll-speed="0.5"id="permita" className="central-msg">
         PERMITA-SE
       </h2>
-      <h2 id="despertar" className="central-msg">
+      <h2  data-scroll data-scroll-speed="0.4" id="despertar" className="central-msg">
         DESPERTAR
       </h2>
 
-        <Folhas/>
+        <Folhas data-scroll data-scroll-speed="0.5"/>
 
 
-        <Maia />
+        <Maia data-scroll data-scroll-speed="0.3" />
 
 
 </div>
