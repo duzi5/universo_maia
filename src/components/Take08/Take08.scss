@@ -1,0 +1,46 @@
+@import "../colors.scss";
+.take08{
+    background: rgb(34, 58, 211);
+    background: linear-gradient(180deg, rgb(102, 138, 200) 0%, rgb(132, 160, 215) 100%);
+    position: relative;
+    padding-top: 10%;
+    h2{
+        font-family: 'Barrio', cursive;
+        color: $secundary_color;
+        position: absolute;
+        top: -90px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+        strong{
+            color: $quaternary_color;
+            font-size:8rem;
+        }
+
+    }
+    h4{
+        font-family: 'Barrio', cursive;
+        font-size: 56px;
+        padding: 10%;
+    }
+    .links{
+        padding: 10%;
+        justify-content: space-around;
+        align-items:normal;
+    }
+    a:first-child{
+        transform: translateX(200px);
+    }
+    a{
+        font-size: 3rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 800;
+        margin: 20px;
+        margin-top: 50px;
+        cursor: pointer;
+    }   a:hover{
+        color: $quaternary_color;
+    }
+}

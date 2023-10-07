@@ -5,7 +5,7 @@ import Take04 from "./components/Take04/Take04";
 import Take05 from './components/Take05/Take05';
 import Take06 from './components/Take06/Take06';
 import Take07 from './components/Take07/Take07';
-
+import Take08 from './components/Take08/Take08';
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
       <Take05 />
       <Take06 />
       <Take07 />
+      <Take08 />
     </div>
   );
 }
