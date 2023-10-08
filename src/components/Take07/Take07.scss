@@ -4,6 +4,8 @@
     background-color: $primary_color;
     padding: 15%;
     padding-top: 1%;
+    // overflow: hidden;
+    height: fit-content;
     h5{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: $secundary_color;
