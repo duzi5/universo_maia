@@ -2,7 +2,7 @@ import React from "react";
 
 const CogusAzuis = (props) => {
   return (
-    <svg viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
+    <svg id="cogus-azuis"viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient
           id="Gradiente_sem_nome_315"

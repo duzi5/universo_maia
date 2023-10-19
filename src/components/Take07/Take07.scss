@@ -2,12 +2,12 @@
 
 .take07{
     background-color: $primary_color;
-    padding: 15%;
+    padding: 5%;
     padding-top: 1%;
     // overflow: hidden;
     height: fit-content;
     h5{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: $font2;
         color: $secundary_color;
         text-transform: uppercase;
         font-size: 40px;
@@ -16,7 +16,7 @@
     h3{
         font-family: 'Barrio', cursive;
         text-align: center;
-        padding: 10%;
+        padding: 5%;
         color: $secundary_color;
         font-size: 85px;
         strong{

@@ -1,5 +1,5 @@
 @import "../LoadingScene/LoadScene.scss";
-
+@import "../colors.scss";
 #folhas {
   position: absolute;
   bottom: 0;
@@ -31,12 +31,12 @@
 }
 
 .central-msg {
-  font-size: 8rem;
+  font-size: 14rem;
   color: azure;
   position: absolute;
   top: 15%;
 
-  font-family: "Chuck";
+  font-family: $font1;
 }
 
 #permita {
@@ -44,7 +44,7 @@
 }
 #despertar {
   right: 0px;
-  margin-top: 300px;
+  margin-top: 450px;
 }
 
 @font-face {

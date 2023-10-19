@@ -6,17 +6,17 @@ import Take05 from './components/Take05/Take05';
 import Take06 from './components/Take06/Take06';
 import Take07 from './components/Take07/Take07';
 import Take08 from './components/Take08/Take08';
+import Take09 from './components/Take09/Take09.jsx'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import gsap from 'gsap';
+
 
 function App() {
 
  
 
 
-
-
-
-  
-  
   
   
   
@@ -31,6 +31,7 @@ function App() {
       <Take06 />
       <Take07 />
       <Take08 />
+      <Take09 />
     </div>
   );
 }

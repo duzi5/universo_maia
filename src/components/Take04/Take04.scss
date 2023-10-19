@@ -5,13 +5,13 @@
     // overflow-y: hidden;
     h2{
         font-size: 100px;
-        font-family: 'Major Mono Display', monospace;
+        font-family: $font2;
         color:$secundary_color;
         padding: 10%;
     }
     strong{
         font-size: 200px;
-        font-family: 'Major Mono Display', monospace;
+        font-family: $font2;
         color: $secundary_color;
         text-align: center;
     }

@@ -1,10 +1,34 @@
 @import "../colors.scss";
 .take08{
-    background: rgb(34, 58, 211);
-    background: linear-gradient(180deg, rgb(102, 138, 200) 0%, rgb(55, 83, 138) 100%);
+    background: linear-gradient(180deg, rgba(134,247,249,1) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);
+
+    background-repeat: repeat;
+    background-attachment: fixed;
     position: relative;
     padding-top: 10%;
-    overflow-x: hidden;
+
+    height: fit-content;
+    #cogus-azuis{
+        position: relative;
+        z-index: 2;  // Este valor deve ser maior que o z-index de #matriz
+       
+        object-fit: cover;
+        
+    }
+    .matriz{
+        position: absolute;
+        z-index: 1;
+    }
+    img{
+        position: absolute;
+        margin: 0 0 0 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
     h2{
         font-family: 'Barrio', cursive;
         color: $secundary_color;
@@ -36,7 +60,7 @@
     }
     a{
         font-size: 3rem;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: $font1;
         font-weight: 800;
         margin: 20px;
         margin-top: 50px;

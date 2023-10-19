@@ -93,7 +93,7 @@ const Take02 = () => {
       yoyo: true,
     });
 
-    gsap.to("#permita", { 
+    gsap.from("#permita", { 
         duration: 3,
         x: "+=800",
         yoyo: true,
@@ -107,7 +107,7 @@ const Take02 = () => {
         ease:'inOut'
     })
 
-    gsap.to("#despertar", { 
+    gsap.from("#despertar", { 
         duration: 3,
         x: "-=800",
         yoyo: true,
@@ -121,7 +121,14 @@ const Take02 = () => {
         ease:'inOut'
     })
     
-
+    gsap.to(
+      "#maia",
+      {
+        duration: 4,
+        yoyo: true,
+        opacity: 0,
+        ease: 'inOut'
+      })
 
 
 
@@ -140,17 +147,17 @@ const Take02 = () => {
 
   return (
     <div id="take02" className="parallax-container">
-      <h2 data-scroll data-scroll-speed="0.5"id="permita" className="central-msg">
+      <h2 id="permita" className="central-msg">
         PERMITA-SE
       </h2>
-      <h2  data-scroll data-scroll-speed="0.4" id="despertar" className="central-msg">
+      <h2  id="despertar" className="central-msg">
         DESPERTAR
       </h2>
 
-        <Folhas data-scroll data-scroll-speed="0.5"/>
+        <Folhas />
 
 
-        <Maia data-scroll data-scroll-speed="0.3" />
+        <Maia />
 
 
 </div>
