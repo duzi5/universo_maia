@@ -8,7 +8,7 @@ import "./Take09.scss";
 import video from "./video.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Glide from '@glidejs/glide'
+
 
 // Styles must use direct files imports // Pagination module
 gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +21,7 @@ const Take09 = () => {
     const slide3Ref = useRef(null);
     useEffect(()=>{
 
-        new Glide('.glide').mount({ Controls, Breakpoints })
+
     },[])
 
   return (
