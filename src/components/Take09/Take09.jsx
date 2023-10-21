@@ -1,9 +1,5 @@
 
 import React,{useEffect, useRef} from "react";
-// Import Swiper styles
-// core Swiper
-import '@glidejs/glide/dist/css/glide.core.min.css';
-import '@glidejs/glide/dist/css/glide.theme.min.css';
 import "./Take09.scss";
 import video from "./video.mp4";
 import gsap from "gsap";
@@ -38,11 +34,9 @@ const Take09 = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content carousel-container" ref={carouselRef}>
-        <div className="glide">
-        <div className="glide__track" data-glide-el=".content">
-            <ul className="glide__slides">
-                <li className="glide__slide">
-                <div className="selling-card" ref={slide1Ref}>
+      
+       
+                <div className="selling-card direita" ref={slide1Ref}>
               <h3>Psilocybe cubensis albino</h3>
               <p>
                 O Psilocybe cubensis albino é uma variedade pra lá de rara e
@@ -98,10 +92,9 @@ const Take09 = () => {
                 </tbody>
               </table>
             </div>
-                </li>
-                <li className="glide__slide">
+           
 
-<div className="selling-card" ref={slide3Ref}>
+<div className="selling-card central" ref={slide3Ref}>
   <h3>Kit Cultivo do Psilocybe cubensis albino</h3>
   <p className="question">
     Imagina só, ter um kit mágico pra você mesmo cultivar seu cogu?
@@ -142,9 +135,8 @@ const Take09 = () => {
   <p className="question">Qual é o investimento?</p>
   <p>R$ 200,00</p>
 </div>
-    </li>
-    <li className="glide__slide">
-                <div className="selling-card" ref={slide2Ref}>
+  
+                <div className="selling-card esquerda" ref={slide2Ref}>
               <h3>Psilocybe cubensis Buffalo Pink</h3>
               <p>
                 o Psilocybe cubensis Buffalo Pink é tipo um rockstar dos
@@ -199,12 +191,10 @@ const Take09 = () => {
                 </tbody>
               </table>
             </div>
-                </li>
-       
-            </ul>
-        </div>
+             
 
-        </div>
+
+
 
 
 

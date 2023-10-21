@@ -3,7 +3,6 @@
 #folhas {
   position: absolute;
   bottom: 0;
-  border: green 4px solid;
   height: 80vw;
 
   margin-left: auto;
@@ -22,10 +21,10 @@
 #take02 {
   display: grid;
   height: 100vh;
-
-  place-items: center;
-  border: solid orchid 5px;
-  overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 ;
   position: relative;
 }
@@ -47,10 +46,7 @@
   margin-top: 450px;
 }
 
-@font-face {
-  font-family: "Chuck";
-  src: url("../anakefka.ttf");
-}
+
 
 
 

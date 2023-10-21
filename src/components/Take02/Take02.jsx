@@ -6,7 +6,6 @@ import Maia from "./Maia";
 import "./Take02.scss";
 import { gsap } from "gsap";
 import Take02Teste from "../Take02Teste";
-gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -15,23 +14,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Take02 = () => {
   const frenteRef = useRef(null);
   const atrasRef = useRef(null);
-
+  
+  
   useEffect(() => {
-      const handleScroll = () => {
-          const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-          if (frenteRef.current && atrasRef.current) {
-              frenteRef.current.style.transform = `translate3d(0, ${scrollTop * 0.5}px, 0)`;
-              atrasRef.current.style.transform = `translate3d(0, ${scrollTop * 0.2}px, 0)`;
-          }
-      };
-
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, []);
-  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to("#PALPEBRA_BAIXO_1", {
       duration: 3,
       y: 10,
@@ -102,7 +88,7 @@ const Take02 = () => {
             start: "top center",
             end: "bottom center",
             scrub: true,
-            markers: true,
+
         },
         ease:'inOut'
     })
@@ -116,7 +102,7 @@ const Take02 = () => {
             start: "top center",
             end: "bottom center",
             scrub: true,
-            markers: true,
+
         },
         ease:'inOut'
     })

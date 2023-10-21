@@ -1,18 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Take05.scss";
-import LocomotiveScroll from "locomotive-scroll";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 const Take05 = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from("#momento", {
+      x: 800,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#momento",
+        start: "-70% center",
+        end: "70% center",
+        scrub: true,
+
+      },
+      ease: "inOut",
+    });
+    gsap.from("#seria", {
+        x: -800,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#seria",
+            start: "-70% center",
+            end: "70% center",
+            scrub: true,
+
+        },
+        ease: "inOut",
+    });
+    gsap.from("#viveria", {
+      x: 800,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#viveria",
+        start: "-70% center",
+        end: "70% center",
+        scrub: true,
+
+      },
+      ease: "inOut",
+    });
+  }, []);
 
   return (
     <div className="take05">
-      <h5>
+      <h5 id="momento">
         E SE DE REPENTE, POR UM MOMENTO, EM UM ESPAÇO TEMPO CRIADO NO UNIVERSO,
         VOCÊ PUDESSE SE PERMITIR ESQUECER TUDO QUE ACONTECE AQUI FORA E FOCASSE
         APENAS EM VOCÊ?
       </h5>
-      <h3>QUEM VOCÊ SERIA?</h3>
-      <h3>COMO VIVERIA?</h3>
+      <h3 id="seria">QUEM VOCÊ SERIA?</h3>
+      <h3 id="viveria">COMO VIVERIA?</h3>
     </div>
   );
 };

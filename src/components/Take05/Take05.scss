@@ -1,23 +1,21 @@
 @import "../colors.scss";
 
-
-.take05{
-    background-color: $secundary_color;
-    height: fit-content;
-    // overflow-y: hidden;
-    h5{
-        color: $primary_color;
-        font-size: 43px;
-        padding: 5%;
-        font-family: $font2;
-        text-align: center;
-        font-weight: 300;
-    }
-    h3{
-        padding: 3%;
-        font-size: 77px;
-        text-align: center;
-        font-family: $font2;
-
-    }
+.take05 {
+  background-color: $secundary_color;
+  height: fit-content;
+  // overflow-y: hidden;
+  h5 {
+    color: $primary_color;
+    font-size: 43px;
+    padding: 5%;
+    font-family: $font2;
+    text-align: center;
+    font-weight: 300;
+  }
+  h3 {
+    padding: 3%;
+    font-size: 77px;
+    text-align: center;
+    font-family: $font2;
+  }
 }

@@ -3,10 +3,6 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 
-#cogumelandose{
-
-}
-
 .video-section {
     position: relative;
     width: 100vw;
@@ -39,6 +35,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    perspective: 200px;
+
 
     /* ... outras estilizações para o conteúdo ... */
 
@@ -46,15 +44,15 @@
 .selling-card{
     min-width: 450px; /* 1/3 da largura total */
     max-width: 450px;
-    border: rgb(255, 255, 255) 3px solid;
+    border: rgb(233, 191, 7) 8px solid;
     min-height: 1000px;
-    margin: auto;
     background-color: #171818cb;
     border-radius: 12px;
     padding: 3%;
     text-align: justify;
 
-    margin: 30px;
+
+    
     h3{
         font-family: 'Barrio';
         color: $secundary_color;
@@ -86,4 +84,20 @@
     box-shadow: 0 0 10px #fff;
     cursor: pointer;
     background-color: black;
+    transform: skew(0);
+}
+
+.central{
+    transform: rotateX(0deg) rotateY(0deg) scale(0.8);
+    transform-style: preserve-3d;
+    z-index: 3;
+}
+
+.esquerda{ 
+    transform: rotateX(0deg) rotateY(-10deg) scale(0.8);
+    transform-style: preserve-3d;
+}
+.direita{
+    transform: rotateX(0deg) rotateY(10deg) scale(0.8);
+    transform-style: preserve-3d;
 }
