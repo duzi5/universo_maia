@@ -1,6 +1,24 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 const CogusAzuis = (props) => {
+ 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from("#cogus-azuis",{
+      duration:4,
+      opacity:0,
+      scrollTrigger:{
+        trigger: '.matrix',
+        start: 'top center',
+        end: 'bottom center'
+
+      }
+    })
+ 
+  },[])
+ 
+ 
   return (
     <svg id="cogus-azuis"viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
       <defs>

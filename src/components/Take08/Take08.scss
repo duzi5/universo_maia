@@ -1,7 +1,10 @@
 @import "../colors.scss";
 .take08{
     background: linear-gradient(180deg, rgba(134,247,249,1) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);
-
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
     background-repeat: repeat;
     background-attachment: fixed;
     position: relative;
@@ -68,4 +71,16 @@
     }   a:hover{
         color: $quaternary_color;
     }
+    #poder{
+        max-width: 800px;
+        height: 400px;
+        object-fit: contain;
+        position: absolute;
+        top: -15%;
+        right: auto;
+        display: grid;
+    }
+
+
+
 }
