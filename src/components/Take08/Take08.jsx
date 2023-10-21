@@ -36,8 +36,10 @@ const Take08 = () => {
         },
       },
     });
-    gsap.fromTo('.take08',{background: "white"},{
-        background: "slateblue",
+    gsap.fromTo(['.take08', '.take07'],{background: "lightblue"},{
+        backgroundColor: "slateblue",
+        duration:5,
+        ease:'inOut',
         scrollTrigger:{
           trigger: '.take08',
           start: 'top center',

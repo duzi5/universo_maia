@@ -7,6 +7,7 @@ import Take06 from "./components/Take06/Take06";
 import Take07 from "./components/Take07/Take07";
 import Take08 from "./components/Take08/Take08";
 import Take09 from "./components/Take09/Take09";
+import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Take07 />
       <Take08 />
       <Take09 />
+      <VideoScroll/>
     </div>
   );
 }
