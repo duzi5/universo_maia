@@ -26,6 +26,7 @@
         text-align: center;
         font-size: 4rem;
         @include breakpoint(small){
+            font-size: 100px;
         }
         
     } 
