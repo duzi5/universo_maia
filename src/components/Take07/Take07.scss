@@ -19,12 +19,24 @@
         padding: 5%;
         color: $secundary_color;
         font-size: 85px;
+        @include breakpoint(small){
+            font-size: 50px;
+          }
+        
         strong{
             color: $quaternary_color
         }
+        
+    
+    
     }
     #mente{
         margin: 10%;
+        @include breakpoint(small){
+            width: 300px;
+            height: auto;
+          }
+        
     }
 
 }

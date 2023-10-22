@@ -36,7 +36,7 @@ const Take08 = () => {
         },
       },
     });
-    gsap.fromTo(['.take08', '.take07'],{background: "lightblue"},{
+    gsap.fromTo(['.take08'],{background: "lightblue"},{
         backgroundColor: "slateblue",
         duration:5,
         ease:'inOut',
