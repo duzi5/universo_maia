@@ -45,7 +45,6 @@ const Take08 = () => {
           start: 'bottom center',
           end: 'top center',
           scrub:true,
-          markers:true
         }
       })
   }, []);

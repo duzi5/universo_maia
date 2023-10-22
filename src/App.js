@@ -21,7 +21,7 @@ function App() {
   
   return (
     <div className="App">
-      {/* <LoadingScene /> */}
+      <LoadingScene />
       <Take02 />
       <Take03 />
       <Take04 />
@@ -30,7 +30,7 @@ function App() {
       <Take07 />
       <Take08 />
       <Take09 />
-      <VideoScroll/>
+      {/* <VideoScroll/> */} 
     </div>
   );
 }

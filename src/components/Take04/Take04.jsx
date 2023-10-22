@@ -29,7 +29,7 @@ const Take04 = () => {
         start: "-30% center",
         end: "70% center",
         scrub: true,
-        markers: true,
+
         onUpdate: (self) => {
           console.log(self.progress);
         },
