@@ -33,8 +33,11 @@ align-items: center;
   color: azure;
   position: absolute;
   top: 15%;
-
   font-family: $font1;
+  @include breakpoint(small){
+    font-size: 4rem;
+  }
+
 }
 
 #permita {
@@ -42,7 +45,8 @@ align-items: center;
 }
 #despertar {
   right: 0px;
-  margin-top: 450px;
+  margin-top: 40%;
+
 }
 
 

@@ -42,8 +42,8 @@ const Take08 = () => {
         ease:'inOut',
         scrollTrigger:{
           trigger: '.take08',
-          start: 'top center',
-          end: 'bottom center',
+          start: 'bottom center',
+          end: 'top center',
           scrub:true,
           markers:true
         }

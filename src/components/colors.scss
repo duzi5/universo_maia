@@ -6,4 +6,23 @@ $quinary_color: #e27500;
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Autour+One&family=Barrio&family=Bebas+Neue&family=Bungee&family=Chelsea+Market&family=Covered+By+Your+Grace&family=Eczar:wght@400;500;600;700;800&family=Kablammo&family=Kranky&family=Lacquer&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Luckiest+Guy&family=Major+Mono+Display&family=Monoton&family=Noto+Sans+Linear+B&family=Paytone+One&family=Ribeye&family=Rubik+Distressed&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Ruslan+Display&family=Ultra&display=swap');
 $font1: 'Luckiest Guy';
-$font2: 'Chelsea Market'
+$font2: 'Chelsea Market';
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1200px
+);
+
+@mixin breakpoint($point) {
+    @if map-has-key($breakpoints, $point) {
+      @media (max-width: map-get($breakpoints, $point)) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint '#{$point}' não encontrado.";
+    }
+  }
+
+  

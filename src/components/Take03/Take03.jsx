@@ -12,6 +12,7 @@ const Take03 = () => {
         end: "80% center",
         toggleActions: "play none reverse none",
         scrub: true,
+        pin:true,
         onUpdate: (self) => {
           console.log(self.progress);
         },

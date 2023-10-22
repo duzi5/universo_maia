@@ -14,11 +14,11 @@
         font-family:$font2;
         color:$secundary_color;
 
-        padding: 10%;
+        padding: 5%;
         border: 5px solid orangered ;
     }
     h1{
-        margin-top: 300px;
+        margin-top: 3%;
         font-size: 200px;
         font-family: 'Major Mono Display';
         color: $secundary_color;
@@ -27,4 +27,25 @@
         border: 5px solid orange ;
 
     }
+    @include breakpoint(small){
+        h1{
+            font-size: 100px;
+            
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
