@@ -8,14 +8,14 @@
     align-items: normal;
     justify-content: space-around;
     background-color: $primary_color;
-    border: 5px solid green ;
+
     h2{
         font-size: 100px;
         font-family:$font2;
         color:$secundary_color;
 
         padding: 5%;
-        border: 5px solid orangered ;
+
     }
     h1{
         margin-top: 3%;
@@ -24,10 +24,10 @@
         color: $secundary_color;
         text-align: center;
         
-        border: 5px solid orange ;
+
 
     }
-    @include breakpoint(small){
+    @include breakpoint(medium){
         h1{
             font-size: 100px;
             

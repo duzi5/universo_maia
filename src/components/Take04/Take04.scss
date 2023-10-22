@@ -5,15 +5,15 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: 4px solid greenyellow;
+
     // overflow-y: hidden;
     h2{
         font-size: 100px;
         font-family: $font2;
         color:$secundary_color;
         margin: 20%;
-        border: 4px solid red;
-        @include breakpoint(small){
+
+        @include breakpoint(medium){
             font-size: 2rem;
             max-width: 90vw;
           }
@@ -25,7 +25,7 @@
         color: $secundary_color;
         text-align: center;
         font-size: 4rem;
-        @include breakpoint(small){
+        @include breakpoint(medium){
             font-size: 100px;
         }
         

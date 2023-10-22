@@ -19,7 +19,7 @@
         padding: 5%;
         color: $secundary_color;
         font-size: 85px;
-        @include breakpoint(small){
+        @include breakpoint(medium){
             font-size: 50px;
           }
         
@@ -32,7 +32,7 @@
     }
     #mente{
         margin: 10%;
-        @include breakpoint(small){
+        @include breakpoint(medium){
             width: 300px;
             height: auto;
           }

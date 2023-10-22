@@ -34,7 +34,7 @@ align-items: center;
   position: absolute;
   top: 15%;
   font-family: $font1;
-  @include breakpoint(small){
+  @include breakpoint(medium){
     font-size: 4rem;
   }
 
