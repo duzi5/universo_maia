@@ -1,3 +1,4 @@
+
 import LoadingScene from "./components/LoadingScene/LoadingScene";
 import Take02 from "./components/Take02/Take02";
 import Take03 from "./components/Take03/Take03";
@@ -8,8 +9,16 @@ import Take07 from "./components/Take07/Take07";
 import Take08 from "./components/Take08/Take08";
 import Take09 from "./components/Take09/Take09";
 import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
-
+import { useEffect } from "react";
 function App() {
+  const slides = document.querySelectorAll('.selling-card');
+  const OPTIONS = { dragFree: true, loop: true }
+  
+  useEffect(() => {
+
+ }, []);
+  
+  
   return (
     <div className="App">
       {/* <LoadingScene /> */}

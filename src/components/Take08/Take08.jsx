@@ -59,7 +59,7 @@ const Take08 = () => {
         CONSCIENTE, COM MENOS ANSIEDADE E MAIS DISPOSIÇÃO PARA VIVER A VIDA.
       </h4>
 
-      <img className="matrix" src={matrix} />
+      <img className="matriz" src={matrix} />
       <CogusAzuis />
     </div>
   );

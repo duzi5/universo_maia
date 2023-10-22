@@ -41,7 +41,7 @@ useEffect(()=>{
         <div className="take07">
             
 
-            <h3 > Mergulhe no <strong>conhecimento ancestral</strong> que liberta o seu futuro</h3>
+            <h3 id="mergulhe"> Mergulhe no <strong>conhecimento ancestral</strong> que liberta o seu futuro</h3>
             <img id="mente" src={expanda}/>
 
         </div>
