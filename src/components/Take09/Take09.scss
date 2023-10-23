@@ -8,10 +8,13 @@
     overflow: hidden;
     object-fit: cover;
     background-color: #0066da;
+    display: block;
+    z-index: 0;
 }
 
 .video-background {
     position: absolute;
+    display: block;
     filter: hue-rotate(240deg) blur(10px) grayscale(1);
     top: 0;
     left: 0;
@@ -20,11 +23,22 @@
     width: 100%;
     height: fit-content;
     object-fit: cover;
-
+    z-index: 1;
     @include breakpoint(small) {
         position: relative;
         filter: grayscale(1);
     }
+}
+
+.cards{
+
+    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
@@ -35,17 +49,42 @@
     color: white;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10%;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     perspective: 200px;
 
+    .titulo{
+        width: 100vw;
+        .title{
+            display: flex;
+            z-index: 100;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+                font-family: 'Barrio', cursive;
+                font-size: 10rem;
+                margin: 0;
+                padding: 0;
+                @include breakpoint(small) {
+                    font-size: 4rem;
+                    position: relative;
+                    z-index: 100;
+                    
+                }
+                @include breakpoint(medium){
+                    font-size: 3rem;
+            }
+                }
+    }
     .selling-card {
-        min-width: 70vw;
-        max-width: 450px;
+        width: 70vw;
+        max-width: 600px;
         height: fit-content;
-        background-color: #171818cb;
-        border-radius: 12px;
-        padding: 3%;
+        background-color: transparent;
+        backdrop-filter: blur(100px);
+        padding: 10%;
         text-align: justify;
 
         h3 {
@@ -59,19 +98,23 @@
         p, table {
             font-weight: 200;
             max-height: 1000px;
-            opacity: 1;
+            justify-content: center;
+            width: fit-content;
+            display: none;
             transition: max-height 0.8s ease-in, opacity 0.4s ease-in;
         }
-
+        
         &.selected p, &.selected table {
             display: block;
         }
-
+        
         table {
+            margin: auto;
+            margin-top: 7%;
             background-color: rgba(255, 255, 255, 0.38);
             color: #121111;
             padding: 4%;
-            border-radius: 10px;
+
 
             td, tr {
                 text-align: center;
@@ -80,9 +123,9 @@
         }
         &:hover {
             transition: 0.5s;
-            box-shadow: 0 0 10px #fff;
             cursor: pointer;
-            background-color: black;
+            
+
             transform: skew(0);
         }
 
@@ -91,8 +134,25 @@
             height: fit-content;
             padding: 5%;
             border: none;
-            background-color: transparent;
 
+            ;
+            h3 {
+                font-size: 25px;
+            }
+
+            p, table {
+                display: none;
+                font-size: 19px;
+            }
+        }
+        @include breakpoint(xlarge) {
+            width: 80vw;
+            margin: auto;
+            height: fit-content;
+            padding: 5%;
+            border: none;
+
+            ;
             h3 {
                 font-size: 25px;
             }

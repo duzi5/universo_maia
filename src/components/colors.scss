@@ -17,12 +17,20 @@ $breakpoints: (
 
 @mixin breakpoint($point) {
     @if map-has-key($breakpoints, $point) {
-      @media (max-width: map-get($breakpoints, $point)) {
-        @content;
-      }
+        @if $point == large {
+            @media (min-width: map-get($breakpoints, $point)) and (max-width: map-get($breakpoints, xlarge) - 1px) {
+                @content;
+            }
+        } @else if $point == xlarge {
+            @media (min-width: map-get($breakpoints, $point)) {
+                @content;
+            }
+        } @else {
+            @media (max-width: map-get($breakpoints, $point)) {
+                @content;
+            }
+        }
     } @else {
-      @warn "Breakpoint '#{$point}' não encontrado.";
+        @warn "Breakpoint '#{$point}' não encontrado.";
     }
-  }
-
-  
+}

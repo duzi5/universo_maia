@@ -21,7 +21,7 @@ function App() {
   
   return (
     <div className="App">
-      <LoadingScene />
+      {/* <LoadingScene /> */}
       <Take02 />
       <Take03 />
       <Take04 />

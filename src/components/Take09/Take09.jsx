@@ -11,18 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 const Take09 = () => {
   const [selectedSlide, setSelectedSlide] = useState(null);
 
-    const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: true, 
-        dragFree: true,
-    });
+   
     const handleSlideClick = (index) => {
       setSelectedSlide(index);
   };
-    useEffect(() => {
-        if (emblaApi) {
-            // You can access the Embla API (like emblaApi.scrollNext()) here
-        }
-    }, [emblaApi]);
+
 
     return (
         <section className="video-section">
@@ -31,8 +24,12 @@ const Take09 = () => {
                 Your browser does not support the video tag.
             </video>
             <div className="content carousel-container">
+            <div className="titulo">
+              <h1 className="title">Produtos</h1>
+            </div>
 
-                        <div className={`selling-card direita ${selectedSlide == 1 ? 'selected' : ''}`} onClick={()=> handleSlideClick(1)}>
+                       <div className="cards">
+                       <div className={`selling-card direita ${selectedSlide == 1 ? 'selected' : ''}`} onClick={()=> handleSlideClick(1)}>
                             <h3>Psilocybe cubensis albino</h3>
                             <p>
                                 O Psilocybe cubensis albino é uma variedade pra lá de rara e única do famoso cogumelo psicodélico Psilocybe cubensis. O que mais chama atenção nesse cogumelo é que ele é branquinho, daí o nome "albino". Enquanto a maioria dos Psilocybe cubensis tem aquela vibe marrom ou acastanhada, o Psilocybe cubensis albino se destaca pela aparência diferentona.
@@ -139,6 +136,7 @@ const Take09 = () => {
                                 </tbody>
                             </table>
                         </div>
+                       </div>
                     </div>
          
 
