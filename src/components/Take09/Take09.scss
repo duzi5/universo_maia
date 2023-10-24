@@ -10,11 +10,16 @@
     background-color: #0066da;
     display: block;
     z-index: 0;
+
+    @include breakpoint(small) {
+        height: fit-content;
+        position: relative;
+        z-index: 0;
+    }
 }
 
 .video-background {
     position: absolute;
-    display: block;
     filter: hue-rotate(240deg) blur(10px) grayscale(1);
     top: 0;
     left: 0;
@@ -24,14 +29,15 @@
     height: fit-content;
     object-fit: cover;
     z-index: 1;
-    @include breakpoint(small) {
+
+    @include breakpoint(medium) {
         position: relative;
-        filter: grayscale(1);
+        filter:  hue-rotate(80deg);
+
     }
 }
 
-.cards{
-
+.cards {
     object-fit: cover;
     width: 100%;
     max-width: 600px;
@@ -44,7 +50,7 @@
 .content {
     position: relative;
     display: flex;
-    width: 100vw; 
+    width: 100vw;
     z-index: 1;
     color: white;
     justify-content: center;
@@ -54,38 +60,42 @@
     flex-wrap: wrap;
     perspective: 200px;
 
-    .titulo{
+    .titulo {
         width: 100vw;
-        .title{
+
+        .title {
             display: flex;
             z-index: 100;
             color: white;
             justify-content: center;
             align-items: center;
             flex-direction: row;
-                font-family: 'Barrio', cursive;
-                font-size: 10rem;
-                margin: 0;
-                padding: 0;
-                @include breakpoint(small) {
-                    font-size: 4rem;
-                    position: relative;
-                    z-index: 100;
-                    
-                }
-                @include breakpoint(medium){
-                    font-size: 3rem;
+            font-family: 'Barrio', cursive;
+            font-size: 10rem;
+            margin: 0;
+            padding: 0;
+
+            @include breakpoint(small) {
+                font-size: 4rem;
+                position: relative;
+                z-index: 100;
             }
-                }
+
+            @include breakpoint(medium) {
+                font-size: 3rem;
+            }
+        }
     }
+
     .selling-card {
         width: 70vw;
         max-width: 600px;
-        height: fit-content;
         background-color: transparent;
         backdrop-filter: blur(100px);
         padding: 10%;
         text-align: justify;
+        transition: max-height 0.5s ease-in-out;
+        overflow: contain;
 
         h3 {
             font-family: 'Barrio';
@@ -95,72 +105,92 @@
             text-align: center;
         }
 
-        p, table {
-            font-weight: 200;
+        &:hover .conteudo, &.selected .conteudo {
             max-height: 1000px;
-            justify-content: center;
-            width: fit-content;
-            display: none;
-            transition: max-height 0.8s ease-in, opacity 0.4s ease-in;
-        }
-        
-        &.selected p, &.selected table {
-            display: block;
-        }
-        
-        table {
-            margin: auto;
-            margin-top: 7%;
-            background-color: rgba(255, 255, 255, 0.38);
-            color: #121111;
-            padding: 4%;
-
-
-            td, tr {
-                text-align: center;
-                min-width: 120px;
-            }
-        }
-        &:hover {
-            transition: 0.5s;
-            cursor: pointer;
-            
-
-            transform: skew(0);
-        }
-
-        @include breakpoint(small) {
-            width: 80vw;
-            height: fit-content;
-            padding: 5%;
-            border: none;
-
-            ;
-            h3 {
-                font-size: 25px;
-            }
 
             p, table {
-                display: none;
-                font-size: 19px;
+                opacity: 1;
             }
         }
-        @include breakpoint(xlarge) {
-            width: 80vw;
-            margin: auto;
-            height: fit-content;
-            padding: 5%;
-            border: none;
 
-            ;
-            h3 {
-                font-size: 25px;
-            }
-
+        .conteudo {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            word-wrap: break-word; // Quebra palavras longas para evitar o desbordamento horizontal.
+        }
+        
+        
             p, table {
-                display: none;
-                font-size: 19px;
+                
+                font-weight: 200;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+                }
+
+             table{
+                background-color: rgba(226, 231, 229, 0.367);
+                padding: 10px;
+                margin: auto;
+            }   
+            &.selected p, &.selected table {
+                max-height: 1000px;
+                opacity: 1;
+                .imagens{
+                    filter: grayscale(0);
+                }
             }
+
+            @include breakpoint(xlarge) {
+                width: 80vw;
+                margin: auto;
+                height: fit-content;
+                padding: 5%;
+
+                h3 {
+                    font-size: 25px;
+                }
+
+                p, table {
+                    font-size: 19px;
+                }
+            }
+
+            @include breakpoint(small) {
+                width: 80vw;
+                height: auto;
+                padding: 5%;
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+            .imagens{
+                height: 15vh;
+                width: 100%;
+                object-fit: cover;
+                object-position: 20% 20%;
+                filter: grayscale(1);
+                transition: filter 0.5s ease-in-out;
+                
+            }
+            .imagens:hover{
+                filter: grayscale(0);
+            }
+        
+        }
+
+    }
+
+
+input[type="radio"].toggle {
+    display: none;
+
+    & + .content .selling-card .conteudo {
+        max-height: 1000px;
+        p, table {
+            opacity: 1;
         }
     }
 }
+

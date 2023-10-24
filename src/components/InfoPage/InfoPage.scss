@@ -1,0 +1,70 @@
+@import "../colors.scss";
+
+
+.info-page{
+    background: rgb(9, 11, 11);
+    background: linear-gradient(180deg, rgb(30, 31, 31) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    #cogu{
+        width: 30vh;
+        position: absolute;
+        bottom: -2%;
+        left: -2%;
+        @include breakpoint(medium){
+            position: relative;
+            transform: translateX(-10%) translateY(40%);
+
+
+        }
+    }
+    .contain{
+        padding: 5%;
+        margin-bottom: 10%;
+        max-width: 800px;
+        height: fit-content;
+        section{
+            border-bottom: 4px dotted $primary_color;
+        }
+        p{
+            font-family: $font2;
+            font-size: 1rem;
+            color: $primary_color;
+            text-align: justify;
+            margin-bottom: 5%;
+            @include breakpoint(medium){
+                font-size: 1.5rem;
+            }
+        }
+        h3{
+            font-family: $font1;
+            font-size: 2rem;
+            color: $tertiary_color;
+            text-align: center;
+        }
+        h2{
+            font-family: $font1;
+            font-size: 4rem;
+            text-align: center;
+            img{
+                width: 100%;
+            }
+        }
+        h1{
+            font-family: $font1;
+            font-size: 6rem;
+            text-align: center;
+            img{
+                width: 100%;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+
+}

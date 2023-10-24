@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import LoadingScene from "./components/LoadingScene/LoadingScene";
 import Take02 from "./components/Take02/Take02";
@@ -8,30 +10,38 @@ import Take06 from "./components/Take06/Take06";
 import Take07 from "./components/Take07/Take07";
 import Take08 from "./components/Take08/Take08";
 import Take09 from "./components/Take09/Take09";
+import InfoPage from './components/InfoPage/InfoPage'; // Supondo que você tenha um componente InfoPage
 import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
-import { useEffect } from "react";
-function App() {
-  const slides = document.querySelectorAll('.selling-card');
-  const OPTIONS = { dragFree: true, loop: true }
-  
-  useEffect(() => {
 
- }, []);
-  
-  
+function App() {
+  useEffect(() => {
+    // Seu código de efeito aqui
+  }, []);
+
   return (
-    <div className="App">
-      {/* <LoadingScene /> */}
-      <Take02 />
-      <Take03 />
-      <Take04 />
-      <Take05 />
-      <Take06 />
-      <Take07 />
-      <Take08 />
-      <Take09 />
-      {/* <VideoScroll/> */} 
-    </div>
+    <Router>
+      <div className="App">
+
+        
+        <Routes>
+          <Route path="/" element={<div>
+            {/* Seu conteúdo principal aqui */}
+            {/* <LoadingScene /> */}
+            <Take02 />
+            <Take03 />
+            <Take04 />
+            <Take05 />
+            <Take06 />
+            <Take07 />
+            <Take08 />
+            <Take09 />
+            {/* <VideoScroll/> */}
+          </div>} />
+
+          <Route path="/info" element={<InfoPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

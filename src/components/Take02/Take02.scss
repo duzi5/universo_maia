@@ -33,17 +33,17 @@
   .central-msg {
     font-family: $font1;
     color: rgb(14, 183, 76);
-    @include breakpoint(xlarge) {
-      font-size: 14rem;
+    @include breakpoint(small) {
+      font-size: 3rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 7rem;
     }
     @include breakpoint(large) {
       font-size: 9rem;
     }
-    @include breakpoint(medium) {
-      font-size: 5rem;
-    }
-    @include breakpoint(small) {
-      font-size: 3rem;
+    @include breakpoint(xlarge) {
+      font-size: 14rem;
     }
   }
 }

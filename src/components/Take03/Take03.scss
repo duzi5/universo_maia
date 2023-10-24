@@ -27,6 +27,18 @@
 
 
     }
+    .logo{
+        width: 70%;
+        max-width: 1300px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        transform: translateY(20%);
+        @include breakpoint(medium){
+            width: 50%;
+            height: auto;
+          }
+    }
     @include breakpoint(medium){
         h1{
             font-size: 100px;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Take03.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+import titulo from "./universoMaiaTitulo.png"
 const Take03 = () => {
   useEffect(() => {
     gsap.from("#universo", {
@@ -43,7 +43,7 @@ const Take03 = () => {
   return (
     <div className="take03">
       <h2 id="universo">
-        NÓS, DO UNIVERSO MAIA, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO
+        NÓS, DO <img className="logo" src={titulo}/>, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO
         AGORA MESMO.
       </h2>
       <h1 id="topa">TOPA?</h1>
