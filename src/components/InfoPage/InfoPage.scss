@@ -3,7 +3,7 @@
 
 .info-page{
     background: rgb(9, 11, 11);
-    background: linear-gradient(180deg, rgb(30, 31, 31) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);;
+    background: linear-gradient(180deg, rgb(69, 100, 100) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -39,11 +39,14 @@
             @include breakpoint(medium){
                 font-size: 1.5rem;
             }
+            strong{
+                color: $quinary_color;
+            }
         }
         h3{
             font-family: $font1;
             font-size: 2rem;
-            color: $tertiary_color;
+            color: $quinary_color;
             text-align: center;
         }
         h2{

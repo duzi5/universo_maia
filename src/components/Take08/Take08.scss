@@ -9,7 +9,7 @@
     background-attachment: fixed;
     position: relative;
     padding-top: 10%;
-
+    position: relative;
     height: fit-content;
     #cogus-azuis{
         position: relative;
@@ -54,8 +54,8 @@
         font-size: 56px;
         padding: 10%;
         margin-top: 20%;
-        @include breakpoint(medium){
-            font-size: 2.5rem;
+        @include breakpoint(small){
+            font-size: 2rem;
           }
         
     }
@@ -82,27 +82,24 @@
         height: 400px;
         object-fit: contain;
         position: absolute;
-        top: -15%;
+        top: 0;
         right: auto;
         display: grid;
        
-       
-       
-       
+        @include breakpoint(small){
+            top: -36%;
+        }
+        @include breakpoint(medium){
+            top: -25%;
+        }
+        @include breakpoint(large){
+            top: -15%;
+         }
        @include breakpoint(xlarge){
         top: -12%;
        }
        
        
-        @include breakpoint(large){
-            top: -15%;
-        }
-        @include breakpoint(medium){
-            top: -25%;
-        }
-        @include breakpoint(small){
-            top: -28%;
-        }
     }
     
     

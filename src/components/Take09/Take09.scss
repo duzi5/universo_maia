@@ -7,7 +7,7 @@
     height: fit-content;
     overflow: hidden;
     object-fit: cover;
-    background-color: #0066da;
+    background-color: $quaternary_color;
     display: block;
     z-index: 0;
 
@@ -30,35 +30,39 @@
     object-fit: cover;
     z-index: 1;
 
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
         position: relative;
         filter:  hue-rotate(80deg);
-
     }
 }
 
 .cards {
-    object-fit: cover;
     width: 100%;
     max-width: 600px;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column}
 
 .content {
     position: relative;
     display: flex;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
-    color: white;
+    color: $secundary_color;
     justify-content: center;
     flex-direction: column;
     margin-top: 10%;
     align-items: center;
     flex-wrap: wrap;
-    perspective: 200px;
+
 
     .titulo {
         width: 100vw;
@@ -66,7 +70,7 @@
         .title {
             display: flex;
             z-index: 100;
-            color: white;
+            color: $secundary_color;
             justify-content: center;
             align-items: center;
             flex-direction: row;
@@ -89,14 +93,13 @@
 
     .selling-card {
         width: 70vw;
-        max-width: 600px;
+        max-width: 900px;
         background-color: transparent;
         backdrop-filter: blur(100px);
-        padding: 10%;
         text-align: justify;
-        transition: max-height 0.5s ease-in-out;
+        transition: max-height 1s ease-in-out, background-color 1s ease-out;
         overflow: contain;
-
+        // border-bottom: $secundary_color solid 6px;
         h3 {
             font-family: 'Barrio';
             color: $secundary_color;
@@ -104,25 +107,31 @@
             font-size: 40px;
             text-align: center;
         }
+        &:hover{
+            background-color: $tertiary_color;
 
+
+        }
         &:hover .conteudo, &.selected .conteudo {
-            max-height: 1000px;
-
+            max-height: fit-content;
             p, table {
                 opacity: 1;
             }
-        }
 
+        }
+        
         .conteudo {
+
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s ease-in-out;
+            transition: max-height 1s ease-in-out;
             word-wrap: break-word; // Quebra palavras longas para evitar o desbordamento horizontal.
+            padding: 5%;
         }
         
         
             p, table {
-                
+                font-family: $font2;
                 font-weight: 200;
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -132,6 +141,13 @@
                 background-color: rgba(226, 231, 229, 0.367);
                 padding: 10px;
                 margin: auto;
+                border-radius: 1%;
+                thead{
+                    font-weight: 800;
+                    font-size: small;
+                    background-color: $secundary_color;
+                    color: $tertiary_color;
+                }
             }   
             &.selected p, &.selected table {
                 max-height: 1000px;
@@ -140,42 +156,73 @@
                     filter: grayscale(0);
                 }
             }
+            @include breakpoint(small) {
+                width: 100vw;
+                height: auto;
+                .imagens{
+                    width: 100%;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+            @include breakpoint(medium) {
+                width: 90vw;
+                height: auto;
+
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+            @include breakpoint(large) {
+                width: 90vw;
+                height: auto;
+                
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
 
             @include breakpoint(xlarge) {
                 width: 80vw;
-                margin: auto;
                 height: fit-content;
-                padding: 5%;
+
 
                 h3 {
                     font-size: 25px;
                 }
 
                 p, table {
-                    font-size: 19px;
+                    font-size: 16px;
                 }
             }
 
-            @include breakpoint(small) {
-                width: 80vw;
-                height: auto;
-                padding: 5%;
-
-                h3 {
-                    font-size: 25px;
-                }
-            }
             .imagens{
-                height: 15vh;
+                display: block;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 0.1s;
+                height: 200px;
                 width: 100%;
                 object-fit: cover;
                 object-position: 20% 20%;
                 filter: grayscale(1);
-                transition: filter 0.5s ease-in-out;
-                
+                transition: filter 0.5s ease-in-out, height 0.9s ease-in-out;
+                background-attachment: fixed;
+
+                // border-top: solid $primary_color 20px;
+                // border-bottom : solid $primary_color 20px;
+                border-radius: 1%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
             .imagens:hover{
                 filter: grayscale(0);
+                height: 400px;
+                
             }
         
         }

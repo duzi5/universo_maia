@@ -12,7 +12,9 @@
         font-family: $font2;
         color:$secundary_color;
         margin: 20%;
-
+        @include breakpoint(small){
+            font-size: 2rem;
+        }
         @include breakpoint(medium){
             font-size: 2rem;
             max-width: 90vw;

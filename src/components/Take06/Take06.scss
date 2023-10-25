@@ -13,5 +13,8 @@
         color: $secundary_color;
 
         text-align: end;
+        @include breakpoint(small){
+            font-size: 3rem;
+          }
     }
 }

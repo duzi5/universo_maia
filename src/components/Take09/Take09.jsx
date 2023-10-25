@@ -3,7 +3,10 @@ import video from "./video.mp4";
 import "./Take09.scss";
 import buffalo from "./BUFALLO.jpeg";
 import albino from "./ALBINO 03.jpeg";
+import gsap from "gsap";
+// import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 const Take09 = () => {
+  // gsap.registerPlugin(ScrambleTextPlugin)
     return (
         <section className="video-section">
             <video className="video-background" autoPlay muted loop playsInline preload="auto">
@@ -19,8 +22,10 @@ const Take09 = () => {
                     {/* Card 1 */}
                     <input type="radio" id="card1" className="toggle" name="accordion" />
                     <label htmlFor="card1" className="selling-card direita">
+                       <div className="cabecalho">
+                       <img className="imagens"src={albino} alt="" />
                         <h3>Psilocybe cubensis albino</h3>
-                        <img className="imagens"src={albino} alt="" />
+                       </div>
                         <div className="conteudo">
                             <p>O Psilocybe cubensis albino é uma variedade pra lá de rara e única do famoso cogumelo psicodélico Psilocybe cubensis. O que mais chama atenção nesse cogumelo é que ele é branquinho, daí o nome "albino". Enquanto a maioria dos Psilocybe cubensis tem aquela vibe marrom ou acastanhada, o Psilocybe cubensis albino se destaca pela aparência diferentona.</p>
                             <p>Tal qual as outras variedades de Psilocybe cubensis, esse camarada albino manda bem na substância psicoativa psilocibina, que é a responsável por te levar numa viagem psicodélica. Quando você dá uma conferida nesses cogumelos, pode esperar um passeio pelos sentidos, uma mudança na percepção e uma ligação profunda com o universo.</p>
@@ -82,8 +87,10 @@ const Take09 = () => {
                     {/* Card 3 */}
                     <input type="radio" id="card3" className="toggle" name="accordion" />
                     <label htmlFor="card3" className="selling-card direita">
+                       <div className="cabecalho">
+                       <img className="imagens"src={buffalo} alt="" />
                         <h3>Psilocybe cubensis Buffalo Pink</h3>
-                        <img className="imagens"src={buffalo} alt="" />
+                       </div>
                         <div className="conteudo">
                             <p>o Psilocybe cubensis Buffalo Pink é tipo um rockstar dos cogumelos psicodélicos, super famoso e encontrado no mundo inteiro. Esses caras crescem em lugares tropicais e subtropicais e são conhecidos por proporcionar viagens incríveis na mente.</p>
                             <p>A mágica toda acontece graças à psilocibina, o ingrediente secreto desses cogumelos. Quando você manda ver na ingestão, a psilocibina se transforma em psilocina no seu corpo e daí começa a jornada. Você pode esperar uma mudança séria na percepção, na forma como pensa e como vê as coisas. Quem já viveu a experiência garante um contato com o divino e frisa no autoconhecimento pós vivência.</p>

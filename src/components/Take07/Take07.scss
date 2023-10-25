@@ -15,6 +15,9 @@
     }
     h3{
         font-family: 'Barrio', cursive;
+        @include breakpoint(small){
+            font-size: 2rem;
+          }
         text-align: center;
         padding: 5%;
         color: $secundary_color;
@@ -32,9 +35,9 @@
     }
     #mente{
         margin: 10%;
-        @include breakpoint(medium){
-            width: 300px;
-            height: auto;
+        @include breakpoint(small){
+            width: 80vw;
+            max-width: 300px;            height: auto;
           }
         
     }

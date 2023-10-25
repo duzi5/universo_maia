@@ -13,8 +13,8 @@ const Take08 = () => {
       opacity: 0,
       scrollTrigger: {
         trigger: "#poder",
-        start: "top center",
-        end: "bottom center",
+        start: "-30% center",
+        end: "100% center",
         scrub: 1,
 
         onUpdate: (self) => {
