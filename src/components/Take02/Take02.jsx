@@ -16,7 +16,7 @@ const Take02 = () => {
     gsap.registerPlugin(ScrollTrigger); // Registre o plugin
   
     gsap.from("#permita", {
-      x: -500,
+
       opacity: 0,
 
     });
@@ -99,21 +99,13 @@ const Take02 = () => {
 
     gsap.from("#permita", { 
         duration: 3,
-        x: "+=800",
-        yoyo: true,
-        scrollTrigger:{
-            trigger: "#permita",
-            start: "top center",
-            end: "bottom center",
-            scrub: true,
-
-        },
+        opacity:0,
         ease:'inOut'
     })
 
     gsap.from("#despertar", { 
         duration: 3,
-        x: "-=800",
+
         yoyo: true,
         scrollTrigger:{
             trigger: "#despertar",

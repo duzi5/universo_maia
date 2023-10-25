@@ -43,6 +43,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    #kit{
+        object-position: 90% 70%;
+    }
 }
 .cabecalho{
     width: 100%;
@@ -50,16 +53,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column}
-
-.content {
-    position: relative;
+    .content {
+        position: relative;
     display: flex;
     width: 100%;
     z-index: 1;
     color: $secundary_color;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10%;
+
     align-items: center;
     flex-wrap: wrap;
 
@@ -75,18 +77,24 @@
             align-items: center;
             flex-direction: row;
             font-family: 'Barrio', cursive;
-            font-size: 10rem;
+            font-size: 3rem;
             margin: 0;
             padding: 0;
 
             @include breakpoint(small) {
-                font-size: 4rem;
+                font-size: 2rem;
                 position: relative;
                 z-index: 100;
             }
 
             @include breakpoint(medium) {
                 font-size: 3rem;
+            }
+            @include breakpoint(large) {
+                font-size: 5rem;
+            }
+            @include breakpoint(xlarge){
+                font-size: 7rem;
             }
         }
     }
@@ -106,6 +114,7 @@
             text-transform: uppercase;
             font-size: 40px;
             text-align: center;
+
         }
         &:hover{
             background-color: $tertiary_color;
@@ -121,12 +130,12 @@
         }
         
         .conteudo {
-
             max-height: 0;
             overflow: hidden;
             transition: max-height 1s ease-in-out;
             word-wrap: break-word; // Quebra palavras longas para evitar o desbordamento horizontal.
-            padding: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
         
         
@@ -140,7 +149,6 @@
              table{
                 background-color: rgba(226, 231, 229, 0.367);
                 padding: 10px;
-                margin: auto;
                 border-radius: 1%;
                 thead{
                     font-weight: 800;
@@ -158,25 +166,25 @@
             }
             @include breakpoint(small) {
                 width: 100vw;
-                height: auto;
                 .imagens{
                     width: 100%;
                 }
-
+                
                 h3 {
                     font-size: 25px;
                 }
             }
             @include breakpoint(medium) {
                 width: 90vw;
-                height: auto;
-
-
+                
+                
+                
                 h3 {
                     font-size: 25px;
                 }
             }
             @include breakpoint(large) {
+                height: 5%;
                 width: 90vw;
                 height: auto;
                 

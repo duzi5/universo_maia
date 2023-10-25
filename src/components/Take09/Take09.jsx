@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import video from "./video.mp4";
 import "./Take09.scss";
 import buffalo from "./BUFALLO.jpeg";
 import albino from "./ALBINO 03.jpeg";
+import kit from "./kit.jpeg"
 import gsap from "gsap";
 // import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 const Take09 = () => {
   // gsap.registerPlugin(ScrambleTextPlugin)
-    return (
+    
+  
+useEffect(()=>{
+  gsap.set(".imagens", {
+    filter: "grayscale(100%)"
+  });
+  
+  // Animação para remover o grayscale e depois retornar a ele
+  gsap.to(".imagens", {
+    filter: "grayscale(0%)",
+    stagger: 0.5, // 0.5 segundos entre o início de cada animação
+    duration: 1,
+    yoyo: true,
+    repeat: -1,  // Repetir infinitamente
+    ease: "power1.inOut"  // Efeito de facilidade suave para transição entre os estados
+  });
+  
+},[])
+  
+  
+  
+  
+  
+  
+  return (
         <section className="video-section">
             <video className="video-background" autoPlay muted loop playsInline preload="auto">
                 <source src={video} type="video/mp4" />
@@ -15,7 +40,7 @@ const Take09 = () => {
             </video>
             <div className="content carousel-container">
                 <div className="titulo">
-                    <h1 className="title">Produtos</h1>
+                    <h1 className="title">COGUMELANDO-SE</h1>
                 </div>
                 <div className="cards">
 
@@ -64,9 +89,11 @@ const Take09 = () => {
                     {/* Card 2 */}
                     <input type="radio" id="card2" className="toggle" name="accordion" />
                     <label htmlFor="card2" className="selling-card direita">
+                        <div className="cabecalho">
+                       <img id="kit"className="imagens"src={kit} alt="" />
                         <h3>Kit Cultivo do Psilocybe cubensis albino</h3>
+                       </div>
                         <div className="conteudo">
-
                             <p className="question">Imagina só, ter um kit mágico pra você mesmo cultivar seu cogu?</p>
                             <p>Cogumelar-se com total consciência e saber que foi sua energia, seu cultivo e sua vivência que deram vida e força para esse fungo.</p>
                             <p className="question">Imaginou? Pronto ! Desejo realizado!</p>
