@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Take05.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Take04 from '../Take04/Take04';
+
 const Take05 = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

@@ -10,7 +10,7 @@
         font-size: 100px;
         font-family: $font2;
         color:$secundary_color;
-        margin: 20%;
+
         @include breakpoint(small){
             font-size: 2rem;
         }
