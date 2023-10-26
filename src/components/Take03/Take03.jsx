@@ -22,13 +22,13 @@ const Take03 = () => {
       duration: 1,
       ease: "inOut",
     });
-    gsap.registerPlugin(TextPlugin)
-    gsap.to('.text', {
-      duration: 10,
-      text: " NÓS, DO <img className='logo' src={titulo}/>, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.",
-      ease: "none",
-      scrub:true,
-    });
+    // gsap.registerPlugin(TextPlugin)
+    // gsap.to('.text', {
+    //   duration: 10,
+    //   text: " NÓS, DO <img className='logo' src={titulo}/>, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.",
+    //   ease: "none",
+    //   scrub:true,
+    // });
 
 
         // gsap.from('#universo', {

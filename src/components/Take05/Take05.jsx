@@ -47,12 +47,11 @@ const Take05 = () => {
   gsap.to(['.take05', '.take04', '.take06'], { 
 
       backgroundColor: '#ffffff',
-      stagger: 3,
       ease: 'inOut',
       scrollTrigger:{
           trigger:'#momento',
-          start: "top center",
-          end: 'bottom center',
+          start: 'top 80%',
+          end: 'bottom 60%',
           scrub: true,
           markers: true
           
