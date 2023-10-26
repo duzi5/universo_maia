@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Take05.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Take04 from '../Take04/Take04';
 const Take05 = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -43,8 +44,24 @@ const Take05 = () => {
     });
   }, []);
 
-  return (
-    <div className="take05">
+  gsap.to(['.take05', '.take04', '.take06'], { 
+
+      backgroundColor: '#ffffff',
+      stagger: 3,
+      ease: 'inOut',
+      scrollTrigger:{
+          trigger:'#momento',
+          start: "top center",
+          end: 'bottom center',
+          scrub: true,
+          markers: true
+          
+      }
+  })
+ 
+ 
+ 
+  return (    <div className="take05">
       <h5 id="momento">
         E SE DE REPENTE, POR UM MOMENTO, EM UM ESPAÇO TEMPO CRIADO NO UNIVERSO,
         VOCÊ PUDESSE SE PERMITIR ESQUECER TUDO QUE ACONTECE AQUI FORA E FOCASSE

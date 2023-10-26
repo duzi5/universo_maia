@@ -1,35 +1,6 @@
 @import "../LoadingScene/LoadScene.scss";
 @import "../colors.scss";
 
-#folhas {
-  position: absolute !important;
-  bottom: 0 !important;
-  height: 80vw !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 40vw !important;
-  
-  @include breakpoint(medium) {
-    width: 100% !important;
-  }
-}
-
-#maia {
-  position: absolute !important;
-
-  bottom: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-height: 80vh !important;
-  @include breakpoint(small){
-    width: 150%;
-  }
-  
-  @include breakpoint(medium){
-
-    width:150% ;
-  }
-}
 #take02 {
   height: 100vh;
   display: flex;
@@ -41,28 +12,46 @@
   .central-msg {
     font-family: $font1;
     color: $secundary_color;
-  
+
     @include breakpoint(small) {
-        font-size: 3rem !important;
-        position: absolute;
-        top: 10%;
-
-
+      font-size: 3rem !important;
+      position: absolute;
+      top: 10%;
     }
     @include breakpoint(medium) {
-        font-size: 5rem !important;
+      font-size: 5rem !important;
     }
     @include breakpoint(large) {
-        font-size: 9rem !important;
+      font-size: 9rem !important;
     }
     @include breakpoint(xlarge) {
-        font-size: 12rem !important;
+      font-size: 12rem !important;
     }
   }
-  #despertar{ 
+  #despertar {
     position: absolute;
     top: 20%;
+  }
 
-    
+  #maia {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    // max-height: 80vh;
+    @include breakpoint(small) {
+      height: 120vh;
+    }
+    @include breakpoint(medium) {
+      height: 120vh;
+
+    }
+    @include breakpoint(large) {
+      height: 120vh;
+    }
+    @include breakpoint(xlarge){
+      
+      height: 120vh;
+    }
   }
 }

@@ -38,3 +38,8 @@ $breakpoints: (
         @warn "Breakpoint '#{$point}' não encontrado.";
     }
 }
+.reveal-text {
+    opacity: 0;
+    transform: translateY(50px);
+    visibility: hidden; // Isso garante que o texto não seja "clicável" ou "selecionável" quando estiver oculto.
+}
