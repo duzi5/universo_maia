@@ -19,6 +19,9 @@ useEffect(()=>{
     tl.to(['.take05', '.take04', '.take06', ".take03", ".take07"], { 
         backgroundColor: '#000',
                 ease: 'Power4.inOut',
+                onComplete:(self)=>{
+                    self.style.backgroundColor = '#CCC'
+                }
     });
   
     gsap.from('#mente',{ 
