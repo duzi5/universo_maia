@@ -1,25 +1,18 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import "./Take04.scss";
 
 const Take04 = () => {
-  const tl = gsap.timeline({ repeat: -1, yoyo: true }); // repetir infinitamente e alternar a animação
-
+  
   // Piscar alterando a opacidade
-  tl.to("#voce", { opacity: 0, duration: 0.2 }).to("#voce", {
-    opacity: 1,
-    duration: 0.2,
-  });
-
-  // Mover 10px para a direita e depois 10px para a esquerda
-  tl.to("#voce", { x: "+=10", duration: 0.5 }).to("#voce", {
-    x: "-=10",
-    duration: 0.5,
-  });
-
+  
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+
+
+
+  
+    // Mover 10px para a direita e depois 10px para a esquerda
     gsap.from("#faria", {
       duration: 3,
       x: -800,

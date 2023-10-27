@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import "./Take06.scss"
 const Take06 = () => {
   useEffect(()=>{
-    gsap.registerPlugin(ScrollTrigger);
+
     gsap.from("#acolha", {
       x: 800,
       opacity: 0,

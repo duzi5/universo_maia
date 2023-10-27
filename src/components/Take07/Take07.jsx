@@ -1,12 +1,26 @@
 import React, { useEffect } from 'react';
 import "./Take07.scss"
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+
 import expanda from "./expanda.png"
 
 const Take07 = () => {
 useEffect(()=>{
-    gsap.registerPlugin(ScrollTrigger)
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.take8',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: true
+        }
+    });
+    
+    tl.to(['.take05', '.take04', '.take06', ".take03", ".take07"], { 
+        backgroundColor: '#000',
+                ease: 'Power4.inOut',
+    });
+  
     gsap.from('#mente',{ 
         x: -800,
         opacity:0,

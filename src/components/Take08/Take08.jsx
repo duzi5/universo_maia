@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./Take08.scss";
-import CogusAzuis from "./CogusAzuis";
+// import CogusAzuis from "./CogusAzuis";
 import matrix from "../matrix.png";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import gsap from "gsap";
 import poder from "./cogumeloPoderTexto.png"
 const Take08 = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+
     gsap.from("#poder", {
       x: 800,
       opacity: 0,
@@ -59,7 +59,7 @@ const Take08 = () => {
       </h4>
 
       <img className="matriz" src={matrix} />
-      <CogusAzuis />
+      {/* <CogusAzuis /> */}
     </div>
   );
 };

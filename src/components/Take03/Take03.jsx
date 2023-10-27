@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./Take03.scss";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import { TextPlugin } from "gsap/TextPlugin";
 import titulo from "./universoMaiaTitulo.png"
 const Take03 = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+
     // ... restante do código ...
 
     gsap.from("#topa", {

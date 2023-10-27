@@ -12,17 +12,21 @@ import Take08 from "./components/Take08/Take08";
 import Take09 from "./components/Take09/Take09";
 import InfoPage from './components/InfoPage/InfoPage'; // Supondo que você tenha um componente InfoPage
 import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
   useEffect(() => {
-    // Seu código de efeito aqui
+    const scroll = new LocomotiveScroll();
+    gsap.registerPlugin(ScrollTrigger);
   }, []);
 
   return (
     <Router>
       <div className="App">
 
-        
         <Routes>
           <Route path="/" element={<div>
             {/* Seu conteúdo principal aqui */}
