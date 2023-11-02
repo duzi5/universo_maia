@@ -15,11 +15,11 @@ import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
   useEffect(() => {
-    const scroll = new LocomotiveScroll();
+    // const scroll = new LocomotiveScroll();
     gsap.registerPlugin(ScrollTrigger);
   }, []);
 

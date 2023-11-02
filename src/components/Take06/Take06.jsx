@@ -5,10 +5,11 @@ import "./Take06.scss"
 const Take06 = () => {
   useEffect(()=>{
 
-    gsap.from("#acolha", {
-      x: 800,
-      opacity: 0,
-      ease: 'inOut',
+    gsap.fromTo("#acolha", 
+    {  x: 800,
+      opacity: 0,},{
+        x:0,
+        opacity: 1,
       scrollTrigger: {
         trigger: "#acolha",
         start: "-70% center",
@@ -17,10 +18,12 @@ const Take06 = () => {
 
       },
   });
-  gsap.from("#questione", {
+  gsap.fromTo("#questione", {
     x: -800,
     opacity: 0,
-    ease: 'inOut',
+    },{
+      x:0,
+      opacity:1,
     scrollTrigger: {
       trigger: "#questione",
       start: "-70% center",
@@ -29,10 +32,14 @@ const Take06 = () => {
 
     },
   });
-  gsap.from("#cocrie", {
-    ease: 'inOut',
+  gsap.fromTo("#cocrie", {
     x: 800,
     opacity: 0,
+
+  },
+  {
+    x:0,
+    opacity:1,
     scrollTrigger: {
       trigger: "#cocrie",
       start: "-70% center",

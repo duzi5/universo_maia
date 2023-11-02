@@ -1,7 +1,7 @@
 @import "../colors.scss";
 .take04{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -20,14 +20,15 @@
           }
         
     }
-    strong{
-        font-size: 200px;
+    #voce{
+        font-size: 270px;
         font-family: $font2;
         color: $secundary_color;
         text-align: center;
-        font-size: 4rem;
+        justify-content: center;
+        margin: auto;
         @include breakpoint(medium){
-            font-size: 100px;
+            font-size: 190px;
         }
         
     } 

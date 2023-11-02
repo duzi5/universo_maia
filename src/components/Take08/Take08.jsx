@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Take08.scss";
-// import CogusAzuis from "./CogusAzuis";
+import CogusAzuis from "./CogusAzuis";
 import matrix from "../matrix.png";
 
 import gsap from "gsap";
@@ -8,9 +8,13 @@ import poder from "./cogumeloPoderTexto.png"
 const Take08 = () => {
   useEffect(() => {
 
-    gsap.from("#poder", {
-      x: 800,
-      opacity: 0,
+    gsap.fromTo("#poder",{
+        x: 800,
+        opacity: 0,
+        
+    }, {
+      x: 0,
+      opacity: 1,
       scrollTrigger: {
         trigger: "#poder",
         start: "-30% center",
@@ -38,7 +42,6 @@ const Take08 = () => {
     });
     gsap.fromTo(['.take08'],{background: "lightblue"},{
         backgroundColor: "slateblue",
-        duration:5,
         ease:'inOut',
         scrollTrigger:{
           trigger: '.take08',
@@ -59,7 +62,7 @@ const Take08 = () => {
       </h4>
 
       <img className="matriz" src={matrix} />
-      {/* <CogusAzuis /> */}
+      <CogusAzuis />
     </div>
   );
 };

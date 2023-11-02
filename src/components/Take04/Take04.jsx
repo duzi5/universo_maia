@@ -13,10 +13,10 @@ const Take04 = () => {
 
   
     // Mover 10px para a direita e depois 10px para a esquerda
-    gsap.from("#faria", {
-      duration: 3,
-      x: -800,
-      opacity: 0,
+    gsap.fromTo("#faria",{x: -800,
+      opacity: 0,}, {
+      x:0,
+      opacity: 1,
       scrollTrigger: {
         trigger: "#faria",
         start: "-30% center",
@@ -27,7 +27,7 @@ const Take04 = () => {
           console.log(self.progress);
         },
       },
-      ease: "inOut",
+      ease: "linear",
     });
   }, []);
 

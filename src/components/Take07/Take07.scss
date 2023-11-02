@@ -5,21 +5,20 @@
     padding: 5%;
     padding-top: 1%;
     // overflow: hidden;
-    height: fit-content;
-    h5{
-        font-family: $font2;
-        color: $secundary_color;
-        text-transform: uppercase;
-        font-size: 40px;
-        text-align: center;
-    }
+    min-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    width:50vw;
+
+    
     h3{
         font-family: 'Barrio', cursive;
         @include breakpoint(small){
             font-size: 2rem;
           }
         text-align: center;
-        padding: 5%;
+        padding: 10%;
         color: $secundary_color;
         font-size: 85px;
         @include breakpoint(medium){
@@ -34,7 +33,10 @@
     
     }
     #mente{
-        margin: 10%;
+        // margin: 10%;
+        // display: block;
+        // width: 100vw;
+
         @include breakpoint(small){
             width: 80vw;
             max-width: 300px;            height: auto;

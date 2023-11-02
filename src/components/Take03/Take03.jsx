@@ -9,18 +9,18 @@ const Take03 = () => {
 
     // ... restante do código ...
 
-    gsap.from("#topa", {
+    gsap.fromTo("#topa", { x: 1200,
+      autoAlpha: 0,
+},{
+      x: 0,
+      autoAlpha: 1,
       scrollTrigger: {
         trigger: "#topa",
         start: "-30% center+=100",
         end: "80% center",
-        toggleActions: "play none reverse none",
         scrub: true,
       },
-      x: 1200,
-      autoAlpha: 0,
-      duration: 1,
-      ease: "inOut",
+     
     });
     // gsap.registerPlugin(TextPlugin)
     // gsap.to('.text', {
@@ -31,18 +31,18 @@ const Take03 = () => {
     // });
 
 
-        // gsap.from('#universo', {
-        //     autoAlpha: 0,
-        //     y: 50,
-        //     duration: 1.5,
-        //     scrollTrigger: {
-        //         trigger: '.reveal-text',
-        //         start: "top 80%",
-        //         end: "top 20%",
-        //         toggleActions: "play none none reverse",
-        //         markers: true
-        //     },
-        // });
+        gsap.fromTo('#universo', {
+            autoAlpha: 0,
+            y: 50,},{
+              autoAlpha: 1,
+            scrollTrigger: {
+                trigger: '#universo',
+                start: "top 80%",
+                end: "top 20%",
+                scrub: 1,
+
+            },
+        });
  
 }, []);
 
