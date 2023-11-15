@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
+  background-color: $primary_color;
   .central-msg {
     font-family: $font1;
     color: $secundary_color;
@@ -34,16 +34,22 @@
   }
 
   #maia {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+   bottom: 0;
+   opacity: 0.7;
     margin-left: auto;
+    filter: hue-rotate(120deg);
     margin-right: auto;
+    z-index: 0;
+    // -webkit-box-reflect: below 1px  blur(20px);
+    ;
+
     // max-height: 80vh;
     @include breakpoint(small) {
-      height: 120vh;
+      height: 100%;
     }
     @include breakpoint(medium) {
-      height: 120vh;
+      height: 220vh;
 
     }
     @include breakpoint(large) {

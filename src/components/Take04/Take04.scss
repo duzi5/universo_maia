@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    background-color: $primary_color;
     // overflow-y: hidden;
     h2{
         font-size: 100px;
@@ -32,5 +32,17 @@
         }
         
     } 
+    #faria{
+        font-size: 100px;
+        font-family: $font2;
+        max-width: 80%;
+        color: $secundary_color;
+        text-align: center;
+        justify-content: center;
+        padding: 20%;
+        @include breakpoint(medium){
+            font-size: 70px;
+        }
+    }
 
 }  

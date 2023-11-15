@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Take08.scss";
-import CogusAzuis from "./CogusAzuis";
+import CogusAzuis from "./coguTake8.png";
 import matrix from "../matrix.png";
 
 import gsap from "gsap";
@@ -13,11 +13,13 @@ const Take08 = () => {
         opacity: 0,
         
     }, {
+        ease: "sine.inOut",
+        duration:2.5,
       x: 0,
       opacity: 1,
       scrollTrigger: {
         trigger: "#poder",
-        start: "-30% center",
+        start: "top center",
         end: "100% center",
         scrub: 1,
 
@@ -26,9 +28,12 @@ const Take08 = () => {
         },
       },
     });
-    gsap.from("#medicina", {
-      x: -800,
-      opacity: 0,
+    gsap.fromTo("#medicina",{x:-800, opacity:0}, {
+      x: 0,
+      duration:2.5,
+ease: "sine.inOut",
+y: -500,
+      opacity: 1,
       scrollTrigger: {
         trigger: "#medicina",
         start: "top center",
@@ -40,16 +45,16 @@ const Take08 = () => {
         },
       },
     });
-    gsap.fromTo(['.take08'],{background: "lightblue"},{
-        backgroundColor: "slateblue",
-        ease:'inOut',
-        scrollTrigger:{
-          trigger: '.take08',
-          start: 'bottom center',
-          end: 'top center',
-          scrub:true,
-        }
-      })
+    // gsap.fromTo(['.take08'],{background: "lightblue"},{
+    //     backgroundColor: "#9a0f73",
+    //     ease:'inOut',
+    //     scrollTrigger:{
+    //       trigger: '.take08',
+    //       start: 'bottom center',
+    //       end: 'top center',
+    //       scrub:true,
+    //     }
+    //   })
   }, []);
 
   return (
@@ -61,8 +66,8 @@ const Take08 = () => {
         CONSCIENTE, COM MENOS ANSIEDADE E MAIS DISPOSIÇÃO PARA VIVER A VIDA.
       </h4>
 
-      <img className="matriz" src={matrix} />
-      <CogusAzuis />
+      {/* <img className="matriz" src={matrix} /> */}
+     {/* <img className="cogus-azuis" src={CogusAzuis}></img> */}
     </div>
   );
 };

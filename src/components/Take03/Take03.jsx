@@ -9,14 +9,18 @@ const Take03 = () => {
 
     // ... restante do código ...
 
-    gsap.fromTo("#topa", { x: 1200,
-      autoAlpha: 0,
-},{
+
+    gsap.fromTo("#topa", { 
+      y: -500,
+      autoAlpha: 0},{
+        duration:2.5,
+        ease: "sine.inOut",
       x: 0,
+      y:0,
       autoAlpha: 1,
       scrollTrigger: {
         trigger: "#topa",
-        start: "-30% center+=100",
+        start: "top center+=100",
         end: "80% center",
         scrub: true,
       },
@@ -35,6 +39,7 @@ const Take03 = () => {
             autoAlpha: 0,
             y: 50,},{
               autoAlpha: 1,
+              y:0,
             scrollTrigger: {
                 trigger: '#universo',
                 start: "top 80%",
@@ -47,11 +52,11 @@ const Take03 = () => {
 }, []);
 
 return (
-    <div className="take03">
+  <div style={{backgroundColor:"black"}}className="take03" id="take03" data-scroll-section>
       <h2 id="universo" className="text">
-        NÓS, DO <img className="logo" src={titulo}/>, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
+        NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
-      <h1 id="topa" className="reveal">TOPA?</h1>
+      <h1 id="topa" className="reveal" data-scroll> TOPA?</h1>
     </div>
 );
 

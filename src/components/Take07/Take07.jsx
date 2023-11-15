@@ -15,25 +15,7 @@ const blinkingTl = gsap.timeline({ repeat: -1, yoyo: true });
 blinkingTl.to('#mente', { opacity: 0, duration: 0.7 })
           .to('#mente', { opacity: 1, duration: 0.7 });
 
-// Animação de entrada com o scrollTrigger
-gsap.fromTo('#mente', 
-    { x: -800, opacity: 0 }, 
-    { 
-        x: 0,
-        opacity: 1,
-        scale: 1.5,
-        scrollTrigger: {
-            trigger: '#mente',
-            start: 'top center',
-            end: 'bottom center',
-            scrub: true,
-            onEnter: () => blinkingTl.play(),
-            onLeaveBack: () => blinkingTl.pause(),
-            onUpdate: (self) => {
-                console.log(self.progress);
-            },
-        }        
-});
+
 
     gsap.fromTo('#mergulhe',{
         x: 800,
@@ -58,8 +40,8 @@ gsap.fromTo('#mente',
         <div className="take07">
             
 
-            <h3 id="mergulhe"> Mergulhe no <strong>conhecimento ancestral</strong> que liberta o seu futuro</h3>
-            <img id="mente" src={expanda}/>
+            <h4 id="mente">EXPANDA SUA MENTE</h4>
+            <marquee scrollamount="40" id="mergulhe"> Mergulhe no <strong>conhecimento ancestral</strong> que liberta o seu futuro</marquee>
 
         </div>
     );

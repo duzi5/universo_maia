@@ -1,7 +1,78 @@
-import React from "react";
+import React, { useEffect } from "react";
+import {gsap} from "gsap"
+
+
 
 const Maia = (props) => {
-  return (
+
+
+useEffect(()=>{
+
+// Animação para #folha1
+
+gsap.to('#folha1', {
+	duration: 20, // Duração diferente
+	y: -80, // Distância diferente
+	
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic",
+  
+  });
+// gsap.to('#maiaCompleto', {
+// 	duration: 20, // Duração diferente
+// 	scale:1.1,
+// 	y: -80, // Distância diferente
+// 	repeat: -1,
+// 	yoyo: true,
+// 	// ease: "elastic",
+  
+//   });
+  // Animação para #folha3
+  gsap.to('#folha3', {
+	duration: 25, // Duração diferente
+	y: -100, // Distância diferente
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic"
+  });
+  
+  // Animação para #folha4
+  gsap.to('#folha4', {
+	duration: 30, // Duração diferente
+	y: -110, // Distância diferente
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic"
+  });
+  gsap.to('#folha1-2', {
+	duration: 20, // Duração diferente
+	y: -80, // Distância diferente
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic"
+  });
+  
+  // Animação para #folha3
+  gsap.to('#folha3-2', {
+	duration: 35, // Duração diferente
+	y: -100, // Distância diferente
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic"
+  });
+  
+  // Animação para #folha4
+  gsap.to('#folha4-2', {
+	duration: 15, // Duração diferente
+	y: -110, // Distância diferente
+	repeat: -1,
+	yoyo: true,
+	ease: "elastic"
+  });
+  
+},[])
+	return (
     <svg id="maia"viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient

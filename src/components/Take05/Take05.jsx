@@ -48,10 +48,10 @@ const Take05 = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.take05',
-        start: 'top center',
-        end: 'bottom center',
+        start: '60% center',
+        end: '95% center',
         scrub: true,
-        markers: true
+
       }
     });
     
@@ -62,8 +62,8 @@ const Take05 = () => {
     );
     
     // Para alternar de volta para preto (ou cinza) durante o mesmo scroll
-    gsap.fromTo(['.take05', '.take04', '.take06', ".take03", ".take07"], 
-      { backgroundColor: '#ffffff' }, // estado inicial (branco novamente para garantir que o fromTo funcione)
+    gsap.to(['.take05', '.take04', '.take06', ".take03", ".take07"], 
+       // estado inicial (branco novamente para garantir que o fromTo funcione)
       { scrollTrigger:{
         trigger: '.take06',
         start: 'top center',

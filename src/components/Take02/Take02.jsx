@@ -29,6 +29,24 @@ const Take02 = () => {
   useEffect(() => {
 
 
+
+    gsap.to(['#maia'],{
+
+      duration: 3,
+      filter: ' blur(40px)',
+      ease:"power3.inOut",
+      scrollTrigger:{
+        trigger: "#take02",
+        start: "bottom center",
+        end: "bottom center",
+        scrub: true,
+        
+      }
+
+    })
+
+
+
     // gsap.from()
 
 //  gsap.to(['#_2-5', '#_2-6'],{
@@ -151,23 +169,16 @@ const Take02 = () => {
 
 
 
-    gsap.to(['#P3', '#P4', '#P5'],{
-        duration: 3,
-        y: 10,
-        yoyo:true,
-        repeat:-1,
-        stagger: 1
 
-    })
   }, []);
 
   return (
-    <div id="take02">
-      <div className="msg-start">
-      <div id="permita" className="central-msg">
+    <div id="take02" data-scroll-container>
+      <div className="msg-start" data-scroll-section>
+      <div id="permita" className="central-msg" data-scroll>
         PERMITA-SE
       </div>
-      <div  id="despertar" className="central-msg">
+      <div  id="despertar" className="central-msg" data-scroll>
         DESPERTAR
       </div>
 

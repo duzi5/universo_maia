@@ -1,36 +1,33 @@
 @import "../colors.scss";
 .take08{
-    background: linear-gradient(180deg, rgba(134,247,249,1) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);
-    display: flex;
+    background: rgba(0, 0, 0, 0.289);
     justify-content:center ;
     align-items: center;
     flex-direction: column;
-    background-repeat: repeat;
-    background-attachment: fixed;
+
     position: relative;
     padding-top: 10%;
     position: relative;
     height: fit-content;
-    #cogus-azuis{
-        position: relative;
-        z-index: 2;  // Este valor deve ser maior que o z-index de #matriz
-       
-        object-fit: cover;
-        
+    justify-content: center;
+    
+    .cogus-azuis{
+
+    position: absolute;
+    min-height: 44vh;
+    min-width: 44vw;
+    margin: 0 auto;
+    bottom: 0%;
+    position: absolute;
+    left: 50%;
+  transform: translateX(-50%);
     }
     .matriz{
         position: absolute;
         z-index: 1;
-        height: 50%;
+        height: 300px;
     }
-    img{
-        position: absolute;
-        margin: 50px 0 0 0;
-        z-index: 0;
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
+
     
     
     h2{
@@ -44,7 +41,7 @@
         width: 100%;
         text-align: center;
         strong{
-            color: $quaternary_color;
+            color: $secundary_color;
             font-size:8rem;
         }
 
@@ -52,8 +49,9 @@
     h4{
         font-family: 'Barrio', cursive;
         font-size: 56px;
-        padding: 10%;
-        margin-top: 20%;
+        padding: 20%;
+        color: $secundary_color;
+      
         @include breakpoint(small){
             font-size: 2rem;
           }
@@ -75,16 +73,19 @@
         margin-top: 50px;
         cursor: pointer;
     }   a:hover{
-        color: $quaternary_color;
+        color: $secundary_color;
     }
     #poder{
-        max-width: 800px;
         height: 400px;
+        max-width: 80vw;
         object-fit: contain;
-        position: absolute;
+        position: relative;
         top: 0;
-        right: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
         display: grid;
+        color: $secundary_color;
        
         @include breakpoint(small){
             top: -36%;

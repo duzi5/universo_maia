@@ -3,6 +3,7 @@ import video from "./video.mp4";
 import "./Take09.scss";
 import buffalo from "./BUFALLO.jpeg";
 import albino from "./ALBINO 03.jpeg";
+import leao from "./jubadeleao.jpg"
 import kit from "./kit.jpeg"
 import gsap from "gsap";
 // import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
@@ -10,22 +11,23 @@ const Take09 = () => {
   // gsap.registerPlugin(ScrambleTextPlugin)
     
   
-useEffect(()=>{
-  gsap.set(".imagens", {
-    filter: "grayscale(100%)"
-  });
+// useEffect(()=>{
+//   gsap.set(".imagens", {
+//     filter: "grayscale(100%)"
+    
+//   });
   
-  // Animação para remover o grayscale e depois retornar a ele
-  gsap.to(".imagens", {
-    filter: "grayscale(0%)",
-    stagger: 0.5, // 0.5 segundos entre o início de cada animação
-    duration: 1,
-    yoyo: true,
-    repeat: -1,  // Repetir infinitamente
-    ease: "power1.inOut"  // Efeito de facilidade suave para transição entre os estados
-  });
+//   // Animação para remover o grayscale e depois retornar a ele
+//   gsap.to(".imagens", {
+//     webkitBoxReflect: 'below 1px linear-gradient(transparent, transparent, black)',
+//     stagger: 0.5, // 0.5 segundos entre o início de cada animação
+//     duration: 1,
+//     yoyo: true,
+//     repeat: -1,  // Repetir infinitamente
+//     ease: "power1.inOut"  // Efeito de facilidade suave para transição entre os estados
+//   });
   
-},[])
+// },[])
   
   
   
@@ -48,8 +50,8 @@ useEffect(()=>{
                     <input type="radio" id="card1" className="toggle" name="accordion" />
                     <label htmlFor="card1" className="selling-card direita">
                        <div className="cabecalho">
-                       <img className="imagens"src={albino} alt="" />
                         <h3>Psilocybe cubensis albino</h3>
+                       <img className="imagens"src={albino} alt="" />
                        </div>
                         <div className="conteudo">
                             <p>O Psilocybe cubensis albino é uma variedade pra lá de rara e única do famoso cogumelo psicodélico Psilocybe cubensis. O que mais chama atenção nesse cogumelo é que ele é branquinho, daí o nome "albino". Enquanto a maioria dos Psilocybe cubensis tem aquela vibe marrom ou acastanhada, o Psilocybe cubensis albino se destaca pela aparência diferentona.</p>
@@ -81,7 +83,7 @@ useEffect(()=>{
                                 </tbody>
                             </table>
                             <div className="frete">
-                              <p> Frete não incluso.</p>
+                              <p> Mais frete</p>
                             </div>
                         </div>
                     </label>
@@ -90,8 +92,8 @@ useEffect(()=>{
                     <input type="radio" id="card2" className="toggle" name="accordion" />
                     <label htmlFor="card2" className="selling-card direita">
                         <div className="cabecalho">
-                       <img id="kit"className="imagens"src={kit} alt="" />
                         <h3>Kit Cultivo do Psilocybe cubensis albino</h3>
+                       <img id="kit"className="imagens"src={kit} alt="" />
                        </div>
                         <div className="conteudo">
                             <p className="question">Imagina só, ter um kit mágico pra você mesmo cultivar seu cogu?</p>
@@ -115,8 +117,8 @@ useEffect(()=>{
                     <input type="radio" id="card3" className="toggle" name="accordion" />
                     <label htmlFor="card3" className="selling-card direita">
                        <div className="cabecalho">
-                       <img className="imagens"src={buffalo} alt="" />
                         <h3>Psilocybe cubensis Buffalo Pink</h3>
+                       <img className="imagens"src={buffalo} alt="" />
                        </div>
                         <div className="conteudo">
                             <p>o Psilocybe cubensis Buffalo Pink é tipo um rockstar dos cogumelos psicodélicos, super famoso e encontrado no mundo inteiro. Esses caras crescem em lugares tropicais e subtropicais e são conhecidos por proporcionar viagens incríveis na mente.</p>
@@ -149,7 +151,42 @@ useEffect(()=>{
                                 </tbody>
                             </table>
                             <div className="frete">
-                              <p> Frete não incluso.</p>
+                              <p> Mais Frete .</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" id="card3" className="toggle" name="accordion" />
+                    <label htmlFor="card3" className="selling-card direita">
+                       <div className="cabecalho">
+                        <h3>Cogumelo Juba de Leão </h3>
+                       <img className="imagens"src={leao} alt="" />
+                       </div>
+                        <div className="conteudo">
+                          <p>O cogumelo Juba de Leão, conhecido cientificamente como Hericium erinaceus, é um verdadeiro tesouro - tanto na cozinha quanto na medicina tradicional. Esse cogumelo é chamado de "Juba de Leão" por causa da sua aparência, que parece uma juba de leão. Mas a pegada vai muito além do visual, especialmente quando a gente fala de cápsulas.</p>
+                          <p>Nessas cápsulas, você encontra extratos ou pó desse cogumelo mágico. E o motivo? Os benefícios para a saúde. O Juba de Leão é um verdadeiro super-herói quando se trata de compostos saudáveis, como beta-glucanos, polissacarídeos e antioxidantes. Esses caras têm o potencial de turbinar a cabeça, dar uma força para o sistema de defesa do corpo, e até acalmar o estresse e a inflamação. E como se não bastasse, também fazem um bem danado pro sistema digestivo e podem dar aquela força no controle do açúcar no sangue.</p>
+                           <p>As cápsulas são como uma mão na roda pra incluir o Juba de Leão na sua rotina. É só tomar, sem precisar encarar um preparo culinário. Só fica a dica: antes de entrar de cabeça na suplementação, é importante bater um papo com um profissional de saúde pra ter certeza de que é a jogada certa pra você.</p> 
+                           <p></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Quantidade</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>30 cápsulas</td>
+                                        <td>R$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60cápsulas</td>
+                                        <td>R$180</td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                            <div className="frete">
+                              <p> Mais frete</p>
                             </div>
                         </div>
                     </label>

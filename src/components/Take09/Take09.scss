@@ -1,251 +1,284 @@
 @import "../colors.scss";
 
 .video-section {
-    position: relative;
-    width: 100vw;
-    min-height: 100vh;
-    height: fit-content;
-    overflow: hidden;
-    object-fit: cover;
-    background-color: $quaternary_color;
-    display: block;
-    z-index: 0;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  background-color: $quaternary_color;
+  position: relative;
+  display: flex;
+  z-index: 0;
+  flex-wrap: wrap;
+  margin-top: -5%;
 
-    @include breakpoint(small) {
-        height: fit-content;
-        position: relative;
-        z-index: 0;
-    }
+  justify-content: center;
+
+  @include breakpoint(medium) {
+    display: block;
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+  }
+  // @include breakpoisnt(small) {
+  // }
 }
 
 .video-background {
-    position: absolute;
-    filter: hue-rotate(240deg) blur(10px) grayscale(1);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: fit-content;
-    object-fit: cover;
-    z-index: 1;
+  position: absolute;
+  filter: hue-rotate(160deg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  z-index: 1;
 
-    @include breakpoint(small) {
-        position: relative;
-        filter:  hue-rotate(80deg);
-    }
+  @include breakpoint(small) {
+    position: relative;
+    filter: hue-rotate(160deg);
+    width: 100vw;
+  }
 }
 
 .cards {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    #kit{
-        object-position: 90% 70%;
-    }
+  width: 100vw;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  perspective: 457px;
+  #kit {
+    object-position: 90% 70%;
+  }
 }
-.cabecalho{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column}
-    .content {
+.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  color: $secundary_color;
+  justify-content: center;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  .titulo {
+    width: 100vw;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, black);
+    margin-bottom: 20%;
+
+    .title {
+      display: flex;
+      z-index: 100;
+      color: $secundary_color;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      font-family: "Barrio", cursive;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+
+      @include breakpoint(small) {
+        font-size: 2rem;
         position: relative;
-    display: flex;
-    width: 100%;
-    z-index: 1;
-    color: $secundary_color;
-    justify-content: center;
-    flex-direction: column;
+        z-index: 100;
+      }
 
-    align-items: center;
-    flex-wrap: wrap;
+      @include breakpoint(medium) {
+        font-size: 3rem;
+      }
+      @include breakpoint(large) {
+        font-size: 5rem;
+      }
+      @include breakpoint(xlarge) {
+        font-size: 7rem;
+      }
+    }
+  }
 
+  .selling-card {
+    transform: rotateX(0deg) rotateY(5deg);
+    transform-style: preserve-3d;
+    min-width: 10vw;
+    min-height: 5vh;
+    max-width: 900px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    text-align: justify;
+    transition: max-height 1s ease-in-out, background-color 1s ease-out;
+    overflow: contain;
+    border-radius: 5%;
 
-    .titulo {
+    overflow: hidden;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, black);
+      @include breakpoint(small) {
         width: 100vw;
+        
+      }
 
-        .title {
-            display: flex;
-            z-index: 100;
-            color: $secundary_color;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            font-family: 'Barrio', cursive;
-            font-size: 3rem;
-            margin: 0;
-            padding: 0;
-
-            @include breakpoint(small) {
-                font-size: 2rem;
-                position: relative;
-                z-index: 100;
-            }
-
-            @include breakpoint(medium) {
-                font-size: 3rem;
-            }
-            @include breakpoint(large) {
-                font-size: 5rem;
-            }
-            @include breakpoint(xlarge){
-                font-size: 7rem;
-            }
-        }
+      @include breakpoint(medium) {
+width: 90vw;
+      }
+      @include breakpoint(large) {
+        font-size: 40vw;
+      }
+      @include breakpoint(xlarge) {
+        font-size: 20vw;
+      }
+    // border-bottom: $secundary_color solid 6px;
+    h3 {
+      font-family: "Barrio";
+      color: $secundary_color;
+      text-transform: uppercase;
+      font-size: 60px;
+      text-align: center;
+      z-index: 10;
+    }
+    &:hover {
+      background-color: $tertiary_color;
+      transform: rotateX(0deg) rotateY(0deg);
+      transform-style: preserve-3d;
+    }
+    &:hover .conteudo,
+    &.selected .conteudo {
+      max-height: fit-content;
+      p,
+      table {
+        opacity: 1;
+      }
     }
 
-    .selling-card {
-        width: 70vw;
-        max-width: 900px;
-        background-color: transparent;
-        backdrop-filter: blur(100px);
-        text-align: justify;
-        transition: max-height 1s ease-in-out, background-color 1s ease-out;
-        overflow: contain;
-        // border-bottom: $secundary_color solid 6px;
-        h3 {
-            font-family: 'Barrio';
-            color: $secundary_color;
-            text-transform: uppercase;
-            font-size: 40px;
-            text-align: center;
-
-        }
-        &:hover{
-            background-color: $tertiary_color;
-
-
-        }
-        &:hover .conteudo, &.selected .conteudo {
-            max-height: fit-content;
-            p, table {
-                opacity: 1;
-            }
-
-        }
-        
-        .conteudo {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 1s ease-in-out;
-            word-wrap: break-word; // Quebra palavras longas para evitar o desbordamento horizontal.
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-        
-        
-            p, table {
-                font-family: $font2;
-                font-weight: 200;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
-                }
-
-             table{
-                background-color: rgba(226, 231, 229, 0.367);
-                padding: 10px;
-                border-radius: 1%;
-                thead{
-                    font-weight: 800;
-                    font-size: small;
-                    background-color: $secundary_color;
-                    color: $tertiary_color;
-                }
-            }   
-            &.selected p, &.selected table {
-                max-height: 1000px;
-                opacity: 1;
-                .imagens{
-                    filter: grayscale(0);
-                }
-            }
-            @include breakpoint(small) {
-                width: 100vw;
-                .imagens{
-                    width: 100%;
-                }
-                
-                h3 {
-                    font-size: 25px;
-                }
-            }
-            @include breakpoint(medium) {
-                width: 90vw;
-                
-                
-                
-                h3 {
-                    font-size: 25px;
-                }
-            }
-            @include breakpoint(large) {
-                height: 5%;
-                width: 90vw;
-                height: auto;
-                
-
-                h3 {
-                    font-size: 25px;
-                }
-            }
-
-            @include breakpoint(xlarge) {
-                width: 80vw;
-                height: fit-content;
-
-
-                h3 {
-                    font-size: 25px;
-                }
-
-                p, table {
-                    font-size: 16px;
-                }
-            }
-
-            .imagens{
-                display: block;
-    top: 0;
-    left: 0;
-    transform: translateY(0);
-    transition: transform 0.1s;
-                height: 200px;
-                width: 100%;
-                object-fit: cover;
-                object-position: 20% 20%;
-                filter: grayscale(1);
-                transition: filter 0.5s ease-in-out, height 0.9s ease-in-out;
-                background-attachment: fixed;
-
-                // border-top: solid $primary_color 20px;
-                // border-bottom : solid $primary_color 20px;
-                border-radius: 1%;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
-            .imagens:hover{
-                filter: grayscale(0);
-                height: 400px;
-                
-            }
-        
-        }
-
+    .conteudo {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s ease-in-out;
+      word-wrap: break-word; // Quebra palavras longas para evitar o desbordamento horizontal.
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
+    p,
+    table {
+      font-family: $font2;
+      font-weight: 200;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    }
+
+    table {
+      background-color: rgba(226, 231, 229, 0.367);
+      padding: 10px;
+      border-radius: 1%;
+      thead {
+        font-weight: 800;
+        font-size: small;
+        background-color: $secundary_color;
+        color: $tertiary_color;
+      }
+    }
+    &.selected p,
+    &.selected table {
+      max-height: 1000px;
+      opacity: 1;
+
+      .imagens {
+        filter: grayscale(0);
+      }
+    }
+    @include breakpoint(small) {
+      width: 100vw;
+      .imagens {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+    @include breakpoint(medium) {
+      width: 90vw;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+    @include breakpoint(large) {
+      height: 5%;
+      width: 90vw;
+      height: auto;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+
+    @include breakpoint(xlarge) {
+      width: 80vw;
+      height: fit-content;
+
+      h3 {
+        font-size: 25px;
+      }
+
+      p,
+      table {
+        font-size: 16px;
+      }
+    }
+
+    .imagens {
+      display: block;
+
+      top: 0;
+      left: 0;
+
+      transform: translateY(0);
+      transition: transform 2s;
+      max-height: 20vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: 20% 20%;
+      // filter: grayscale(1);
+      transition: filter 0.5s ease-in-out, height 0.9s ease-in-out;
+      background-attachment: fixed;
+
+      // border-top: solid $primary_color 20px;
+      // border-bottom : solid $primary_color 20px;
+      border-radius: 1%;
+    }
+    .imagens:hover {
+      filter: grayscale(0);
+      height: 400px;
+      -webkit-box-reflect: below 1px
+        linear-gradient(transparent, transparent, black);
+    }
+  }
+}
 
 input[type="radio"].toggle {
-    display: none;
+  display: none;
 
-    & + .content .selling-card .conteudo {
-        max-height: 1000px;
-        p, table {
-            opacity: 1;
-        }
+  & + .content .selling-card .conteudo {
+    max-height: 1000px;
+    p,
+    table {
+      opacity: 1;
     }
+  }
 }
-

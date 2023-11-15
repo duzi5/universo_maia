@@ -1,0 +1,11 @@
+@import "../colors.scss";
+
+.take10 {
+  background-color: $primary_color;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  
+}
