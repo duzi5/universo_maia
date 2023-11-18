@@ -21,12 +21,15 @@
         
     }
     #voce{
-        font-size: 270px;
+        font-size: 220px;
         font-family: $font2;
         color: $secundary_color;
         text-align: center;
         justify-content: center;
         margin: auto;
+        @include breakpoint(small){
+            font-size: 80px;
+        }
         @include breakpoint(medium){
             font-size: 190px;
         }
@@ -40,6 +43,9 @@
         text-align: center;
         justify-content: center;
         padding: 20%;
+        @include breakpoint(small){
+            font-size: 40px;
+        }
         @include breakpoint(medium){
             font-size: 70px;
         }

@@ -7,25 +7,28 @@ import titulo from "./universoMaiaTitulo.png"
 const Take03 = () => {
   useEffect(() => {
 
-    // ... restante do código ...
+    const tl = gsap.timeline({ scrollTrigger:{
+      trigger: "#topa",
+      start: "-200% center",
+      end: "50% center",
+      scrub: true,
 
+      markers:true
+    }})
+    
 
-    gsap.fromTo("#topa", { 
-      y: -500,
-      autoAlpha: 0},{
-        duration:2.5,
-        ease: "sine.inOut",
-      x: 0,
-      y:0,
-      autoAlpha: 1,
-      scrollTrigger: {
-        trigger: "#topa",
-        start: "top center+=100",
-        end: "80% center",
-        scrub: true,
-      },
-     
+    // Animação de rotação
+    gsap.set(".letter", { display: "inline-block" }); // Configura os spans para se comportarem como blocos inline
+
+    tl.to(".letter", {
+      rotateY: 720,
+      color:"#ba0c54",
+      rotateZ: 720,
+      stagger:0.1// Repete infinitamente// Faz a animação de ida e volta
     });
+
+
+
     // gsap.registerPlugin(TextPlugin)
     // gsap.to('.text', {
     //   duration: 10,
@@ -56,8 +59,11 @@ return (
       <h2 id="universo" className="text">
         NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
-      <h1 id="topa" className="reveal" data-scroll> TOPA?</h1>
-    </div>
+      <h1 id="topa" className="reveal" data-scroll>
+  {Array.from("TOPA?").map((letter, index) => (
+    <span key={index} className="letter">{letter}</span>
+  ))}
+</h1>    </div>
 );
 
 

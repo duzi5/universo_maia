@@ -8,68 +8,56 @@ const Maia = (props) => {
 
 useEffect(()=>{
 
-// Animação para #folha1
 
-gsap.to('#folha1', {
-	duration: 20, // Duração diferente
-	y: -80, // Distância diferente
+	const tl = gsap.timeline({ repeat: -1, yoyo: true, stagger:2 });
+
+	tl
+	  .to('#folha1', {
+		duration: 20,
+		y: -80,
+		scale: 1.1,
+		opacity:0.3,
+		ease: "linear"
+	})
+	.to('#folha3', {
+		duration: 25,
+		y: -100,
+		scale: 0.9,
+		opacity:0.4,
+		ease: "linear"
+	},0)
+	.to('#folha4', {
+		duration: 30,
+		y: -120,
+		fill: "#aaa",
+		opacity:0.5,
+		scale: 1.2,
+		ease: "linear"
+	},0)
+	.to('#folha1-2', {
+		duration: 22,
+		y: -90,
+		opacity:0.6,
+		scale: 1.05,
+		ease: "linear"
+	  },0)
+	  .to('#folha3-2', {
+		duration: 28,
+		y: -110,
+		opacity:0.4,
+		scale: 0.95,
+		ease: "linear"
+	},0)
+	.to('#folha4-2', {
+		duration: 32,
+		opacity:0.2,
+		y: -130,
+		fill: "#888",
+		scale: 1.15,
+		ease: "linear"
+	  },0);
 	
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic",
-  
-  });
-// gsap.to('#maiaCompleto', {
-// 	duration: 20, // Duração diferente
-// 	scale:1.1,
-// 	y: -80, // Distância diferente
-// 	repeat: -1,
-// 	yoyo: true,
-// 	// ease: "elastic",
-  
-//   });
-  // Animação para #folha3
-  gsap.to('#folha3', {
-	duration: 25, // Duração diferente
-	y: -100, // Distância diferente
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic"
-  });
-  
-  // Animação para #folha4
-  gsap.to('#folha4', {
-	duration: 30, // Duração diferente
-	y: -110, // Distância diferente
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic"
-  });
-  gsap.to('#folha1-2', {
-	duration: 20, // Duração diferente
-	y: -80, // Distância diferente
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic"
-  });
-  
-  // Animação para #folha3
-  gsap.to('#folha3-2', {
-	duration: 35, // Duração diferente
-	y: -100, // Distância diferente
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic"
-  });
-  
-  // Animação para #folha4
-  gsap.to('#folha4-2', {
-	duration: 15, // Duração diferente
-	y: -110, // Distância diferente
-	repeat: -1,
-	yoyo: true,
-	ease: "elastic"
-  });
+
   
 },[])
 	return (

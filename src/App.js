@@ -14,30 +14,35 @@ import InfoPage from './components/InfoPage/InfoPage'; // Supondo que você tenh
 import VideoScroll from "./components/VideoScrollComponent/VideoScroll";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { TextPlugin } from "gsap/TextPlugin";
+
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Take09 from './components/Take09/Take09-2';
 import LocomotiveScroll from 'locomotive-scroll';
 import Lenis from '@studio-freight/lenis'
 import Take10 from './components/Take10/Take10';
 
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
-
-// gsap.registerPlugin(ScrollSmoother);
+    
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
+    
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+    
+    
+    // gsap.registerPlugin(ScrollSmoother);
     const scroll = new LocomotiveScroll();
+
+gsap.registerPlugin(TextPlugin);
     gsap.registerPlugin(ScrollTrigger);
   }, []);
 
