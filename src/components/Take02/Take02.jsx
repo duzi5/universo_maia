@@ -14,9 +14,9 @@ const Take02 = () => {
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#universo",
-        start: "-190% top",
-        end: "-140% top",
+        trigger: "#take02",
+        start: "30% top",
+        end: "90% top",
         markers: true,
         scrub: true,
         onEnter: () => {
@@ -56,12 +56,20 @@ const Take02 = () => {
       scale: 1.2,
       ease: "linear",
       scrollTrigger: {
-        trigger: "#universo",
-        start: "-90% 30%",
-        end: "30% 90%",
+        trigger: "#take02",
+        start: "60% center",
+        end: "bottom center",
+        markers: true,
         scrub: true,
-        onEnter: () => setMostrarMaia(false),
-        onLeaveBack: () => setMostrarMaia(true),
+        onLeave: () => {
+          setMostrarMaia(false);
+          console.log("Entrou na área do trigger");
+        },
+        onLeaveBack: () => {
+          setMostrarMaia(true);
+          console.log("Saiu na área do trigger");
+        },
+        
       },
     });
  

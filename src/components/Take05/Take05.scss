@@ -17,9 +17,10 @@
     @include breakpoint(medium){
       font-size: 2.5rem;
     }
-  
+    
   }
   h3 {
+    opacity: 0;
     margin: 0%;
     padding: 3%;
     font-size: 77px;
