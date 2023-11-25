@@ -1,26 +1,100 @@
 @import "../colors.scss";
 .take08{
-    background: $tertiary_color;
+    background: rgb(10,7,62);
+    background: linear-gradient(360deg, rgba(10,7,62,1) 0%, rgba(9,62,121,1) 71%, rgba(21,91,130,1) 95%);
     justify-content:center ;
     align-items: center;
+    display: flex;
     flex-direction: column;
-
-    position: relative;
-    padding-top: 10%;
+    width: 100vw;
     position: relative;
     height: fit-content;
-    justify-content: center;
+   #porque{
+        font-family: $font1;
+        text-align: center;
+        font-weight: 300;
+        width: 100vw;
+        margin: 0%;
+        color: $quaternary_color;
+        @include breakpoint(small) {
+          font-size: 1.6rem;
+        }
+        @include breakpoint(medium) {
+          font-size: 2.5rem;
+        }
+        @include breakpoint(large) {
+          font-size: 3.2rem;
+        }
+        @include breakpoint(xlarge) {
+          font-size: 4rem;
+        }
+      }
     
-    .cogus-azuis{
 
-    position: absolute;
-    min-height: 44vh;
-    min-width: 44vw;
-    margin: 0 auto;
-    bottom: 0%;
-    position: absolute;
-    left: 50%;
-  transform: translateX(-50%);
+
+    #intro-text{ 
+            margin: auto;
+          width: 80%;
+            column-count: 3;  // Define o número de colunas
+
+            column-gap: 40px; // Define o espaço entre as colunas
+            font-size: 1.6rem;
+            // Estilos adicionais para melhorar a aparência
+            padding: 20px;
+            text-align: justify;
+            color: $secundary_color;
+            font-family:fantasy;
+            font-weight: 100;
+      }
+   
+   
+    #btns-texts{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 100vw;
+        height: 20vh;
+        
+        .btn{
+            flex-grow: 1;
+            font-size: 3rem;
+            font-family: $font1;
+            color: white;
+            background-color: transparent;
+            border: none;
+        &:hover{
+            background-color: $quinary_color;
+            color: $tertiary_color;
+            cursor: pointer;
+        }
+        }
+    
+
+    }
+    #mandala{
+        filter: hue-rotate(120deg);
+        opacity:0.2;
+        top: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: 4;
+        width: auto;
+
+    }
+    #env-cogus{
+        // border: solid 3px brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cogus-azuis{
+            position: relative;
+            min-height: 33vh;
+            min-width: 33vw;      
+            filter: hue-rotate(25deg) brightness(1.2);
+
+            }
     }
     .matriz{
         position: absolute;
@@ -28,24 +102,24 @@
         height: 300px;
     }
 
+  
     
-    
-    h2{
-        font-family: 'Barrio', cursive;
-        color: $secundary_color;
-        position: absolute;
-        top: -90px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 4rem;
-        width: 100%;
-        text-align: center;
-        strong{
-            color: $secundary_color;
-            font-size:8rem;
-        }
+    // h2{
+    //     font-family: 'Barrio', cursive;
+    //     color: $secundary_color;
+    //     position: absolute;
+    //     top: -90px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     font-size: 4rem;
+    //     width: 100%;
+    //     text-align: center;
+    //     strong{
+    //         color: $secundary_color;
+    //         font-size:8rem;
+    //     }
 
-    }
+    // }
     h4{
         font-family: 'Barrio', cursive;
         font-size: 56px;
@@ -75,33 +149,29 @@
     }   a:hover{
         color: $secundary_color;
     }
-    #poder{
-        height: 400px;
-        max-width: 80vw;
-        object-fit: contain;
+#env-poder{
+    display: flex;
+    justify-content: center;
+    #poder {
+        height: auto;
         position: relative;
-        top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15%;
-        display: grid;
-        color: $secundary_color;
-       
-        @include breakpoint(small){
-            top: -36%;
+        transform: translateY(-30%); // Ajusta a posição para o centro exato
+    
+        @include breakpoint(small) {
+            width: 90vw;
         }
-        @include breakpoint(medium){
-            top: -25%;
+        @include breakpoint(medium) {
+            width: 80vw;
         }
-        @include breakpoint(large){
-            top: -15%;
-         }
-       @include breakpoint(xlarge){
-        top: -12%;
-       }
-       
-       
+        @include breakpoint(large) {
+            width: 70vw;
+        }
+        @include breakpoint(xlarge) {
+            width: 60vw;
+        }
     }
+}
+    
     
     
     

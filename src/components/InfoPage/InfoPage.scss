@@ -1,73 +1,70 @@
 @import "../colors.scss";
 
-
-.info-page{
-    background: rgb(9, 11, 11);
-    background: linear-gradient(180deg, rgb(69, 100, 100) 0%, rgba(114,232,249,1) 30%, rgba(47,208,246,1) 58%, rgba(1,141,170,1) 100%);;
+.info-page {
     display: flex;
     justify-content: center;
-    height: fit-content;
+    align-items: center;
     text-align: justify;
     position: relative;
-    overflow: hidden;
-    #cogu{
-        width: 30vh;
-        position: absolute;
-        bottom: -2%;
-        left: -2%;
-        @include breakpoint(medium){
-            position: relative;
-            transform: translateX(-10%) translateY(40%);
+    overflow: hidden; // Esconde o overflow
+    color: $secundary_color;
+    padding: 10%;
+    width: 100vw; // Largura igual à viewport
+    height: 100vh;
 
-
-        }
+    .horizontal-scroll {
+        display: flex;
+        width: auto; // Ajuste conforme necessário para se adequar ao seu conteúdo
+        // ...outros estilos
     }
-    .contain{
-        padding: 5%;
-        margin-bottom: 10%;
-        max-width: 800px;
-        height: fit-content;
-        section{
-            border-bottom: 4px dotted $primary_color;
-        }
-        p{
-            font-family: $font2;
+
+.content2 {
+    display: flex; // Flex para permitir que os itens fiquem lado a lado
+    width: fit-content; // Ajusta a largura para o conteúdo
+    padding: 5%;
+    margin-bottom: 10%;
+    height: fit-content;
+
+    section {
+        border-bottom: 4px dotted $primary_color;
+        flex: 0 0 100vw; // Cada seção terá a largura de uma viewport
+        box-sizing: border-box; // Para incluir padding e border no cálculo da largura
+    }
+
+    p {
+        font-family: $font2;
+        font-size: 1.3rem;
+        color: $secundary_color;
+        margin-bottom: 5%;
+        max-width: 20vw;
+        @include breakpoint(medium) {
             font-size: 1rem;
-            color: $primary_color;
-            text-align: justify;
-            margin-bottom: 5%;
-            @include breakpoint(medium){
-                font-size: 1.5rem;
-            }
-            strong{
-                color: $quinary_color;
-            }
         }
-        h3{
-            font-family: $font1;
-            font-size: 2rem;
+        strong {
             color: $quinary_color;
-            text-align: center;
-        }
-        h2{
-            font-family: $font1;
-            font-size: 4rem;
-            text-align: center;
-            img{
-                width: 100%;
-            }
-        }
-        h1{
-            font-family: $font1;
-            font-size: 6rem;
-            text-align: center;
-            img{
-                width: 100%;
-            }
-        }
-        img{
-            max-width: 100%;
         }
     }
 
+    h3, h2, h1 {
+        font-family: $font1;
+        font-size: 2rem; // Ajuste conforme necessário
+        color: $quinary_color;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#cogu {
+    width: 30vh;
+    position: absolute;
+    bottom: -2%;
+    left: -2%;
+    @include breakpoint(medium) {
+        position: relative;
+        transform: translateX(-10%) translateY(40%);
+    }
+}
 }

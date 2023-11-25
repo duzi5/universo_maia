@@ -1,54 +1,60 @@
 @import "../colors.scss";
-.take04{
-    display: flex;
+.take04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $primary_color;
+  overflow: hidden;
+  h2 {
+    font-family: $font2;
+    color: $secundary_color;
+    max-width: 90vw;
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 3rem;
+    }
+    @include breakpoint(large) {
+      font-size: 4rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 5rem;
+    }
+  }
+  #voce {
+    font-family: $font2;
+    color: $secundary_color;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: $primary_color;
-    // overflow-y: hidden;
-    h2{
-        font-size: 100px;
-        font-family: $font2;
-        color:$secundary_color;
-
-        @include breakpoint(small){
-            font-size: 2rem;
-        }
-        @include breakpoint(medium){
-            font-size: 2rem;
-            max-width: 90vw;
-          }
-        
+    margin: auto;
+    @include breakpoint(small) {
+      font-size: 4rem;
     }
-    #voce{
-        font-size: 220px;
-        font-family: $font2;
-        color: $secundary_color;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        @include breakpoint(small){
-            font-size: 80px;
-        }
-        @include breakpoint(medium){
-            font-size: 190px;
-        }
-        
-    } 
-    #faria{
-        font-size: 100px;
-        font-family: $font2;
-        max-width: 80%;
-        color: $secundary_color;
-        text-align: center;
-        justify-content: center;
-        padding: 20%;
-        @include breakpoint(small){
-            font-size: 40px;
-        }
-        @include breakpoint(medium){
-            font-size: 70px;
-        }
+    @include breakpoint(medium) {
+      font-size: 6rem;
     }
-
-}  
+    @include breakpoint(large) {
+      font-size: 8rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 11rem;
+    }
+  }
+  #faria {
+    font-size: 100px;
+    font-family: $font2;
+    max-width: 80%;
+    color: $secundary_color;
+    text-align: center;
+    justify-content: center;
+    padding: 20%;
+    @include breakpoint(small) {
+      font-size: 40px;
+    }
+    @include breakpoint(medium) {
+      font-size: 70px;
+    }
+  }
+}

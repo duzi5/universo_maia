@@ -17,13 +17,28 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { TextPlugin } from "gsap/TextPlugin";
 
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
-import Take09 from './components/Take09/Take09-2';
+import Take09 from './components/Take09/Take09';
 import LocomotiveScroll from 'locomotive-scroll';
 import Lenis from '@studio-freight/lenis'
 import Take10 from './components/Take10/Take10';
+import Menu from './components/Menu/Menu';
+
 
 
 function App() {
+  document.addEventListener('scroll', () => {
+    // Verifica se o usuário chegou ao fim da página
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        // Volta para o topo da página
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+    
+        }
+    )
+}
+});
+
   useEffect(() => {
     const lenis = new Lenis()
     
@@ -49,11 +64,11 @@ gsap.registerPlugin(TextPlugin);
   return (
     <Router>
       <div className="App">
-
+          <Menu/>
         <Routes>
           <Route path="/" element={<div>
             {/* Seu conteúdo principal aqui */}
-            <LoadingScene />
+            {/* <LoadingScene /> */}
             <Take02 />
             <Take03 />
             <Take04 />
@@ -67,7 +82,7 @@ gsap.registerPlugin(TextPlugin);
             {/* <VideoScroll/> */}
           </div>} />
 
-          <Route path="/info" element={<InfoPage />} />
+          {/* <Route path="/info" element={<InfoPage />} /> */}
         </Routes>
       </div>
     </Router>

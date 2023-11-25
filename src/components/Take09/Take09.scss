@@ -11,8 +11,8 @@
   display: flex;
   z-index: 0;
   flex-wrap: wrap;
-  margin-top: -5%;
-
+  
+  
   justify-content: center;
 
   @include breakpoint(medium) {
@@ -22,12 +22,12 @@
     overflow-x: hidden;
   }
   // @include breakpoisnt(small) {
-  // }
-}
+    // }
+  }
 
 .video-background {
   position: absolute;
-  filter: hue-rotate(160deg);
+  filter: hue-rotate(120deg);
   top: 0;
   left: 0;
   bottom: 0;
@@ -43,6 +43,7 @@
     width: 100vw;
   }
 }
+
 
 .cards {
   width: 100vw;
@@ -72,9 +73,22 @@
   color: $secundary_color;
   justify-content: center;
   flex-direction: column;
-
+  -webkit-box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
+  -moz-box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
+  box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
   flex-wrap: wrap;
 
+  &::before {
+    position:absolute;
+    content:'';
+    top:0;bottom:0;left:0;right:0;
+    $color: $tertiary_color;
+    $rotation: 45/1;    
+    background-image: linear-gradient(#{$rotation}deg, $color 20%, transparent 25%, transparent 25%, $color 50%, $color 75%, transparent 75%, transparent);
+    background-size: 4px 4px;
+    filter:  contrast(1.4) saturate(1.8);
+  }
+  
   .titulo {
     width: 100vw;
     -webkit-box-reflect: below 1px

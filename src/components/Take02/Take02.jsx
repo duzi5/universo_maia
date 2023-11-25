@@ -15,9 +15,9 @@ const Take02 = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#take02",
-        start: "30% top",
-        end: "90% top",
-        markers: true,
+        start: "top top",
+        end: "bottom top",
+
         scrub: true,
         onEnter: () => {
           setMostrarElemento(false);
@@ -29,27 +29,27 @@ const Take02 = () => {
         },
       },
     });
-
-    tl.to(
-      "#permita",
-      {
-        x: "+=80vw",
-        zIndex: 4,
-      },
-      0
-    );
-    tl.to(
-      "#despertar",
-      {
-        x: "-=60vw",
-
-        zIndex: 5,
-      },
-      0
-    );
+    
+    // Animação para 'permita' vindo da esquerda para o centro
+    tl.from("#permita", {
+      x: "-100vw", // Começa fora da tela à esquerda
+      zIndex: 4,
+      ease: "power2.out", // Suaviza a animação
+    }, 0); // 0 indica que esta animação começa no início da timeline
+    
+    // Animação para 'despertar' vindo da direita para o centro
+    tl.from("#despertar", {
+      x: "100vw", // Começa fora da tela à direita
+      zIndex: 5,
+      ease: "power2.out", // Suaviza a animação
+    }, 0); // 0 indica que esta animação começa ao mesmo tempo que a anterior
+    
+    // Faz ambas as palavras desaparecerem no final da animação
     tl.to(["#permita", "#despertar"], {
       opacity: 0,
-    });
+      duration: 7 // Controla a duração do desaparecimento
+    }, "+=1"); // "+=1" faz com que essa parte da animação comece 1 segundo após as animações anteriores
+    
 
     gsap.to("#maia", {
       opacity: 0,
@@ -59,7 +59,7 @@ const Take02 = () => {
         trigger: "#take02",
         start: "60% center",
         end: "bottom center",
-        markers: true,
+
         scrub: true,
         onLeave: () => {
           setMostrarMaia(false);
@@ -69,13 +69,10 @@ const Take02 = () => {
           setMostrarMaia(true);
           console.log("Saiu na área do trigger");
         },
-        
       },
     });
- 
-    
   }, []);
- useEffect(()=>{
+  useEffect(() => {
     gsap.to("#camisa", {
       duration: 2,
       fill: "#9027ba",
@@ -111,7 +108,7 @@ const Take02 = () => {
       yoyo: true,
       repeat: -1,
     });
-  },[mostrarMaia])
+  }, [mostrarMaia]);
 
   return (
     <div id="take02">

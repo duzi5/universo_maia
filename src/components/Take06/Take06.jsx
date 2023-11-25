@@ -54,7 +54,7 @@ const Take06 = () => {
     <div className="take06">
       <h2 id="acolha">ACOLHA-SE</h2>
       <h2 id="questione">QUESTIONE-SE</h2>
-      <h2 id="cocrie">VIAJE ENTRE O PASSADO E COCRIE SEU FUTURO</h2>
+      <h2 id="cocrie">VIAJE PARA O PASSADO E COCRIE SEU FUTURO</h2>
     </div>
   );
 };

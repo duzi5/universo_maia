@@ -1,0 +1,61 @@
+@import "../colors.scss";
+
+
+#menu{
+    color: $secundary_color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    flex-grow: 1;
+    height: 5vh; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0%;
+    left: 0%;
+    @include breakpoint(small){
+        height: 5vh;
+        font-size: 1rem;
+      
+    }
+
+    ul{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .icon{ 
+        display: inline-block;
+        font-size: 2rem;
+        cursor: pointer;
+        @include breakpoint(small){
+            font-size: 1.2rem;
+            padding: 1px;
+            justify-content: center;
+            color: red;
+
+          }
+        @include breakpoint(medium){
+            font-size: 1.2rem;
+            padding: auto;
+            justify-content: center;
+            color: aquamarine;
+          }
+        // @include breakpoint(small){
+        //     font-size: 1.2rem;
+        //     padding: 3px;
+        //     justify-content: center;
+        //   }
+        // @include breakpoint(small){
+        //     font-size: 1.2rem;
+        //     padding: 3px;
+        //     justify-content: center;
+        //   }
+        }
+    }
+

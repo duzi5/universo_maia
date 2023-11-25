@@ -2,20 +2,29 @@
 
 .take03 {
   height: fit-content;
-  // overflow-y: hidden;
-  display: flex;
+  width: 100vw;
+    display: flex;
   flex-direction: column;
   align-items: normal;
   justify-content: space-around;
+  overflow: hidden;// overflow-y: hidden;
 
   background-color: $primary_color;
   h2 {
-    font-size: 100px;
     font-family: $font2;
     color: $secundary_color;
     padding: 5%;
     @include breakpoint(small) {
-      font-size: 30px;
+      font-size: 2rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 3rem;
+    }
+    @include breakpoint(large) {
+      font-size: 4rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 5rem;
     }
   }
   h1 {
@@ -45,23 +54,26 @@
     padding: 0;
     transform: translateY(20%);
     @include breakpoint(medium) {
+      width: 60%;
+      height: auto;
+    }
+    @include breakpoint(large) {
       width: 50%;
       height: auto;
     }
-  }
-  @include breakpoint(medium) {
-    h1 {
-      font-size: 100px;
-    }
-    h2 {
-      font-size: 25px;
+    @include breakpoint(xlarge) {
+      width: 40%;
+      height: auto;
     }
   }
-}
+
+
+  }
+
 .take03,
 .take04,
 .take05,
 .take06,
 .take07 {
-  background-color: #000; /* ou qualquer cor de fundo inicial desejada */
+  background-color: transparent; /* ou qualquer cor de fundo inicial desejada */
 }

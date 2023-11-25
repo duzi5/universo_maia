@@ -12,8 +12,6 @@ const Take03 = () => {
       start: "-200% center",
       end: "50% center",
       scrub: true,
-
-      markers:true
     }})
     
 
@@ -40,9 +38,12 @@ const Take03 = () => {
 
         gsap.fromTo('#universo', {
             autoAlpha: 0,
-            y: 50,},{
+            y: 50,
+            x:0,
+          },{
               autoAlpha: 1,
               y:0,
+              x:"5%",
             scrollTrigger: {
                 trigger: '#universo',
                 start: "top 80%",

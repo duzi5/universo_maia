@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-
 import "./Take04.scss";
 
 const Take04 = () => {
@@ -8,27 +7,23 @@ const Take04 = () => {
     gsap.utils.toArray("#voce span").forEach((letter, i) => {
       gsap.to(letter, {
         opacity: 0.7,
-        color: "#ba0c54", // Duração da animação
-        repeat: -1, // Repetir indefinidamente
-        yoyo: true, // Faz a animação ir e voltar
-        ease: "power1.inOut", // Suavização da animação
-        delay: i * 0.2, // Cria um atraso sequencial para cada letra
+        color: "#ba1255",
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+        delay: i * 0.2,
       });
     });
-
     gsap.to("#faria", {
-      color:"#5ea1c3",
-   
+      color: "#60a1c3",
       scrollTrigger: {
         trigger: "#faria",
-        scrub:true,
+        scrub: true,
         start: "top center",
         end: "bottom center",
-
       },
     });
   }, []);
-
   return (
     <div className="take04">
       <h2 id="faria">
@@ -44,5 +39,4 @@ const Take04 = () => {
     </div>
   );
 };
-
 export default Take04;

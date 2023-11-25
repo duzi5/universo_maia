@@ -29,18 +29,22 @@ const Take09 = () => {
   
 // },[])
   
-  
+useEffect(()=>{
+    const videoElement = document.querySelector('.video-background');
+    if (videoElement) {
+      videoElement.playbackRate = 0.1;
+}},[])
   
   
   
   
   return (
-        <section className="video-section">
-            <video className="video-background" autoPlay muted loop playsInline preload="auto">
+        <div id="take09" className="take09 video-section">
+            <video className="video-background" autoPlay muted loop playsInline preload="auto" >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="content carousel-container">
+            <div id="content"className="content carousel-container">
                 <div className="titulo">
                     <h1 className="title">COGUMELANDO-SE</h1>
                 </div>
@@ -193,7 +197,7 @@ const Take09 = () => {
 
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

@@ -3,13 +3,14 @@
 
 #take02 {
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: $primary_color;
+
   .central-msg {
     font-family: $font1;
     color: $secundary_color;
