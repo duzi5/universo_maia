@@ -1,8 +1,11 @@
 import React from "react";
-import './Take11.scss'
+import './Take11.scss';
+import { IoLogoWhatsapp } from "react-icons/io";
+
 const Take11 = () => {
   return (
     <div id="take11">
+        <IoLogoWhatsapp id="whats"/>
       <h2>CONECTE-SE COM NOSSA COMUNIDADE:</h2>
 <div className="contain">
 <div className="universo-maia">

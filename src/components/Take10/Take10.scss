@@ -28,7 +28,9 @@
     color: $secundary_color;
     font-family: $font2;
     margin: auto;
-    padding-bottom: 10%;margin: auto;
+
+   
+    
   }
   img{
 opacity: 0.1;
@@ -56,22 +58,23 @@ opacity: 0.1;
   p{
    font-family: $font2;
     max-width: 1000px;
-
     column-count: 2;
   // Define o número de colunas
     font-size: 1.4rem;
     text-align: justify;
-    text-indent: 10%;
+     padding: 3%; 
     z-index: 15;
     column-gap: 40px;
     @include breakpoint(small){
       column-count: 1;
       font-size: 1.2rem;
-      width: 90vw;
+      width: 95vw;
       margin: auto;
+      column-gap: 0;
     }
     @include breakpoint(medium){
       column-count: 1;
+      column-gap: 0;
       font-size: 1.6rem;
       width: 90vw;
       margin: auto;

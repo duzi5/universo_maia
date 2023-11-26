@@ -63,23 +63,23 @@
       font-family: $font2;
       font-weight: 100;
       margin: auto;
-      padding-bottom: 10%;
+
       @include breakpoint(small) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 95%;
         column-count: 1;
       }
       @include breakpoint(medium) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         width: 90%;
         column-count: 1;
       }
       @include breakpoint(large) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         column-count: 1;
       }
       @include breakpoint(xlarge) {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
 
         column-count: 2;
       }
@@ -103,7 +103,7 @@
       display: block;
       padding: 20px ;
       @include breakpoint(small) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
         column-count: 1;
       }
