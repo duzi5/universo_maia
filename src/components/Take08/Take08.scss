@@ -1,178 +1,224 @@
 @import "../colors.scss";
-.take08{
-    background: rgb(10,7,62);
-    background: linear-gradient(360deg, rgba(10,7,62,1) 0%, rgba(9,62,121,1) 71%, rgba(21,91,130,1) 95%);
-    justify-content:center ;
-    align-items: center;
+.take08 {
+  background: rgb(10, 7, 62);
+  background: linear-gradient(
+    360deg,
+    rgba(10, 7, 62, 1) 0%,
+    rgba(9, 62, 121, 1) 71%,
+    rgba(21, 91, 130, 1) 95%
+  );
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+  height: fit-content;
+  .stars-container {
+    span {
+      position: absolute;
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      top: 0%;
+      left: 0%;
+      border-radius: 50%;
+      color: $quaternary_color;
+    }
+  }
+  #porque {
+    font-family: $font1;
+    text-align: center;
+    font-weight: 300;
+    width: 100vw;
+    margin: 0%;
+    color: $quaternary_color;
+    @include breakpoint(small) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint(large) {
+      font-size: 3.2rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 4rem;
+    }
+  }
+
+  #intro {
+
+    #intro-text {
+      margin: auto;
+      width: 80%; // Define o número de colunas
+      max-width: 1000px;
+      column-gap: 40px; // Define o espaço entre as colunas
+      font-size: 1.6rem;
+      text-align: justify;
+      color: $secundary_color;
+      font-family: fantasy;
+      font-weight: 100;
+      padding: 14%;
+
+      @include breakpoint(small) {
+        font-size: 1.2rem;
+        padding: 3px;
+        column-count: 1;
+      }
+      @include breakpoint(medium) {
+        font-size: 1.4rem;
+        padding: 3px;
+        column-count: 1;
+      }
+      @include breakpoint(large) {
+        font-size: 1.8rem;
+        padding: 3px;
+        column-count: 1;
+      }
+      @include breakpoint(xlarge) {
+        font-size: 1.8rem;
+        padding: 3px;
+        column-count: 2;
+      }
+    }
+  }
+
+  #btns-texts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
     width: 100vw;
-    position: relative;
-    height: fit-content;
-   #porque{
-        font-family: $font1;
-        text-align: center;
-        font-weight: 300;
-        width: 100vw;
-        margin: 0%;
-        color: $quaternary_color;
-        @include breakpoint(small) {
-          font-size: 1.6rem;
-        }
-        @include breakpoint(medium) {
-          font-size: 2.5rem;
-        }
-        @include breakpoint(large) {
-          font-size: 3.2rem;
-        }
-        @include breakpoint(xlarge) {
-          font-size: 4rem;
-        }
+    height: 20vh;
+
+    .btn {
+      flex-grow: 1;
+      font-size: 3rem;
+      font-family: $font1;
+      color: white;
+      background-color: transparent;
+      border: none;
+      @include breakpoint(small) {
+        font-size: 1.2rem;
+        padding: 3px;
+        column-count: 1;
       }
-    
-
-
-    #intro-text{ 
-            margin: auto;
-          width: 80%;
-            column-count: 3;  // Define o número de colunas
-
-            column-gap: 40px; // Define o espaço entre as colunas
-            font-size: 1.6rem;
-            // Estilos adicionais para melhorar a aparência
-            padding: 20px;
-            text-align: justify;
-            color: $secundary_color;
-            font-family:fantasy;
-            font-weight: 100;
+      @include breakpoint(medium) {
+        font-size: 1.8rem;
+        padding: 3px;
+        column-count: 1;
       }
-   
-   
-    #btns-texts{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        width: 100vw;
-        height: 20vh;
-        
-        .btn{
-            flex-grow: 1;
-            font-size: 3rem;
-            font-family: $font1;
-            color: white;
-            background-color: transparent;
-            border: none;
-        &:hover{
-            background-color: $quinary_color;
-            color: $tertiary_color;
-            cursor: pointer;
-        }
-        }
-    
-
-    }
-    #mandala{
-        filter: hue-rotate(120deg);
-        opacity:0.2;
-        top: 0%;
-        left: 0%;
-        position: absolute;
-        z-index: 4;
-        width: auto;
-
-    }
-    #env-cogus{
-        // border: solid 3px brown;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .cogus-azuis{
-            position: relative;
-            min-height: 33vh;
-            min-width: 33vw;      
-            filter: hue-rotate(25deg) brightness(1.2);
-
-            }
-    }
-    .matriz{
-        position: absolute;
-        z-index: 1;
-        height: 300px;
-    }
-
-  
-    
-    // h2{
-    //     font-family: 'Barrio', cursive;
-    //     color: $secundary_color;
-    //     position: absolute;
-    //     top: -90px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     font-size: 4rem;
-    //     width: 100%;
-    //     text-align: center;
-    //     strong{
-    //         color: $secundary_color;
-    //         font-size:8rem;
-    //     }
-
-    // }
-    h4{
-        font-family: 'Barrio', cursive;
-        font-size: 56px;
-        padding: 20%;
-        color: $secundary_color;
-      
-        @include breakpoint(small){
-            font-size: 2rem;
-          }
-        
-    }
-    .links{
-        padding: 10%;
-        justify-content: space-around;
-        align-items:normal;
-    }
-    a:first-child{
-        transform: translateX(200px);
-    }
-    a{
+      @include breakpoint(large) {
+        font-size: 2.4rem;
+        padding: 3px;
+        column-count: 1;
+      }
+      @include breakpoint(xlarge) {
         font-size: 3rem;
-        font-family: $font1;
-        font-weight: 800;
-        margin: 20px;
-        margin-top: 50px;
+        padding: 3px;
+        column-count: 1;
+      }
+      &:hover {
+        background-color: $quinary_color;
+        color: $tertiary_color;
         cursor: pointer;
-    }   a:hover{
-        color: $secundary_color;
+      }
     }
-#env-poder{
+  }
+  #mandala {
+    filter: hue-rotate(120deg);
+    opacity: 0.2;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: 4;
+    width: auto;
+  }
+  #env-cogus {
+    // border: solid 3px brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cogus-azuis {
+      position: relative;
+      min-height: 33vh;
+      min-width: 33vw;
+      filter: hue-rotate(25deg) brightness(1.2);
+    }
+  }
+  .matriz {
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+  }
+
+  // h2{
+  //     font-family: 'Barrio', cursive;
+  //     color: $secundary_color;
+  //     position: absolute;
+  //     top: -90px;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //     font-size: 4rem;
+  //     width: 100%;
+  //     text-align: center;
+  //     strong{
+  //         color: $secundary_color;
+  //         font-size:8rem;
+  //     }
+
+  // }
+  h4 {
+    font-family: "Barrio", cursive;
+    font-size: 56px;
+    padding: 20%;
+    color: $secundary_color;
+
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
+  }
+  .links {
+    padding: 10%;
+    justify-content: space-around;
+    align-items: normal;
+  }
+  a:first-child {
+    transform: translateX(200px);
+  }
+  a {
+    font-size: 3rem;
+    font-family: $font1;
+    font-weight: 800;
+    margin: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  a:hover {
+    color: $secundary_color;
+  }
+  #env-poder {
     display: flex;
     justify-content: center;
     #poder {
-        height: auto;
-        position: relative;
-        transform: translateY(-30%); // Ajusta a posição para o centro exato
-    
-        @include breakpoint(small) {
-            width: 90vw;
-        }
-        @include breakpoint(medium) {
-            width: 80vw;
-        }
-        @include breakpoint(large) {
-            width: 70vw;
-        }
-        @include breakpoint(xlarge) {
-            width: 60vw;
-        }
+      height: auto;
+      position: relative;
+      transform: translateY(-30%); // Ajusta a posição para o centro exato
+
+      @include breakpoint(small) {
+        width: 90vw;
+      }
+      @include breakpoint(medium) {
+        width: 80vw;
+      }
+      @include breakpoint(large) {
+        width: 70vw;
+      }
+      @include breakpoint(xlarge) {
+        width: 60vw;
+      }
     }
-}
-    
-    
-    
-    
+  }
 }

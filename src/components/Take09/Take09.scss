@@ -3,7 +3,7 @@
 .video-section {
   width: 100vw;
   min-height: 100vh;
-  max-height: 100vh;
+
   overflow: hidden;
   object-fit: cover;
   background-color: $quaternary_color;
@@ -15,12 +15,10 @@
   
   justify-content: center;
 
-  @include breakpoint(medium) {
-    display: block;
-    width: 100vw;
-    height: fit-content;
-    overflow-x: hidden;
-  }
+  // @include breakpoint(medium) {
+  //   display: block;
+
+  // }
   // @include breakpoisnt(small) {
     // }
   }
@@ -39,7 +37,6 @@
 
   @include breakpoint(small) {
     position: relative;
-    filter: hue-rotate(160deg);
     width: 100vw;
   }
 }
@@ -50,7 +47,6 @@
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   align-items: stretch;
   perspective: 457px;
@@ -77,7 +73,7 @@
   -moz-box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
   box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
   flex-wrap: wrap;
-
+ 
   &::before {
     position:absolute;
     content:'';
@@ -88,7 +84,8 @@
     background-size: 4px 4px;
     filter:  contrast(1.4) saturate(1.8);
   }
-  
+
+
   .titulo {
     width: 100vw;
     -webkit-box-reflect: below 1px

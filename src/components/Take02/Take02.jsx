@@ -111,7 +111,7 @@ const Take02 = () => {
   }, [mostrarMaia]);
 
   return (
-    <div id="take02">
+    <div id="take02" >
       {mostrarElemento && (
         <div id="permita" className="central-msg">
           PERMITA-SE

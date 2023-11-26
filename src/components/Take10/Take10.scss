@@ -9,17 +9,27 @@
   width: 100vw;
   min-height: 100vh;
   color: $secundary_color;
+  position: relative;
+  padding: 0%;
+  margin: 0%;
   #brain{
     font-size: 9rem;
     width: 100%;
     margin-bottom: 5vh;
   }
   .terapy-texts{
-    width: 80vw;
+    width: 100vw;
     max-width: 1000px;
     margin: auto;
     padding-top: 10vh;
     padding-bottom: 10vh;
+  }
+  img{
+opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
   h1{
     font-size: 3rem;
@@ -47,7 +57,26 @@
     font-size: 1.4rem;
     text-align: justify;
     text-indent: 10%;
-            column-gap: 40px;
+    z-index: 15;
+    column-gap: 40px;
+    @include breakpoint(small){
+      column-count: 1;
+      font-size: 1.2rem;
+      width: 90vw;
+      margin: 0;
+    }
+    @include breakpoint(medium){
+      column-count: 1;
+      font-size: 1.6rem;
+      width: 90vw;
+      margin: 0;
+    }
+    @include breakpoint(small){
+      column-count: 1;
+      font-size: 1.2rem;
+      width: 90vw;
+      margin: 0;
+    }
    strong{
     color: $quinary_color;
     font-size: 1.6rem;

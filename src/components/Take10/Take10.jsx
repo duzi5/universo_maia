@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Take10.scss";
 import { GiBrain } from "react-icons/gi";
+import folha1 from "./folha1.svg"
+import folha2 from "./folha2.svg"
+import folha3 from "./folha3.svg"
+import folha4 from "./folha4.svg"
+import folha5 from "./folha5.svg"
+import folha6 from "./folha6.svg"
+import { gsap } from "gsap";
+
 
 const Take10 = () => {
+
+useEffect(()=>{
+    document.querySelectorAll('.folha').forEach(e=>{
+        gsap.fromTo(e,{
+            y:0
+        },{
+            yPercent: 100,
+            scrollTrigger: {
+                trigger: "#take10",
+                start: "top center",
+                end: "bottom center",
+                scrub: true,
+            },
+        })
+    })
+},[])
+
+
+
   return (
     <div id="take10" className="take10">
       <div className="terapy-texts">
       <GiBrain id="brain" />
+    <img className="folha" src={folha1} alt="" />
+    <img className="folha" src={folha2} alt="" />
+    <img className="folha" src={folha3} alt="" />
 
         <h1>Desbloqueie a Magia da Vida e Transforme-se !</h1>
         <p>
