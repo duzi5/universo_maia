@@ -3,7 +3,7 @@ import "./Take08.scss";
 import CogusAzuis from "./coguTake8.png";
 import matrix from "../matrix.png";
 import { TbMushroomFilled } from "react-icons/tb";
-
+import { FaBookOpen } from "react-icons/fa";
 import gsap, { random } from "gsap";
 import poder from "./cogumeloPoderTexto.png";
 import { InfoPage } from "../InfoPage/InfoPage";
@@ -81,6 +81,7 @@ const Take08 = () => {
 
   return (
     <div id="take08" className="take08">
+      <FaBookOpen id="book"/>
       <div className="stars-container">
         <span className="star">
           <TbMushroomFilled />

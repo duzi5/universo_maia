@@ -2,7 +2,6 @@
 
 .video-section {
   width: 100vw;
-  min-height: 100vh;
 
   overflow: hidden;
   object-fit: cover;
@@ -10,10 +9,15 @@
   position: relative;
   display: flex;
   z-index: 0;
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap; 
   justify-content: center;
+  padding-top: 5%;
+  #cogu{
+    margin: 1%;
+    font-size: 7rem;
+    display: block;
+    width: 100%;
+  }
 
   // @include breakpoint(medium) {
   //   display: block;
@@ -44,12 +48,12 @@
 
 .cards {
   width: 100vw;
-  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   perspective: 457px;
+  margin: auto;
   #kit {
     object-position: 90% 70%;
   }
@@ -72,7 +76,7 @@
   -webkit-box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
   -moz-box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
   box-shadow: inset -40px 156px 252px 137px rgba(10,7,62,1);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
  
   &::before {
     position:absolute;
@@ -90,7 +94,7 @@
     width: 100vw;
     -webkit-box-reflect: below 1px
       linear-gradient(transparent, transparent, black);
-    margin-bottom: 20%;
+
 
     .title {
       display: flex;
@@ -102,7 +106,7 @@
       font-family: "Barrio", cursive;
       font-size: 3rem;
       margin: 0;
-      padding: 0;
+      padding: 5%;
 
       @include breakpoint(small) {
         font-size: 2rem;
@@ -123,17 +127,16 @@
   }
 
   .selling-card {
-    transform: rotateX(0deg) rotateY(5deg);
-    transform-style: preserve-3d;
-    min-width: 10vw;
-    min-height: 5vh;
-    max-width: 900px;
+    // transform: rotateX(0deg) rotateY(5deg);
+    // transform-style: preserve-3d;
+    width: 100vw;
+    max-width: 1000px;
     background-color: transparent;
     backdrop-filter: blur(100px);
     text-align: justify;
     transition: max-height 1s ease-in-out, background-color 1s ease-out;
     overflow: contain;
-    border-radius: 5%;
+
 
     overflow: hidden;
     -webkit-box-reflect: below 1px
@@ -144,7 +147,7 @@
       }
 
       @include breakpoint(medium) {
-width: 90vw;
+
       }
       @include breakpoint(large) {
         font-size: 40vw;

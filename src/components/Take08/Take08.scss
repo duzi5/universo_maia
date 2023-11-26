@@ -14,6 +14,11 @@
   width: 100vw;
   position: relative;
   height: fit-content;
+  #book{
+    font-size: 7rem;
+    color: $secundary_color;
+    margin: 10%;
+  }
   .stars-container {
     span {
       position: absolute;
@@ -57,28 +62,27 @@
       font-size: 1.6rem;
       text-align: justify;
       color: $secundary_color;
-      font-family: fantasy;
+      font-family: $font2;
       font-weight: 100;
-      padding: 14%;
-
+      padding: 10%;
       @include breakpoint(small) {
         font-size: 1.2rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(medium) {
         font-size: 1.4rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(large) {
         font-size: 1.8rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(xlarge) {
         font-size: 1.8rem;
-        padding: 3px;
+
         column-count: 2;
       }
     }
@@ -90,33 +94,33 @@
     justify-content: center;
     align-self: center;
     width: 100vw;
-    height: 20vh;
 
     .btn {
       flex-grow: 1;
-      font-size: 3rem;
       font-family: $font1;
       color: white;
       background-color: transparent;
       border: none;
+      display: block;
+      padding: 20px ;
       @include breakpoint(small) {
         font-size: 1.2rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(medium) {
         font-size: 1.8rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(large) {
         font-size: 2.4rem;
-        padding: 3px;
+
         column-count: 1;
       }
       @include breakpoint(xlarge) {
         font-size: 3rem;
-        padding: 3px;
+
         column-count: 1;
       }
       &:hover {
@@ -137,10 +141,11 @@
   }
   #env-cogus {
     // border: solid 3px brown;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-
+    display: block;
+    position: relative;
     .cogus-azuis {
       position: relative;
       min-height: 33vh;

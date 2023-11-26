@@ -9,6 +9,11 @@ import Take05 from "./components/Take05/Take05";
 import Take06 from "./components/Take06/Take06";
 import Take07 from "./components/Take07/Take07";
 import Take08 from "./components/Take08/Take08";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 // import Take09 from "./components/Take09/Take09";
 import InfoPage from './components/InfoPage/InfoPage'; // Supondo que você tenha um componente InfoPage
 import VideoScroll from "./components/VideoScrollComponent/VideoScroll";

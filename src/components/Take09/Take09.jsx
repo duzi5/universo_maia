@@ -6,6 +6,8 @@ import albino from "./ALBINO 03.jpeg";
 import leao from "./jubadeleao.jpg"
 import kit from "./kit.jpeg"
 import gsap from "gsap";
+import { GiSlicedMushroom } from "react-icons/gi";
+
 // import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 const Take09 = () => {
   // gsap.registerPlugin(ScrambleTextPlugin)
@@ -40,12 +42,14 @@ useEffect(()=>{
   
   return (
         <div id="take09" className="take09 video-section">
-            <video className="video-background" autoPlay muted loop playsInline preload="auto" >
+            {/* <video className="video-background" autoPlay muted loop playsInline preload="auto" >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
             <div id="content"className="content carousel-container">
                 <div className="titulo">
+
+            <GiSlicedMushroom id="cogu" />
                     <h1 className="title">COGUMELANDO-SE</h1>
                 </div>
                 <div className="cards">

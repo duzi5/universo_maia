@@ -31,25 +31,19 @@ const Take02 = () => {
     });
     
     // Animação para 'permita' vindo da esquerda para o centro
-    tl.from("#permita", {
-      x: "-100vw", // Começa fora da tela à esquerda
-      zIndex: 4,
-      ease: "power2.out", // Suaviza a animação
-    }, 0); // 0 indica que esta animação começa no início da timeline
-    
+
     // Animação para 'despertar' vindo da direita para o centro
-    tl.from("#despertar", {
-      x: "100vw", // Começa fora da tela à direita
-      zIndex: 5,
-      ease: "power2.out", // Suaviza a animação
-    }, 0); // 0 indica que esta animação começa ao mesmo tempo que a anterior
-    
-    // Faz ambas as palavras desaparecerem no final da animação
-    tl.to(["#permita", "#despertar"], {
-      opacity: 0,
-      duration: 7 // Controla a duração do desaparecimento
-    }, "+=1"); // "+=1" faz com que essa parte da animação comece 1 segundo após as animações anteriores
-    
+gsap.fromTo('#permita',{
+  opacity:1,
+},{
+  opacity:1,
+  yPercent: 3000,
+  scrollTrigger:{
+    scrub:true,
+    pin:true,
+    markers: true,
+  }
+})
 
     gsap.to("#maia", {
       opacity: 0,
@@ -112,16 +106,12 @@ const Take02 = () => {
 
   return (
     <div id="take02" >
-      {mostrarElemento && (
+
         <div id="permita" className="central-msg">
           PERMITA-SE
         </div>
-      )}
-      {mostrarElemento && (
-        <div id="despertar" className="central-msg">
-          DESPERTAR
-        </div>
-      )}
+      
+      
 
       {mostrarMaia && <Maia />}
     </div>

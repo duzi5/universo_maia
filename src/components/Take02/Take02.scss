@@ -13,9 +13,9 @@
 
   .central-msg {
     font-family: $font1;
-    color: $secundary_color;
+    color: $quaternary_color;
     transform-origin: center center;
-
+z-index: 10;
     @include breakpoint(small) {
       font-size: 3rem !important;
       position: absolute;
@@ -31,19 +31,9 @@
       font-size: 12rem !important;
     }
   }
-  #despertar {
-    position: fixed;
-    top: 50vw;
-    left: 100vw;
-    text-wrap: nowrap;
-  }
-  #permita{
-    position: fixed;
-    left: -70vw;
-    top: 40vw;
 
-    text-wrap: nowrap;
-  }
+
+
 
   #maia {
     position: fixed;
