@@ -28,21 +28,10 @@ import Lenis from '@studio-freight/lenis'
 import Take10 from './components/Take10/Take10';
 import Menu from './components/Menu/Menu';
 
-
+import Take11 from './components/Take11/Take11';
 
 function App() {
-  document.addEventListener('scroll', () => {
-    // Verifica se o usuário chegou ao fim da página
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        // Volta para o topo da página
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-    
-        }
-    )
-}
-});
+
 
   useEffect(() => {
     const lenis = new Lenis()
@@ -82,8 +71,8 @@ gsap.registerPlugin(TextPlugin);
             <Take07 />
             <Take08 />
             <Take09 />
-
             <Take10 />
+            <Take11 />
             {/* <VideoScroll/> */}
           </div>} />
 

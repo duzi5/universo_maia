@@ -15,7 +15,7 @@ const Menu = () => {
 
   useEffect(() => {
     // Configuração do ScrollTrigger para cada seção
-    const sections = ["take02", "take08", "take09", "take10"];
+    const sections = ["take02", "take08", "take09", "take10", "take11"];
 
     sections.forEach((sectionId) => {
       ScrollTrigger.create({
@@ -58,7 +58,8 @@ const Menu = () => {
         <li data-target="take08" onClick={() => scrollToSection("take08")} className="icon" ref={el => menuItemsRef.current[1] = el}><FaBookOpen /></li>
         <li data-target="take09" onClick={() => scrollToSection("take09")} className="icon" ref={el => menuItemsRef.current[2] = el}><GiSlicedMushroom /></li>
         <li data-target="take10" onClick={() => scrollToSection("take10")} className="icon" ref={el => menuItemsRef.current[3] = el}><GiBrain /></li>
-        <li className="icon" ref={el => menuItemsRef.current[4] = el}><IoLogoWhatsapp /></li>
+        <li data-target="take11" onClick={() => scrollToSection("take11")} className="icon" ref={el => menuItemsRef.current[4] = el}><IoLogoWhatsapp /></li>
+
       </ul>
     </div>
   );

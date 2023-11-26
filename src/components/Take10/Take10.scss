@@ -3,6 +3,7 @@
 .take10 {
   background-color: $primary_color;
   overflow: hidden;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -18,11 +19,16 @@
     margin-bottom: 5vh;
   }
   .terapy-texts{
-    width: 100vw;
     max-width: 1000px;
-    margin: auto;
+    width: 95vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    max-width: 1000px;
+    text-align: justify;
+    color: $secundary_color;
+    font-family: $font2;
+    margin: auto;
+    padding-bottom: 10%;margin: auto;
   }
   img{
 opacity: 0.1;
@@ -50,10 +56,9 @@ opacity: 0.1;
   p{
    font-family: $font2;
     max-width: 1000px;
-    width: 80vw;
-    margin: auto;
+
     column-count: 2;
-    padding: 2vh;  // Define o número de colunas
+  // Define o número de colunas
     font-size: 1.4rem;
     text-align: justify;
     text-indent: 10%;
@@ -63,13 +68,13 @@ opacity: 0.1;
       column-count: 1;
       font-size: 1.2rem;
       width: 90vw;
-      margin: 0;
+      margin: auto;
     }
     @include breakpoint(medium){
       column-count: 1;
       font-size: 1.6rem;
       width: 90vw;
-      margin: 0;
+      margin: auto;
     }
     @include breakpoint(small){
       column-count: 1;

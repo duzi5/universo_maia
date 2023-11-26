@@ -63,14 +63,15 @@
       font-family: $font2;
       font-weight: 100;
       margin: auto;
+      padding-bottom: 10%;
       @include breakpoint(small) {
         font-size: 1.2rem;
-        width: 100%;
+        width: 95%;
         column-count: 1;
       }
       @include breakpoint(medium) {
         font-size: 1.4rem;
-        width: 95%;
+        width: 90%;
         column-count: 1;
       }
       @include breakpoint(large) {
