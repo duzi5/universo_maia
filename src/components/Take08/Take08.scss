@@ -54,9 +54,7 @@
 
   #intro {
 
-    #intro-text {
-      margin: auto;
-      width: 80%; // Define o número de colunas
+    #intro-text { // Define o número de colunas
       max-width: 1000px;
       column-gap: 40px; // Define o espaço entre as colunas
       font-size: 1.6rem;
@@ -64,20 +62,19 @@
       color: $secundary_color;
       font-family: $font2;
       font-weight: 100;
-      padding: 10%;
+      margin: auto;
       @include breakpoint(small) {
         font-size: 1.2rem;
-
+        width: 100%;
         column-count: 1;
       }
       @include breakpoint(medium) {
         font-size: 1.4rem;
-
+        width: 95%;
         column-count: 1;
       }
       @include breakpoint(large) {
         font-size: 1.8rem;
-
         column-count: 1;
       }
       @include breakpoint(xlarge) {
@@ -94,6 +91,7 @@
     justify-content: center;
     align-self: center;
     width: 100vw;
+    max-width: 1200px;
 
     .btn {
       flex-grow: 1;

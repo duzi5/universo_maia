@@ -9,7 +9,8 @@
   h2 {
     font-family: $font2;
     color: $secundary_color;
-    max-width: 90vw;
+    max-width: 1000px;
+    
     @include breakpoint(small) {
       font-size: 2rem;
     }

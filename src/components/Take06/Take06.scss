@@ -1,16 +1,16 @@
 @import "../colors.scss";
 
 .take06 {
-  padding: 10%;
+
   height: fit-content;
   width: 100vw;
   overflow: hidden;
   display: block;
   justify-content: center;
   flex-direction: column;
-
+  padding-right: 6%;
   h2 {
-    max-width: 80vw;
+    max-width: 1000px;
     font-weight: 300;
     font-family: "Barrio", cursive;
     color: $secundary_color;

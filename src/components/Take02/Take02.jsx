@@ -41,7 +41,6 @@ gsap.fromTo('#permita',{
   scrollTrigger:{
     scrub:true,
     pin:true,
-    markers: true,
   }
 })
 
