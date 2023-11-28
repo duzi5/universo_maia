@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Take09-3.scss"
-import albino from "./ALBINO 03 - cópia 2.jpeg"
+import albino from "./ALBINO 03.jpeg"
 import buffalo from "./BUFALLO.jpeg"
 import kit from "./kit.jpeg"
 import leao from "./jubadeleao.jpg"
