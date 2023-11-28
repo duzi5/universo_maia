@@ -21,18 +21,7 @@ const Take09 = () => {
   };
 
   return (
-    <section className="video-section">
-      <video className="video-background" autoPlay muted loop playsInline preload="auto">
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="content carousel-container">
-        <div className="titulo">
-          <h1 className="title">COGUMELANDO-SE</h1>
-        </div>
-        <Slider {...settings}>
-          {/* Slide 1 */}
-          <div className="slide">
+
             <div className="selling-card">
               <h3>Psilocybe cubensis albino</h3>
               <img className="imagens" src={albino} alt="Psilocybe cubensis albino" />
@@ -64,10 +53,10 @@ const Take09 = () => {
               </table>
               <p>Mais frete</p>
             </div>
-          </div>
+
           
           {/* Slide 2 */}
-          <div className="slide">
+
             <div className="selling-card">
               <h3>Kit Cultivo do Psilocybe cubensis albino</h3>
               <img className="imagens" src={kit} alt="Kit Cultivo" />
@@ -79,7 +68,7 @@ const Take09 = () => {
               <p>R$ 200,00</p>
               <p>Frete não incluso.</p>
             </div>
-          </div>
+
           
           {/* Slide 3 */}
           <div htmlFor="card3" className="selling-card direita">

@@ -33,16 +33,15 @@ const Take02 = () => {
     // Animação para 'permita' vindo da esquerda para o centro
 
     // Animação para 'despertar' vindo da direita para o centro
-gsap.fromTo('#permita',{
-  opacity:1,
-},{
-  opacity:1,
-  yPercent: 3000,
-  scrollTrigger:{
-    scrub:true,
-    pin:true,
-  }
-})
+// gsap.fromTo('#permita',{
+//   opacity:1,
+// },{
+//   opacity:1,
+//   scrollTrigger:{
+//     scrub:true,
+//     pin:true,
+//   }
+// })
 
     gsap.to("#maia", {
       opacity: 0,

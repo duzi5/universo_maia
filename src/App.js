@@ -22,7 +22,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { TextPlugin } from "gsap/TextPlugin";
 
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
-import Take09 from './components/Take09/Take09';
+import Take09 from './components/Take09/Take09-3';
 import LocomotiveScroll from 'locomotive-scroll';
 import Lenis from '@studio-freight/lenis'
 import Take10 from './components/Take10/Take10';

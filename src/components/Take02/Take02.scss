@@ -13,13 +13,14 @@
 
   .central-msg {
     font-family: $font1;
-    color: $quaternary_color;
+    color: $secundary_color;
     transform-origin: center center;
-z-index: 10;
+    z-index: 10;
+    position: absolute;
+    top: 12vh;
+
     @include breakpoint(small) {
       font-size: 3rem !important;
-      position: absolute;
-      top: 10%;
     }
     @include breakpoint(medium) {
       font-size: 5rem !important;
@@ -50,7 +51,7 @@ z-index: 10;
       height: 100%;
     }
     @include breakpoint(medium) {
-      height: 220vh;
+      height: 180vh;
 
     }
     @include breakpoint(large) {

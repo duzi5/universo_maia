@@ -72,12 +72,12 @@ useEffect(()=>{
           10g para o mesmo período.
           <br />
           <strong>Leitura Energética:</strong>
-          Leitura Energética: Você receberá uma análise energética exclusiva
+      Você receberá uma análise energética exclusiva
           baseada no Método de Autoconhecimento por Alquimia da Amanda
           Baragiola. Isso fornecerá clareza sobre os bloqueios energéticos que
           precisam ser superados.
           <br />
-          <strong>Acesso Exclusivo: </strong> Acesso Exclusivo: Você se tornará
+          <strong>Acesso Exclusivo: </strong>  Você se tornará
           um membro do Grupo de Pupilos, um ambiente para aprender sobre a Lei
           do Tempo e outros Protocolos de Magia Natural. Além disso, terá acesso
           ao Instagram Privado do Universo Místico de Bara, onde conteúdo

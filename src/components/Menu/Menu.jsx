@@ -52,8 +52,9 @@ const Menu = () => {
   };
 
   return (
-    <div id="menu" ref={menuRef}>
-      <ul>
+<div id="menu-container">
+<div id="menu" ref={menuRef}>
+      <ul id="m">
         <li data-target="take02" onClick={() => scrollToSection("take02")} className="icon" ref={el => menuItemsRef.current[0] = el}><TiHome /></li>
         <li data-target="take08" onClick={() => scrollToSection("take08")} className="icon" ref={el => menuItemsRef.current[1] = el}><FaBookOpen /></li>
         <li data-target="take09" onClick={() => scrollToSection("take09")} className="icon" ref={el => menuItemsRef.current[2] = el}><GiSlicedMushroom /></li>
@@ -62,6 +63,7 @@ const Menu = () => {
 
       </ul>
     </div>
+</div>
   );
 };
 

@@ -7,37 +7,9 @@ import leao from "./jubadeleao.jpg"
 import kit from "./kit.jpeg"
 import gsap from "gsap";
 import { GiSlicedMushroom } from "react-icons/gi";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-// import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
 const Take09 = () => {
-  // gsap.registerPlugin(ScrambleTextPlugin)
-    
-  
-// useEffect(()=>{
-//   gsap.set(".imagens", {
-//     filter: "grayscale(100%)"
-    
-//   });
-  
-//   // Animação para remover o grayscale e depois retornar a ele
-//   gsap.to(".imagens", {
-//     webkitBoxReflect: 'below 1px linear-gradient(transparent, transparent, black)',
-//     stagger: 0.5, // 0.5 segundos entre o início de cada animação
-//     duration: 1,
-//     yoyo: true,
-//     repeat: -1,  // Repetir infinitamente
-//     ease: "power1.inOut"  // Efeito de facilidade suave para transição entre os estados
-//   });
-  
-// },[])
-  
-useEffect(()=>{
-    const videoElement = document.querySelector('.video-background');
-    if (videoElement) {
-      videoElement.playbackRate = 0.1;
-}},[])
-  
-  
   
   
   return (
@@ -51,18 +23,20 @@ useEffect(()=>{
 
             <GiSlicedMushroom id="cogu" />
                     <h1 className="title">COGUMELANDO-SE</h1>
+                    <span>Com consciência e responsabilidade</span>
                 </div>
                 <div className="cards">
 
                     {/* Card 1 */}
-                    <input type="radio" id="card1" className="toggle" name="accordion" />
-                    <label htmlFor="card1" className="selling-card direita">
+                   <div className="horizontal-scroll-wrapper">
+                   <input type="radio" id="card1" className="toggle" name="accordion" />
+                    <div htmlFor="card1" className="selling-card direita">
                        <div className="cabecalho">
                         <h3>Psilocybe cubensis albino</h3>
                        <img className="imagens"src={albino} alt="" />
                        </div>
                         <div className="conteudo">
-                            <p>O Psilocybe cubensis albino é uma variedade pra lá de rara e única do famoso cogumelo psicodélico Psilocybe cubensis. O que mais chama atenção nesse cogumelo é que ele é branquinho, daí o nome "albino". Enquanto a maioria dos Psilocybe cubensis tem aquela vibe marrom ou acastanhada, o Psilocybe cubensis albino se destaca pela aparência diferentona.</p>
+                            <p>O Psilocybe Cubensis Albino é uma variedade pra lá de rara e única do famoso cogumelo psicodélico Psilocybe cubensis. O que mais chama atenção nesse cogumelo é que ele é branquinho, daí o nome "albino". Enquanto a maioria dos Psilocybe cubensis tem aquela vibe marrom ou acastanhada, o Psilocybe cubensis albino se destaca pela aparência diferentona.</p>
                             <p>Tal qual as outras variedades de Psilocybe cubensis, esse camarada albino manda bem na substância psicoativa psilocibina, que é a responsável por te levar numa viagem psicodélica. Quando você dá uma conferida nesses cogumelos, pode esperar um passeio pelos sentidos, uma mudança na percepção e uma ligação profunda com o universo.</p>
                             <p>Por conta de sua raridade e peculiaridades, o Psilocybe cubensis albino é um cogumelo que chama a atenção dos entusiastas do mundo psicodélico. Mas é importante frisar que, assim como com todos os cogumelos psicodélicos, usar o Psilocybe cubensis albino requer responsabilidade e um ambiente apropriado. É melhor ainda se tiver alguém experiente junto para garantir que a viagem seja segura e significativa.</p>
                             <p className="question">Como ele chega até você?</p>
@@ -91,16 +65,16 @@ useEffect(()=>{
                                 </tbody>
                             </table>
                             <div className="frete">
-                              <p> Mais frete</p>
+                              <p> Mais frete.</p>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
                     {/* Card 2 */}
                     <input type="radio" id="card2" className="toggle" name="accordion" />
                     <label htmlFor="card2" className="selling-card direita">
                         <div className="cabecalho">
-                        <h3>Kit Cultivo do Psilocybe cubensis albino</h3>
+                        <h3>Kit Cultivo do Psilocybe Cubensis Albino</h3>
                        <img id="kit"className="imagens"src={kit} alt="" />
                        </div>
                         <div className="conteudo">
@@ -116,7 +90,7 @@ useEffect(()=>{
                             <p className="question">Qual é o investimento?</p>
                             <p>R$ 200,00</p>
                             <div className="frete">
-                              <p> Frete não incluso.</p>
+                              <p>Mais frete.</p>
                             </div>
                         </div>
                     </label>
@@ -133,9 +107,9 @@ useEffect(()=>{
                             <p>A mágica toda acontece graças à psilocibina, o ingrediente secreto desses cogumelos. Quando você manda ver na ingestão, a psilocibina se transforma em psilocina no seu corpo e daí começa a jornada. Você pode esperar uma mudança séria na percepção, na forma como pensa e como vê as coisas. Quem já viveu a experiência garante um contato com o divino e frisa no autoconhecimento pós vivência.</p>
                             <p>Só um detalhe importante: o uso desses cogumelos, como de outros psicodélicos, tem que ser feita na vibe da responsabilidade e com cuidado. Os efeitos variam com a dose, ambiente e como você tá na mente naquele dia.</p>
                             <p>Sempre indicamos uma viagem guiada para melhor proveito da experiência.</p>
-                            <p className="question">Como ele chega até você ?</p>
+                            <p className="question">Como ele chega até você?</p>
                             <p>Desidratado e pronto para consumo. Você pode optar em comer ou fazer o Lemon Tek, que acaba sendo umas das preferências devido ao sabor marcante do cogumelo in natura.</p>
-                            <p className="question">Qual investimento ?</p>
+                            <p className="question">Qual investimento?</p>
                             <table>
                                 <thead>
                                     <tr>
@@ -159,7 +133,7 @@ useEffect(()=>{
                                 </tbody>
                             </table>
                             <div className="frete">
-                              <p> Mais Frete .</p>
+                              <p> Mais Frete.</p>
                             </div>
                         </div>
                     </label>
@@ -187,17 +161,18 @@ useEffect(()=>{
                                         <td>R$100</td>
                                     </tr>
                                     <tr>
-                                        <td>60cápsulas</td>
+                                        <td>60 cápsulas</td>
                                         <td>R$180</td>
                                     </tr>
                                 
                                 </tbody>
                             </table>
                             <div className="frete">
-                              <p> Mais frete</p>
+                              <p> Mais frete.</p>
                             </div>
                         </div>
                     </label>
+                   </div>
 
                 </div>
             </div>
