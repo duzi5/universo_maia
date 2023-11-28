@@ -28,7 +28,7 @@
     color: $secundary_color;
     font-family: $font2;
     margin: auto;
-    
+
 
    
     
@@ -84,7 +84,7 @@ opacity: 0.1;
       column-count: 1;
       font-size: 1.3rem;
       width: 90vw;
-      margin: 0;
+      margin: auto;
     @include breakpoint(xlarge){
       column-count: 2;
       font-size: 1.4rem;

@@ -175,7 +175,7 @@
   h4 {
     font-family: "Barrio", cursive;
     font-size: 56px;
-
+    max-width: 1000px;
     color: $secundary_color;
     padding: 2vh;
     @include breakpoint(small) {
