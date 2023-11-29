@@ -29,6 +29,10 @@
       left: 0%;
       border-radius: 50%;
       color: $quaternary_color;
+      opacity: 0.5;
+    }
+    .star svg{
+      opacity: 0.4;
     }
   }
   h1 {
