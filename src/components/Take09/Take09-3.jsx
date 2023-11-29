@@ -193,8 +193,8 @@ const Take09 = () => {
         <h1 className="title">COGUMELANDO-SE</h1>
         <span>Com consciência e responsabilidade</span>
     </div>
-      <div className="slider">
-        <div className="container">
+      <div className="slider2">
+        <div className="container2">
           <div className={`card1 card ${activeCard === 1 ? 'active' : ''}`} onClick={() => changeCard(1)}>
 
           <h3>Psilocybe cubensis albino</h3>
