@@ -32,6 +32,19 @@ import Take11 from './components/Take11/Take11';
 import Music from './Music';
 
 function App() {
+  useEffect(() => {
+    const handleFocus = (event) => {
+      if (event.target.tagName === 'IFRAME') {
+        event.preventDefault();
+      }
+    };
+  
+    window.addEventListener('focus', handleFocus, true);
+  
+    return () => {
+      window.removeEventListener('focus', handleFocus, true);
+    };
+  }, []);
 
   setInterval(() => {
     ScrollTrigger.refresh();
