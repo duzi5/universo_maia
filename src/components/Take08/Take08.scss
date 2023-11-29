@@ -71,10 +71,9 @@
   h3 {
     font-family: $font2;
     color: $secundary_color;
-
-    padding: 2vh;
     color: $secundary_color;
     margin: auto;
+    max-width: 100%;
     text-align: justify;
     @include breakpoint(small) {
       font-size: 1.1rem;
