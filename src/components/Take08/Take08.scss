@@ -41,16 +41,16 @@
     max-width: 100vw;
     transition: 1s;
     @include breakpoint(small) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     @include breakpoint(medium) {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
     @include breakpoint(large) {
-      font-size: 3.2rem;
+      font-size: 2.6rem;
     }
     @include breakpoint(xlarge) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     &:hover{
       background-color: $quinary_color;
