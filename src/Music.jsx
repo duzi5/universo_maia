@@ -4,14 +4,14 @@ const Music = () => {
     return (
        <>
          <iframe 
-        width="100%" 
-        height="166" 
+        width="0" 
+        height="0" 
         scrolling="no" 
         frameBorder="no" 
         allow="autoplay" 
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1441645684&color=%2324025f&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
       </iframe>
-      <div 
+      <div id='music'
         style={{
           fontSize: "10px", 
           color: "#cccccc", 

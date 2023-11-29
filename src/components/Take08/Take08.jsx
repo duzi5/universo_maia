@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Take08.scss";
 import CogusAzuis from "./coguTake8.png";
 import matrix from "../matrix.png";
@@ -7,20 +7,28 @@ import { FaBookOpen } from "react-icons/fa";
 import gsap, { random } from "gsap";
 import poder from "./cogumeloPoderTexto.png";
 import { InfoPage } from "../InfoPage/InfoPage";
-import Mandala from "./Mandala";
+import { FaCaretSquareDown } from "react-icons/fa";
+
 const Take08 = () => {
   const [showText, setShowText] = useState({
     porqueCogumelos: false,
     curaAncestral: false,
     medicinaTradicional: false,
     comoCogumelar: false,
-    coguComTerapia: false
+    coguComTerapia: false,
   });
+  const curaAncestralRef = useRef();
+  const medicinaTradicionalRef = useRef();
+  const comoCogumelarRef = useRef();
+  const coguComTerapiaRef = useRef();
 
-  // Função para alternar a visibilidade do texto para uma seção específica
   const toggleText = (section) => {
-    setShowText(prevState => ({ ...prevState, [section]: !prevState[section] }));
+    setShowText((prevState) => {
+      const newShowText = { ...prevState, [section]: !prevState[section] };
+      return newShowText;
+    });
   };
+
   useEffect(() => {
     gsap.fromTo(
       "#poder",
@@ -70,13 +78,19 @@ const Take08 = () => {
 
     document.querySelectorAll(".star").forEach((star) => {
       let x = gsap.utils.random(0, window.innerWidth);
-      let y = gsap.utils.random(0, document.getElementById('take08').offsetHeight);
+      let y = gsap.utils.random(
+        0,
+        document.getElementById("take08").offsetHeight
+      );
       gsap.fromTo(
         star,
         {
           opacity: 1,
-          x: gsap.utils.random(0,window.innerWidth),
-          y: gsap.utils.random(0,document.getElementById('take08').offsetHeight)
+          x: gsap.utils.random(0, window.innerWidth),
+          y: gsap.utils.random(
+            0,
+            document.getElementById("take08").offsetHeight
+          ),
         },
         {
           opacity: 1,
@@ -85,7 +99,6 @@ const Take08 = () => {
           duration: 100,
           repeat: -1,
           stagger: gsap.utils.random(1, 100),
-      
         }
       );
     });
@@ -93,7 +106,7 @@ const Take08 = () => {
 
   return (
     <div id="take08" className="take08">
-      <FaBookOpen id="book"/>
+      <FaBookOpen id="book" />
       <div className="stars-container">
         <span className="star">
           <TbMushroomFilled />
@@ -358,7 +371,7 @@ const Take08 = () => {
         A MEDICINA ANCESTRAL QUE TE DESPERTA PARA UM AQUI E AGORA MAIS
         CONSCIENTE, COM MENOS ANSIEDADE E MAIS DISPOSIÇÃO PARA VIVER A VIDA.
       </h4>
-      <div id="intro">
+      <div id="intro" className="text-camp">
         <h1 id="porque">Porquê Cogumelos?</h1>
         <p id="text" className="text">
           Imagine-se navegando nas ondas da mente, onde os cogumelos são como o
@@ -388,10 +401,19 @@ const Take08 = () => {
         </p>
       </div>
       <div id="btns-texts">
-      <div>
-        <h1 onClick={() => toggleText('curaAncestral')}>Entenda a Cura Ancestral</h1>
-        {showText.curaAncestral && <>
-            <p className="text"> 
+        <div className="text-camp">
+          <h1 onClick={() => toggleText("curaAncestral")}>
+            Entenda a Cura Ancestral
+            <FaCaretSquareDown />
+          </h1>
+          <div
+            className={`collapsible-section ${
+              showText.curaAncestral ? "expanded" : ""
+            }`}
+            ref={curaAncestralRef}
+          >
+            <p className="text">
+              {" "}
               Vamos mergulhar nas origens profundas do cogumelar nos rituais
               xamânicos da antiguidade. O uso dessa medicina natural é bem raiz
               e está conectada com a cura espiritual, expandir a mente e
@@ -469,11 +491,22 @@ const Take08 = () => {
               crenças chatas. É a prova de que as tradições antigas podem se
               reinventar, trazendo uma dose de sabedoria ao nosso mundo maluco e
               em constante mutação.
-            </p></>}
-      </div>
-      <div>
-        <h1 onClick={() => toggleText('medicinaTradicional')}>Como a Medicina Tradicional interage?</h1>
-        {showText.medicinaTradicional && <> <p>
+            </p>
+          </div>
+        </div>
+        <div className="text-camp">
+          <h1 onClick={() => toggleText("medicinaTradicional")}>
+            Como a Medicina Tradicional interage? <FaCaretSquareDown />
+          </h1>
+          <div
+            className={`collapsible-section ${
+              showText.medicinaTradicional ? "expanded" : ""
+            }`}
+            ref={curaAncestralRef}
+          >
+            {/* Conteúdo da seção */}
+
+            <p className="text medicinaTradicional">
               A visão da medicina tradicional sobre o uso de cogumelos no
               tratamento de doenças é profundamente enraizada na história de
               várias culturas ao redor do mundo. Os cogumelos, em particular os
@@ -550,64 +583,81 @@ const Take08 = () => {
               psilocibina pode promover a reestruturação cognitiva, a
               ressignificação de experiências traumáticas e a melhoria da saúde
               mental geral.
-            </p></>}
-      </div>
-      <div>
-        <h1 onClick={() => toggleText('comoCogumelar')}>Como cogumelar-se?</h1>
-        {showText.comoCogumelar && <> <p className="text">
-              Quando o assunto é dosar os cogumelos psicodélicos, é como mexer
-              nos botões do som: cada um tem seu estilo. A quantidade que você
-              vai usar varia de acordo com a experiência que você quer ter e
-              como seu corpo se sintoniza com a viagem. O truque é encontrar a
-              dosagem que combina com o que você busca, levar em conta o lugar
-              onde você tá e como a sua mente tá naquele dia. Dá uma olhada nas
-              dicas gerais pra te guiar nessa jornada:
-              <br />
-              <br />
-              Exploração Sutil: Alguns buscam uma jornada leve e espiritual,
-              buscando uma conexão mais profunda com a espiritualidade e a
-              consciência. Isso pode ser alcançado com uma quantidade mínima de
-              cogumelos, geralmente menos de um terço de um grama. Essas
-              quantidades não levam a experiências alucinatórias, mas podem
-              oferecer maior clareza mental e sensibilidade espiritual.
-              <br />
-              <br />
-              Jornada Espiritual Moderada: Para aqueles que buscam uma
-              experiência mais profunda e significativa, em que a ligação com o
-              divino ou o eu interior é o foco, uma dosagem que varia entre 1 e
-              2 gramas de cogumelos secos pode ser apropriada. Essa quantidade
-              permite uma exploração espiritual mais profunda, levando a
-              insights e conexões espirituais.
-              <br />
-              <br />
-              Viagem Profunda para a Alma: Para alcançar estados espirituais
-              profundos de expansão da consciência, que frequentemente resultam
-              em conexões com o divino ou o universo, doses de 2 a 3,5 gramas ou
-              mais de cogumelos secos são comuns. Essas doses podem resultar em
-              experiências espirituais intensas, fornecendo uma oportunidade
-              para questionamentos profundos e transformação pessoal.
-              <br />
-              <br />
-              Dosagem Elevada ou Terapêutica: Para experiências altamente
-              psicodélicas e terapêuticas, onde a introspecção profunda é
-              desejada, doses de 3,5 a 5 gramas ou mais podem ser usadas. Essas
-              doses podem levar a estados de consciência profundamente alterados
-              e experiências de transformação pessoal. É crucial ter um ambiente
-              seguro e orientação adequada ao usar doses elevadas.
-              <br />
-              <br />
-              Olha, a sensibilidade espiritual é tipo uma música que varia de
-              pessoa pra pessoa, e como a galera reage às doses dos cogumelos é
-              um lance bem pessoal. Então, a pegada é começar de boa, com uma
-              dose mais leve, e depois aumentar se sentir a necessidade. E ó, o
-              local onde a mágica rola é fundamental, então ter um
-              Terapeuta/Guia espiritual experiente é uma baita ajuda pra dar um
-              norte e estar lá pra dar uma força na experiência.
-            </p></>}
-      </div>
-      <div>
-        <h1 onClick={() => toggleText('coguComTerapia')}>Cogu com Terapia</h1>
-        {showText.coguComTerapia && <> <p className="text">
+            </p>
+          </div>
+        </div>
+        <div className="text-camp">
+          <h1 onClick={() => toggleText("comoCogumelar")}>
+            Como cogumelar-se? <FaCaretSquareDown />
+          </h1>
+          {showText.comoCogumelar && (
+            <div className="comoCogumelar" ref={comoCogumelarRef}>
+              {" "}
+              <p className="text">
+                Quando o assunto é dosar os cogumelos psicodélicos, é como mexer
+                nos botões do som: cada um tem seu estilo. A quantidade que você
+                vai usar varia de acordo com a experiência que você quer ter e
+                como seu corpo se sintoniza com a viagem. O truque é encontrar a
+                dosagem que combina com o que você busca, levar em conta o lugar
+                onde você tá e como a sua mente tá naquele dia. Dá uma olhada
+                nas dicas gerais pra te guiar nessa jornada:
+                <br />
+                <br />
+                Exploração Sutil: Alguns buscam uma jornada leve e espiritual,
+                buscando uma conexão mais profunda com a espiritualidade e a
+                consciência. Isso pode ser alcançado com uma quantidade mínima
+                de cogumelos, geralmente menos de um terço de um grama. Essas
+                quantidades não levam a experiências alucinatórias, mas podem
+                oferecer maior clareza mental e sensibilidade espiritual.
+                <br />
+                <br />
+                Jornada Espiritual Moderada: Para aqueles que buscam uma
+                experiência mais profunda e significativa, em que a ligação com
+                o divino ou o eu interior é o foco, uma dosagem que varia entre
+                1 e 2 gramas de cogumelos secos pode ser apropriada. Essa
+                quantidade permite uma exploração espiritual mais profunda,
+                levando a insights e conexões espirituais.
+                <br />
+                <br />
+                Viagem Profunda para a Alma: Para alcançar estados espirituais
+                profundos de expansão da consciência, que frequentemente
+                resultam em conexões com o divino ou o universo, doses de 2 a
+                3,5 gramas ou mais de cogumelos secos são comuns. Essas doses
+                podem resultar em experiências espirituais intensas, fornecendo
+                uma oportunidade para questionamentos profundos e transformação
+                pessoal.
+                <br />
+                <br />
+                Dosagem Elevada ou Terapêutica: Para experiências altamente
+                psicodélicas e terapêuticas, onde a introspecção profunda é
+                desejada, doses de 3,5 a 5 gramas ou mais podem ser usadas.
+                Essas doses podem levar a estados de consciência profundamente
+                alterados e experiências de transformação pessoal. É crucial ter
+                um ambiente seguro e orientação adequada ao usar doses elevadas.
+                <br />
+                <br />
+                Olha, a sensibilidade espiritual é tipo uma música que varia de
+                pessoa pra pessoa, e como a galera reage às doses dos cogumelos
+                é um lance bem pessoal. Então, a pegada é começar de boa, com
+                uma dose mais leve, e depois aumentar se sentir a necessidade. E
+                ó, o local onde a mágica rola é fundamental, então ter um
+                Terapeuta/Guia espiritual experiente é uma baita ajuda pra dar
+                um norte e estar lá pra dar uma força na experiência.
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="text-camp">
+          <h1 onClick={() => toggleText("coguComTerapia")}>
+            Cogu com Terapia <FaCaretSquareDown />
+          </h1>
+          <div
+            className={`collapsible-section ${
+              showText.coguComTerapia ? "expanded" : ""
+            }`}
+            ref={curaAncestralRef}
+          >
+            <p className="text">
               A jornada de despertar da consciência, especialmente quando
               envolve o uso de substâncias como cogumelos psicodélicos, é uma
               experiência profundamente pessoal e espiritual. Ter uma Terapeuta
@@ -666,9 +716,8 @@ const Take08 = () => {
               substâncias de maneira mais eficaz e benéfica para sua jornada
               espiritual e de crescimento pessoal.
             </p>
-          
-</>}
-      </div>
+          </div>
+        </div>
       </div>
       <div id="env-cogus">
         <img className="cogus-azuis" src={CogusAzuis}></img>
