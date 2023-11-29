@@ -33,7 +33,9 @@ import Music from './Music';
 
 function App() {
 
-
+  setInterval(() => {
+    ScrollTrigger.refresh();
+  }, 3000);
   useEffect(() => {
     const lenis = new Lenis()
     

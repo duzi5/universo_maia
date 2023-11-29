@@ -62,6 +62,7 @@
       font-family: $font2;
       margin: auto;
       padding-bottom: 2vh;
+      
       @include breakpoint(small) {
         font-size: 1rem;
         width: 95%;

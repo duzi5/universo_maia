@@ -12,7 +12,12 @@ gsap.registerPlugin(ScrollTrigger);
 const Menu = () => {
   const menuRef = useRef(null);
   const menuItemsRef = useRef([]);
-
+  window.onscroll = function() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+  };
   useEffect(() => {
     // Configuração do ScrollTrigger para cada seção
     const sections = ["take02", "take08", "take09", "take10", "take11"];
@@ -42,7 +47,19 @@ const Menu = () => {
         });
       });
     }
-  }, []);
+    gsap.to('#progressBar',{
+      
+      background:"white",
+      duration: 1,
+      ease: "bounce",
+      scrollTrigger:{
+        trigger: "#take10",
+        start: "top end",
+        end: "bottom end",
+        scrub:true
+      },
+   
+  })},[]);
 
   const scrollToSection = (targetId) => {
     const targetSection = document.getElementById(targetId);
@@ -51,9 +68,16 @@ const Menu = () => {
     }
   };
 
+
+  
+
+
+
+
   return (
 <div id="menu-container">
 <div id="menu" ref={menuRef}>
+
       <ul id="m">
         <li data-target="take02" onClick={() => scrollToSection("take02")} className="icon" ref={el => menuItemsRef.current[0] = el}><TiHome /></li>
         <li data-target="take08" onClick={() => scrollToSection("take08")} className="icon" ref={el => menuItemsRef.current[1] = el}><FaBookOpen /></li>
@@ -62,6 +86,7 @@ const Menu = () => {
         <li data-target="take11" onClick={() => scrollToSection("take11")} className="icon" ref={el => menuItemsRef.current[4] = el}><IoLogoWhatsapp /></li>
 
       </ul>
+<div id="progressBar"></div>
     </div>
 </div>
   );
