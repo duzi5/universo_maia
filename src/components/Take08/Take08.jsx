@@ -607,7 +607,7 @@ const Take08 = () => {
       </div>
       <div>
         <h1 onClick={() => toggleText('coguComTerapia')}>Cogu com Terapia</h1>
-        {showText.coguComTerapia && <> <p>
+        {showText.coguComTerapia && <> <p className="text">
               A jornada de despertar da consciência, especialmente quando
               envolve o uso de substâncias como cogumelos psicodélicos, é uma
               experiência profundamente pessoal e espiritual. Ter uma Terapeuta
