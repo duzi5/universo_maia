@@ -8,7 +8,7 @@ import { GiSlicedMushroom } from "react-icons/gi";
 import gsap from 'gsap';
 const Take09 = () => {
   // Estado para controlar qual card está ativo
-  const [activeCard, setActiveCard] = useState(1);
+  const [activeCard, setActiveCard] = useState(0);
 
   // Função para mudar o card ativo
   const changeCard = (cardNumber) => {
@@ -157,7 +157,6 @@ const Take09 = () => {
         <p>O cogumelo Juba de Leão, conhecido cientificamente como Hericium erinaceus, é um verdadeiro tesouro - tanto na cozinha quanto na medicina tradicional. Esse cogumelo é chamado de "Juba de Leão" por causa da sua aparência, que parece uma juba de leão. Mas a pegada vai muito além do visual, especialmente quando a gente fala de cápsulas.</p>
         <p>Nessas cápsulas, você encontra extratos ou pó desse cogumelo mágico. E o motivo? Os benefícios para a saúde. O Juba de Leão é um verdadeiro super-herói quando se trata de compostos saudáveis, como beta-glucanos, polissacarídeos e antioxidantes. Esses caras têm o potencial de turbinar a cabeça, dar uma força para o sistema de defesa do corpo, e até acalmar o estresse e a inflamação. E como se não bastasse, também fazem um bem danado pro sistema digestivo e podem dar aquela força no controle do açúcar no sangue.</p>
          <p>As cápsulas são como uma mão na roda pra incluir o Juba de Leão na sua rotina. É só tomar, sem precisar encarar um preparo culinário. Só fica a dica: antes de entrar de cabeça na suplementação, é importante bater um papo com um profissional de saúde pra ter certeza de que é a jogada certa pra você.</p> 
-         <p></p>
           <table>
               <thead>
                   <tr>
@@ -182,7 +181,7 @@ const Take09 = () => {
           </div>
       </div>
       default:
-        return <div>Conteúdo padrão</div>;
+        return <div>Selecione um Produto</div>;
     }
   };
 
