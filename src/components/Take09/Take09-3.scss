@@ -100,7 +100,8 @@
 
         .card {
             display: flex; // Muda para inline-flex para permitir alinhamento interno
-            flex-direction: column; // Coloca o conteúdo do card em coluna 
+            flex-direction: column;
+            border-radius: 5%; // Coloca o conteúdo do card em coluna 
            max-width: 100vw;
            min-width: 300px;
             height: 500px; // Adiciona espaço entre os cards
@@ -125,7 +126,7 @@
                 filter: grayscale(0);
                 scale:1.2;
                 z-index: 7;
-                border: $quinary_color 4px solid;
+                border: $quinary_color 8px solid;
 
             }
 
