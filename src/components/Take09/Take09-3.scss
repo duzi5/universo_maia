@@ -81,7 +81,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: row;
-        background-color: rgb(44, 42, 42);
+        background-color: rgb(0, 0, 0);
         width: 100vw;
         height: 700px;
         overflow-y: visible; // Evita quebra de linha dos elementos inline
@@ -222,3 +222,43 @@
         border: 3px solid $quaternary_color  /* creates padding around scroll thumb */
       }
 }
+/* Estilo para a barra de rolagem */
+.scrollbar-style {
+    scrollbar-width: thin;
+    scrollbar-color: $primary_color $quaternary_color;
+  }
+  
+  .scrollbar-style::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollbar-style::-webkit-scrollbar-track {
+    background: $primary_color;
+  }
+  
+  .scrollbar-style::-webkit-scrollbar-thumb {
+    background-color: $primary_color;
+    border-radius: 20px;
+    border: 3px solid $primary_color;
+  }
+  /* Estilo para navegadores que suportam scrollbar-color */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:$primary_color $secundary_color;
+  }
+  
+  /* Estilo para navegadores baseados em WebKit */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $tertiary_color;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $primary_color;
+    border-radius: 20px;
+    border: 3px solid $secundary_color;
+  }
+  

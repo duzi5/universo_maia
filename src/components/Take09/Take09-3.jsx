@@ -194,7 +194,7 @@ const Take09 = () => {
         <span>Com consciência e responsabilidade</span>
     </div>
       <div className="slider">
-        <div className="container">
+        <div className="container scrollbar-style">
           <div className={`card1 card ${activeCard === 1 ? 'active' : ''}`} onClick={() => changeCard(1)}>
 
           <h3>Psilocybe cubensis albino</h3>
