@@ -49,7 +49,7 @@ const Take09 = () => {
 //   [])
   const animateContent = (cardNumber) => {
     // Primeiro, oculte o conteúdo antigo
-    gsap.to('.product-text', { opacity: 0, y: 10, duration: 0.3 });
+    gsap.to('.product-text', { opacity: 0, y: 10, duration: 1 });
 
     // Atualize o card ativo após a animação de saída
     setTimeout(() => {
@@ -193,8 +193,8 @@ const Take09 = () => {
         <h1 className="title">COGUMELANDO-SE</h1>
         <span>Com consciência e responsabilidade</span>
     </div>
-      <div className="slider2">
-        <div className="container2">
+      <div className="slider">
+        <div className="container">
           <div className={`card1 card ${activeCard === 1 ? 'active' : ''}`} onClick={() => changeCard(1)}>
 
           <h3>Psilocybe cubensis albino</h3>
