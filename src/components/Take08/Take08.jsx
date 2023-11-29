@@ -482,7 +482,7 @@ const Take08 = () => {
               podemos destacar :
             </p>
             <h3>Cogus para transtornos mentais:</h3>
-            <p>
+            <p className="text">
               Depressão: Pesquisas iniciais sugerem que a psilocibina pode ser
               eficaz no tratamento da depressão resistente a outros tratamentos.
               Ela pode ajudar a criar uma experiência espiritual ou
@@ -505,7 +505,7 @@ const Take08 = () => {
               dependências
             </p>
             <h3>Gogu na melhora de condições físicas:</h3>
-            <p>
+            <p className="text">
               Dor crônica: A psilocibina pode reduzir a percepção de dor em
               pacientes com dor crônica, embora seja importante notar que ela
               não trata a causa subjacente da dor.
@@ -554,7 +554,7 @@ const Take08 = () => {
       </div>
       <div>
         <h1 onClick={() => toggleText('comoCogumelar')}>Como cogumelar-se?</h1>
-        {showText.comoCogumelar && <> <p>
+        {showText.comoCogumelar && <> <p className="text">
               Quando o assunto é dosar os cogumelos psicodélicos, é como mexer
               nos botões do som: cada um tem seu estilo. A quantidade que você
               vai usar varia de acordo com a experiência que você quer ter e

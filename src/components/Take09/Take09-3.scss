@@ -14,6 +14,7 @@
         font-size: 3rem;
         margin-top: 5vh;
         margin-bottom: 5vh;
+        color: $primary_color;
         @include breakpoint(small){
             font-size: 3rem;
         }
