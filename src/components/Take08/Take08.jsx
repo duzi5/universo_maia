@@ -470,7 +470,9 @@ const Take08 = () => {
               para abrir a porta das dimensões e liberar aquele conhecimento
               profundo e regar as plantinhas da cura, sacou?
             </p>
+            <br/>
             <h3>Os primeiros Cogumelados:</h3>
+            <br/>
             <p className="text">
               Vamos fazer uma viagem no tempo para descobrir as raízes de
               cogumelar-se! Historicamente, os nossos antepassados cogumelados
@@ -493,7 +495,9 @@ const Take08 = () => {
               traumas emocionais e aqueles pensamentos chatos que limitam a
               nossa mente.
             </p>
+            <br/>
             <h3>Expansão da Consciência e Cura Espiritual:</h3>
+            <br/>
             <p className="text">
               Os cogumelos psicodélicos, aqueles que são carregados com
               ingredientes mágicos como a psilocibina, têm esse poder de abrir
@@ -513,7 +517,9 @@ const Take08 = () => {
               espirituais, tipo traumas, bad vibes da depressão e aqueles
               pensamentos limitantes que a mente arrasta
             </p>
+            <br/>
             <h3>E hoje em dia, como tá esse lance todo?</h3>
+            <br/>
             <p className="text">
               Nos dias de hoje, a ciência tá botando as lupas nos cogumelos
               psicodélicos, especialmente quando se trata de tratar uns
