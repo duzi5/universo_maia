@@ -13,7 +13,8 @@ const Take11 = () => {
           <p>
             Dois amigos unidos para trazer informação de qualidade e
             conhecimento sobre essa medicina ancestral que desperta para uma
-            vida mais consciente e desperta. @universomaiassa / (71)9.8218-7183
+            vida mais consciente.<br/>
+             @universomaiassa / (71)9.8218-7183
           </p>
         </div>
         <div className="amanda contato">
@@ -21,8 +22,7 @@ const Take11 = () => {
           <p>
             Mentora Esotérica e Alquimista, com o propósito de expandir a
             compreensão sobre o quanto o autoconhecimento por meio da Magia e
-            Medicina Naturais nos conectam com o presente, para um aqui e agora
-            menos ansioso , com menos vícios e mais respeito. @amandabaragiola
+            Medicina Naturais nos conectam com o presente.<br/> @amandabaragiola / (71)9.8270-5439
           </p>
         </div>
       </div>

@@ -559,7 +559,8 @@ const Take08 = () => {
               curar uma variedade de doenças, tanto físicas quanto mentais,
               podemos destacar :
             </p>
-            <h3>Cogus para transtornos mentais:</h3>
+            <br/>
+            <h3>Cogus para transtornos mentais:</h3><br/>
             <p className="text">
               Depressão: Pesquisas iniciais sugerem que a psilocibina pode ser
               eficaz no tratamento da depressão resistente a outros tratamentos.
@@ -582,19 +583,20 @@ const Take08 = () => {
               tabaco e outras drogas, ajudando as pessoas a enfrentar suas
               dependências
             </p>
-            <h3>Gogu na melhora de condições físicas:</h3>
+            <br/>
+            <h3>Gogu na melhora de condições físicas:</h3><br/>
             <p className="text">
-              Dor crônica: A psilocibina pode reduzir a percepção de dor em
+              Dor crônica:<br/> A psilocibina pode reduzir a percepção de dor em
               pacientes com dor crônica, embora seja importante notar que ela
               não trata a causa subjacente da dor.
               <br />
               <br />
-              Enxaquecas: Alguns relatos indicam que os cogumelos psilocibínicos
+              Enxaquecas: <br/>Alguns relatos indicam que os cogumelos psilocibínicos
               podem ajudar a prevenir enxaquecas, embora mais pesquisas sejam
               necessárias.
               <br />
               <br />
-              Cluster Headaches: Cogumelos psilocibínicos foram explorados como
+              Cluster Headaches:<br/> Cogumelos psilocibínicos foram explorados como
               uma opção para aliviar as dores de cabeça em aglomerados, um tipo
               extremamente doloroso de cefaleia.
               <br />
@@ -711,7 +713,7 @@ const Take08 = () => {
               essa orientação é valiosa:
               <br />
               <br />
-              <strong>Navegação Segura:</strong> Ter o acompanhamento de uma
+              <strong>Navegação Segura:</strong><br/> Ter o acompanhamento de uma
               Terapeuta Especializada pode fornecer um espaço seguro e acolhedor
               para a experiência. Isso é crucial, pois o uso de cogumelos
               psicodélicos pode desencadear uma ampla gama de emoções e
@@ -719,14 +721,14 @@ const Take08 = () => {
               garantir que a jornada seja segura e controlada.
               <br />
               <br />
-              <strong>Apoio Emocional:</strong> O despertar da consciência pode
+              <strong>Apoio Emocional:</strong><br/> O despertar da consciência pode
               trazer à tona questões emocionais profundas e, às vezes, traumas
               não resolvidos. Ter essa especialista para fornecer apoio
               emocional durante esses momentos desafiadores, ajuda a pessoa a
               enfrentar e superar o que for necessário.
               <br />
               <br />
-              <strong>Orientação Espiritual:</strong> O uso de cogumelos
+              <strong>Orientação Espiritual:</strong><br/> O uso de cogumelos
               frequentemente leva a experiências espirituais profundas e
               transcendentais. Um guia com uma perspectiva espiritual pode
               ajudar a interpretar essas experiências, oferecer orientação e
@@ -734,21 +736,21 @@ const Take08 = () => {
               cotidiana.
               <br />
               <br />
-              <strong>Integração: </strong>Após a experiência com cogumelos, a
+              <strong>Integração: </strong><br/>Após a experiência com cogumelos, a
               integração dos insights e mudanças na consciência é essencial. A
               Terapeuta vai ajudar a pessoa a entender e aplicar esses insights
               em sua vida, promovendo o crescimento pessoal e espiritual
               contínuo.
               <br />
               <br />
-              <strong>Cuidado Individualizado:</strong> Cada pessoa é única, e
+              <strong>Cuidado Individualizado:</strong><br/> Cada pessoa é única, e
               suas necessidades espirituais e terapêuticas também são únicas.
               Uma mentora vai adaptar a orientação e o suporte para atender às
               necessidades individuais, tornando a jornada de despertar da
               consciência verdadeiramente personalizada.
               <br />
               <br />
-              <strong>Ética e Segurança:</strong> Um guia vai ajudar a garantir
+              <strong>Ética e Segurança:</strong> <br/>Um guia vai ajudar a garantir
               que a jornada seja conduzida de maneira ética e segura, com foco
               na promoção da saúde e do bem-estar.
               <br />

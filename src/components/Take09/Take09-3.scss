@@ -10,9 +10,6 @@
     width: 100vw;
     h1.title{
         font-family: $font1;
-        font-size: 3rem;
-
-
         color: $primary_color;
         @include breakpoint(small){
             font-size: 2rem;

@@ -53,31 +53,32 @@ useEffect(()=>{
         </p>
         <h2>Essa jornada você vai viver:</h2>
         <p>
-          <strong>Uma Imersão de 4 horas:</strong> Este é o ponto de partida,
+          <strong>Uma Imersão de 4 horas:</strong><br/> Este é o ponto de partida,
           uma viagem guiada para reconectar-se com sua essência, traçando um
           caminho que une o passado ao futuro. Nossa mentora, Amanda, irá guiar
           você no processo de cura de traumas ancestrais que podem estar
           impedindo você de avançar.
           <br />
-          <strong>7 Sessões de 2 horas cada:</strong> Distribuídas ao longo de 4
+          <strong>7 Sessões de 2 horas cada:</strong><br/> Distribuídas ao longo de 4
           meses, essas sessões aprofundam a sua jornada, permitindo que você
           explore as dimensões do "eu sou", "eu sinto", "eu faço", "eu amo", "eu
           falo", "eu vejo" e "eu sei". É uma oportunidade para desbloquear o
           potencial que está adormecido dentro de você.
           <br />
-          <strong> Doses de Cogumelo:</strong>
+          <strong> Doses de Cogumelo:</strong><br/>
           O Psilocybe cubensis é uma ferramenta poderosa nesse processo.
           Recomendamos um mínimo de 5g para os 4 meses de Mentoria Imersiva.
           Para aqueles que já conhecem os benefícios dos cogumelos, recomendamos
           10g para o mesmo período.
           <br />
-          <strong>Leitura Energética:</strong>
+          <strong>Leitura Energética:</strong><br/>
       Você receberá uma análise energética exclusiva
           baseada no Método de Autoconhecimento por Alquimia da Amanda
           Baragiola. Isso fornecerá clareza sobre os bloqueios energéticos que
           precisam ser superados.
           <br />
-          <strong>Acesso Exclusivo: </strong>  Você se tornará
+          <strong>Acesso Exclusivo: </strong><br/>
+          Você se tornará
           um membro do Grupo de Pupilos, um ambiente para aprender sobre a Lei
           do Tempo e outros Protocolos de Magia Natural. Além disso, terá acesso
           ao Instagram Privado do Universo Místico de Bara, onde conteúdo

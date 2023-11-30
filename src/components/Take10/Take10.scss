@@ -55,18 +55,20 @@ opacity: 0.1;
     z-index: 1;
   }
   h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: block;
     font-family: $font1;
     margin: auto;
     text-align: center;
     color: $quinary_color;
+    padding: 3vh;
   }
   h2{
     font-size: 2rem;
     display: block;
     font-family: $font1;
     margin: auto;
+    padding: 3vh;
     text-align: center;
     color: $quinary_color;
   }

@@ -29,6 +29,7 @@ import Take10 from './components/Take10/Take10';
 import Menu from './components/Menu/Menu';
 
 import Take11 from './components/Take11/Take11';
+import Take12 from './components/Take12/Take12';
 import Music from './Music';
 
 function App() {
@@ -89,8 +90,8 @@ gsap.registerPlugin(TextPlugin);
             <Take09 />
             <Take10 />
             <Take11 />
-            <Music/>
-          
+            {/* <Music/> */}
+            <Take12 />
             {/* <VideoScroll/> */}
           </div>} />
 
