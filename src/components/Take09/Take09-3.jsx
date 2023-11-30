@@ -181,7 +181,7 @@ const Take09 = () => {
           </div>
       </div>
       default:
-        return <div>Selecione um Produto</div>;
+        return <div>Selecione um produto.</div>;
     }
   };
 
@@ -190,8 +190,10 @@ const Take09 = () => {
               <div className="titulo">
 
 <GiSlicedMushroom id="cogu" />
-        <h1 className="title">COGUMELANDO-SE</h1>
+        <h1 className="title">COGUMELANDO-SE
+        <br></br>
         <span>Com consciência e responsabilidade</span>
+        </h1>
     </div>
       <div className="slider">
         <div className="container scrollbar-style">

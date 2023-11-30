@@ -17,17 +17,62 @@ const Take08 = () => {
     comoCogumelar: false,
     coguComTerapia: false,
   });
+  const [rotateIcon, setRotateIcon] = useState({
+    curaAncestral: false,
+    medicinaTradicional: false,
+    comoCogumelar: false,
+    coguComTerapia: false,
+  });
+
+  const toggleText = (section) => {
+    setShowText(prevState => {
+      const newShowText = { ...prevState, [section]: !prevState[section] };
+      setRotateIcon(prevRotate => ({
+        ...prevRotate, 
+        [section]: !prevRotate[section]
+      }));
+      return newShowText;
+    });
+  }
   const curaAncestralRef = useRef();
   const medicinaTradicionalRef = useRef();
   const comoCogumelarRef = useRef();
   const coguComTerapiaRef = useRef();
 
-  const toggleText = (section) => {
-    setShowText((prevState) => {
-      const newShowText = { ...prevState, [section]: !prevState[section] };
-      return newShowText;
-    });
-  };
+
+
+
+  useEffect(() => {
+    // Função para atualizar a rotação do ícone
+    const updateIconRotation = (iconId, shouldRotate) => {
+      const iconElement = document.getElementById(iconId);
+      if (iconElement) {
+        if (shouldRotate) {
+          iconElement.classList.add("rotate");
+          iconElement.classList.remove("rotate-back");
+        } else {
+          iconElement.classList.add("rotate-back");
+          iconElement.classList.remove("rotate");
+        }
+      }
+    };
+  
+    // Atualizando a rotação de cada ícone
+    updateIconRotation("ancestralIcon", rotateIcon.curaAncestral);
+    updateIconRotation("tradicionalIcon", rotateIcon.medicinaTradicional);
+    updateIconRotation("cogumelarIcon", rotateIcon.comoCogumelar);
+    updateIconRotation("terapiaIcon", rotateIcon.coguComTerapia);
+  
+  }, [rotateIcon]);
+
+
+
+
+
+
+
+
+
 
   useEffect(() => {
     gsap.fromTo(
@@ -403,8 +448,8 @@ const Take08 = () => {
       <div id="btns-texts">
         <div className="text-camp">
           <h1 onClick={() => toggleText("curaAncestral")}>
-            Entenda a Cura Ancestral
-            <FaCaretSquareDown />
+            Entenda a Cura Ancestral 
+
           </h1>
           <div
             className={`collapsible-section ${
@@ -496,7 +541,7 @@ const Take08 = () => {
         </div>
         <div className="text-camp">
           <h1 onClick={() => toggleText("medicinaTradicional")}>
-            Como a Medicina Tradicional interage? <FaCaretSquareDown />
+            Como a Medicina Tradicional interage? 
           </h1>
           <div
             className={`collapsible-section ${
@@ -588,7 +633,7 @@ const Take08 = () => {
         </div>
         <div className="text-camp">
           <h1 onClick={() => toggleText("comoCogumelar")}>
-            Como cogumelar-se? <FaCaretSquareDown />
+            Como cogumelar-se? 
           </h1>
           {showText.comoCogumelar && (
             <div className="comoCogumelar" ref={comoCogumelarRef}>
@@ -649,7 +694,7 @@ const Take08 = () => {
         </div>
         <div className="text-camp">
           <h1 onClick={() => toggleText("coguComTerapia")}>
-            Cogu com Terapia <FaCaretSquareDown />
+            Cogu com Terapia 
           </h1>
           <div
             className={`collapsible-section ${

@@ -11,7 +11,7 @@
     h1.title{
         font-family: $font1;
         font-size: 3rem;
-        margin-top: 5vh;
+
 
         color: $primary_color;
         @include breakpoint(small){
@@ -31,6 +31,9 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
+        padding: 0;
+        margin: 0%;
+        justify-content: center;
         text-align: center;
         font-family: $font1;
         @include breakpoint(small){
@@ -85,7 +88,9 @@
         width: 100vw;
         height:auto;
         overflow-y: visible; // Evita quebra de linha dos elementos inline
-        overflow-x: scroll; // Habilita a rolagem horizontal
+        overflow-x: scroll; 
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(60%, transparent), to(#ffffff90));
+
         .container {
         display: flex;
         flex-grow: 1;
@@ -101,7 +106,6 @@
         .card {
             display: flex; // Muda para inline-flex para permitir alinhamento interno
             flex-direction: column;
-            filter: grayscale(1);
             border-radius: 5%; // Coloca o conteúdo do card em coluna 
            max-width: 100vw;
            min-width: 300px;
@@ -114,8 +118,10 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Adiciona sombra para um efeito 3D
             transition: transform 0.9s ease;
             position: relative;
+            overflow: hidden;
+            border-radius: 5%;
             transform: translateZ(15deg);
-            transition: 1s;
+            transition: 2s;
             @include breakpoint(small){
                 height: 200px;
             }
@@ -134,14 +140,15 @@
 // transform-style: preserve-3d;
 // transition: 2s;
             &:hover {
-                filter:invert(1); // Efeito de zoom ao passar o mouse
+                filter:invert(1); 
             }
-
+            
             &.active {
-                filter: grayscale(0);
+           
+                filter:invert(1); // Efeito de zoom ao passar o mouse
                 z-index: 7;
-                border-left: $quinary_color 8px solid;
-                border-right: $quinary_color 8px solid;
+                // border-left: $quinary_color 8px solid;
+                // border-right: $quinary_color 8px solid;
 
             }
 

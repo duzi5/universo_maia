@@ -49,7 +49,8 @@
     color: $quaternary_color;
     padding: 2vh;
     max-width: 100vw;
-    transition: 1s;
+    transition: 2s;
+ 
     @include breakpoint(small) {
       font-size: 1.4rem;
     }
@@ -84,6 +85,7 @@
     margin: auto;
     max-width: 100%;
     text-align: justify;
+
     @include breakpoint(small) {
       font-size: 1.1rem;
     }
@@ -100,7 +102,7 @@
 
   .collapsible-section {
     overflow: hidden;
-    transition: max-height 1s ease, opacity 0.5s ease;
+    transition: max-height 2s ease, opacity 1s ease;
     max-height: 0;
     opacity: 0;
   }
@@ -108,6 +110,7 @@
   .expanded {
     opacity: 1;
     max-height: 100%;
+  
 
   }
 
@@ -119,8 +122,12 @@
     text-align: center;
     margin: auto;
     width: 100vw;
-    max-width: 1200px;
     height: fit-content;
+    position: relative;
+    svg{
+      position: absolute;
+      right: 5%;
+    }
 
     @include breakpoint(small) {
       font-size: 0.8rem;
@@ -148,9 +155,11 @@
       font-family: $font1;
       color: white;
       background-color: transparent;
-      border: none;
-      display: block;
-      padding: 4vh;
+      border: solid 5px green;
+      display: flex;
+      width: 100%;
+
+
       @include breakpoint(small) {
         font-size: 1.5rem;
 
@@ -266,17 +275,25 @@
       transform: translateY(-30%); // Ajusta a posição para o centro exato
 
       @include breakpoint(small) {
-        width: 90vw;
-      }
-      @include breakpoint(medium) {
-        width: 80vw;
-      }
-      @include breakpoint(large) {
         width: 70vw;
       }
+      @include breakpoint(medium) {
+        width: 50vw;
+      }
+      @include breakpoint(large) {
+        width: 40vw;
+      }
       @include breakpoint(xlarge) {
-        width: 60vw;
+        width: 30vw;
       }
     }
   }
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.rotate-back {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
 }

@@ -16,16 +16,16 @@
     color: $secundary_color;
     text-align: end;
     @include breakpoint(small) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     @include breakpoint(medium) {
-      font-size: 4rem;
+      font-size: 2.6rem;
     }
     @include breakpoint(large) {
-      font-size: 5rem;
+      font-size: 3.2rem;
     }
     @include breakpoint(xlarge) {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 }
