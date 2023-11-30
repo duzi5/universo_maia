@@ -5,6 +5,7 @@
     background-color: $quinary_color;
     overflow: hidden;
     height: fit-content;
+    justify-content: center;
     #whats{
         margin-top: 5vh;
         text-align: center;
@@ -54,7 +55,8 @@
 margin: auto;
         width: 100%;
         margin-bottom: 100px;
-        padding: 6vh;
+        padding-bottom: 3vh;
+
 
 
         h3 {
