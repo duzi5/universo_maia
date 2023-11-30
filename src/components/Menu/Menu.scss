@@ -1,42 +1,57 @@
 @import "../colors.scss";
 
+#menu-container{
+ 
+    border: solid 5px green;
 
 #menu{
     color: $secundary_color;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-
-    flex-grow: 1;
- 
-    position: fixed;
-    top: 0;
-    z-index: 1000;
     padding: 0%;
-    left: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: hidden;
+    position: fixed;
+    height: auto;
+    left: 50vw;
+    z-index: 1000;
+    transform: translateX(-50%);
+    background-color: $primary_color;
+    top: 0%;
     
-    #progressBar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 16px;
-        background-color: $quinary_color;
-        border-radius: 5px; /* ou qualquer cor que preferir */
-        z-index: 1000; /* Para garantir que fique no topo de outros elementos */
-      }
-      
+    
+    
     
     ul{
+        background: transparent;
         display: flex;
-        width: 100vw;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        margin: 0%;
-        padding: 0%;
-        background-color: $primary_color;
-    
+        
+        height: 100%;
+        @include breakpoint(small){
+            width: 100vw;
+            top: 0%;
+        }
+        @include breakpoint(medium){
+            width: 100vw;
+            
+            top: 0%;
+            
+        }
+        @include breakpoint(large){
+            width: 300px;
+            top: 7vh;
+            
+        }
+        @include breakpoint(xlarge){
+            width: 400px;
+
+        top: 3vh;
+        }
 
             
         li{
@@ -45,33 +60,39 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-size: 4rem;
-            
+            font-size: 3rem;
+            height: 100%;
             display: inline-block;
             cursor: pointer;
             &:hover{
                 color: $quaternary_color
             }
             @include breakpoint(small){
-                font-size: 1.7rem;
-                padding: 3px;    
+                font-size: 1.7rem;   
             }
             @include breakpoint(medium){
-                font-size: 2.4rem;
-                padding: 3px;    
+                font-size: 2rem;
             }
             @include breakpoint(large){
-                font-size: 3rem;
-                padding: 3px;    
+                font-size: 2.6rem; 
             }
             @include breakpoint(xlarge){
-                font-size: 4rem;
-                padding: 3px;    
+                font-size: 3rem;
             }
             
         }
     }
     
-
-    }
-
+    
+}
+}
+#progressBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 16px;
+    background-color: $quinary_color;
+    border-radius: 5px; /* ou qualquer cor que preferir */
+    z-index: 1000; /* Para garantir que fique no topo de outros elementos */
+}

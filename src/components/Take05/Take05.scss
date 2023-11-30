@@ -13,18 +13,19 @@
     text-align: center;
     font-weight: 300;
     max-width: 1000px;
+    width: 80vw;
     margin: 0%;
     @include breakpoint(small) {
       font-size: 1.6rem;
     }
     @include breakpoint(medium) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     @include breakpoint(large) {
-      font-size: 3.2rem;
+      font-size: 2.6rem;
     }
     @include breakpoint(xlarge) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
   h3 {

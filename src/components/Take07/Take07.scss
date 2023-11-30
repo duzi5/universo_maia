@@ -17,7 +17,6 @@
   #mergulhe {
     font-family: "Barrio", cursive;
     color: $secundary_color;
-    font-size: 100px;
     max-width: 1000px;
     text-align: center;
     position: relative;
@@ -26,19 +25,19 @@
     z-index: 7;
     opacity: 0;
     @include breakpoint(small) {
-      font-size: 2.5rem;
+      font-size: 2rem;
       width: 90vw;
     }
     @include breakpoint(medium) {
-      font-size: 4rem;
+      font-size: 2.5rem;
       width: 80vw;
     }
     @include breakpoint(large) {
-      font-size: 6rem;
+      font-size: 4rem;
       width: 70vw;
     }
     @include breakpoint(xlarge) {
-      font-size: 8rem;
+      font-size: 5rem;
       width: 60vw;
     }
   }

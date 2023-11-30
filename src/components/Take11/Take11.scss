@@ -6,11 +6,21 @@
     overflow: hidden;
     height: fit-content;
     #whats{
-        font-size: 7rem;
+        margin-top: 5vh;
+        text-align: center;
         width: 100%;
-        margin-bottom: 5vh;
-        margin-top:5vh;
-        color:$primary_color;
+        @include breakpoint(small){
+            font-size: 6rem
+        }
+        @include breakpoint(medium){
+            font-size: 7rem
+        }
+        @include breakpoint(large){
+            font-size: 8rem
+        }
+        @include breakpoint(xlarge){
+            font-size: 9rem
+        }
     }
     h2{
         font-family: $font2;
@@ -23,13 +33,13 @@
             font-size: 2rem;
         }
         @include breakpoint(medium) {
-            font-size: 3rem;
+            font-size: 2.3rem;
         }
         @include breakpoint(large) {
-            font-size: 4rem;
+            font-size: 2.6rem;
         }
         @include breakpoint(xlarge) {
-            font-size: 5rem;
+            font-size: 3rem;
         }
     }
 
@@ -72,13 +82,13 @@
             padding: 2vh;
             text-align: justify;
             @include breakpoint(small) {
-                font-size: 1.1rem;
+                font-size: 0.8rem;
             }
             @include breakpoint(medium) {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             @include breakpoint(large) {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             @include breakpoint(xlarge) {
                 font-size: 1.3rem;

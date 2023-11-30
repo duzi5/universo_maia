@@ -20,13 +20,13 @@
       font-size: 2rem;
     }
     @include breakpoint(medium) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     @include breakpoint(large) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     @include breakpoint(xlarge) {
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
   }
   h1 {
@@ -36,16 +36,16 @@
     color: $secundary_color;
     text-align: center;
     @include breakpoint(small) {
-      font-size: 70px;
+      font-size: 50px;
     }
     @include breakpoint(medium) {
-      font-size: 110px;
+      font-size: 70px;
     }
     @include breakpoint(large) {
-      font-size: 180px;
+      font-size: 100px;
     }
     @include breakpoint(xlarge) {
-      font-size: 270px;
+      font-size: 120px;
     }
   }
   .logo {

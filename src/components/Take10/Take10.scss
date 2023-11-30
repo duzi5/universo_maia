@@ -14,14 +14,28 @@
   padding: 0%;
   margin: 0%;
   #brain{
-    font-size: 7rem;
     width: 100%;
-    margin-bottom: 5vh;
-  }
+    position: relative;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    @include breakpoint(small){
+        height: 6rem
+      
+    }
+    @include breakpoint(medium){
+        height: 7rem
+    }
+    @include breakpoint(large){
+        height: 8rem
+    }
+    @include breakpoint(xlarge){
+        height: 9rem
+    }
+}
   .terapy-texts{
     max-width: 1000px;
     width: 95vw;
-    padding-top: 10vh;
     padding-bottom: 10vh;
     max-width: 1000px;
     text-align: justify;
@@ -41,7 +55,7 @@ opacity: 0.1;
     z-index: 1;
   }
   h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
     font-family: $font1;
     margin: auto;
@@ -68,7 +82,7 @@ opacity: 0.1;
     column-gap: 40px;
     @include breakpoint(small){
       column-count: 1;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       width: 95vw;
       margin: auto;
       column-gap: 0;
@@ -76,18 +90,18 @@ opacity: 0.1;
     @include breakpoint(medium){
       column-count: 1;
       column-gap: 0;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       width: 90vw;
       margin: auto;
     }
     @include breakpoint(large){
       column-count: 1;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       width: 90vw;
       margin: auto;
     @include breakpoint(xlarge){
       column-count: 2;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       width: 90vw;
       margin: 0;
     
@@ -95,7 +109,7 @@ opacity: 0.1;
     }
    strong{
     color: $quinary_color;
-    font-size: 1.3rem;
+    font-size: 1rem;
    } 
   }
 }

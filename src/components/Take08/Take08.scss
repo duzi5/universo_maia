@@ -18,6 +18,12 @@
     font-size: 7rem;
     color: $secundary_color;
     margin: 10%;
+    @include breakpoint(small){
+      font-size: 3rem;
+    }
+    @include breakpoint(medium){
+      font-size: 3rem;
+    }
   }
   .stars-container {
     span {
@@ -211,14 +217,25 @@
   // }
   h4 {
     font-family: "Barrio", cursive;
-    font-size: 56px;
+   
+   
     max-width: 1000px;
     color: $secundary_color;
-    padding: 2vh;
+    padding: 5vh;
     text-align: center;
-    width: 100%;
+    max-width: 1000px;
+    
     @include breakpoint(small) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(medium) {
       font-size: 2rem;
+    }
+    @include breakpoint(large) {
+      font-size: 3;
+    }
+    @include breakpoint(xlarge){
+      font-size: 3.5rem;
     }
   }
   .links {

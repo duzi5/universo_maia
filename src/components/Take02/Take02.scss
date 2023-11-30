@@ -17,7 +17,7 @@
     transform-origin: center center;
     z-index: 10;
     position: absolute;
-    top: 12vh;
+    top: 15vh;
 
     @include breakpoint(small) {
       font-size: 3rem !important;

@@ -74,7 +74,7 @@ const Menu = () => {
 
 
 
-  return (
+  return ( <>
 <div id="menu-container">
 <div id="menu" ref={menuRef}>
 
@@ -86,10 +86,11 @@ const Menu = () => {
         <li data-target="take11" onClick={() => scrollToSection("take11")} className="icon" ref={el => menuItemsRef.current[4] = el}><IoLogoWhatsapp /></li>
 
       </ul>
+</div>
 <div id="progressBar"></div>
     </div>
-</div>
-  );
+    
+ </>);
 };
 
 export default Menu;
