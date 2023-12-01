@@ -93,13 +93,24 @@
         display: flex;
         flex-grow: 1;
         width: 100vw;
-        max-width: 1000px;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         margin: auto;
         padding-top: 5vh;
         padding-bottom: 5vh;
+        @include breakpoint(small){
+            width: 100vw;
+        }
+        @include breakpoint(medium){
+
+        }
+        @include breakpoint(large){
+
+        }
+        @include breakpoint(xlarge){
+
+        }
 
  // Alinha os cards à esquerda
         // perspective: 4000px;// Adiciona algum espaço acima e abaixo dos cards
@@ -137,16 +148,30 @@
                 height:300px;
             }
             @include breakpoint(xlarge){
-                height: 600px
+                height: 600px;
+                width: 300px;
             }
     
             &.active {
-               width: 800px;
-               filter: grayscale(0);
-                // border-left: $quinary_color 8px solid;
-                // border-right: $quinary_color 8px solid;
+                filter: grayscale(0);
+                width: 80vw;
 
-            }
+            //     @include breakpoint(small){
+            //        width: 300px;
+
+            // }
+            // @include breakpoint(medium){
+            //     width: 500px;
+            // }
+            // @include breakpoint(large){
+            //        width: 600px; 
+            // }
+            // @include breakpoint(xlarge){
+            //         width: 40vw;
+            //     // border-left: $quinary_color 8px solid;
+            //     // border-right: $quinary_color 8px solid;
+
+             }}
 
             img {
                 width: 100%;
@@ -182,7 +207,7 @@
             }
         }
     }
-    }
+    
 
     .product-text-container {
         max-width: 800px;
