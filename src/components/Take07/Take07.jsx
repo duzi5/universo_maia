@@ -29,7 +29,7 @@ const Take07 = () => {
         x: () => `${window.innerWidth}px`,
       },
       {
-        x: `-${document.getElementById("mente").offsetWidth +window.innerWidth}px`,
+        x: `-${document.getElementById("mente").offsetWidth +(window.innerWidth - document.getElementById('mente'.offsetWidth))}px`,
         ease: "none",
         scrollTrigger: {
           trigger: "#mente",
