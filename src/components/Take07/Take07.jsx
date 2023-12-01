@@ -31,7 +31,6 @@ const Take07 = () => {
             start: "40% 80%",
             end: "100% 65%",
             scrub: true,
-            markers: true,
             // pin:true,
             // pinSpacing: true
         }
