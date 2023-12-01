@@ -1,7 +1,9 @@
 @import "../colors.scss";
 
 #menu-container{
- 
+    overflow: hidden;
+    border-radius: 10%;
+    background-color: aliceblue;
 
 #menu{
     color: $secundary_color;
@@ -20,10 +22,7 @@
     transform: translateX(-50%);
     background-color: $primary_color;
     top: 0%;
-    height: 50px;
-;
-    
-    
+    height: 40px;
     
     
     ul{
@@ -31,37 +30,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        
         padding: 0%;
-        padding: 3px;
+        
+        
         @include breakpoint(small){
             width: 100vw;
-            top: 0%;
+            top: 5%;
         }
         @include breakpoint(medium){
             width: 100vw;
-            
-            top: 0%;
+            border-radius: 0%;
+            top: 5%;
             
         }
         @include breakpoint(large){
             width: 300px;
-            top: 7vh;
+            border-radius: 12px;
+            top: 7%;
+                
+            }
+            @include breakpoint(xlarge){
+                border-radius: 12px;
+                width: 300px;
+            top: 3vh;
+            }
             
-        }
-        @include breakpoint(xlarge){
-            width: 300px;
-
-        top: 3vh;
-        }
 
             
         li{
-            border-radius: -50%;
             flex-grow: 1;
             text-align: center;
             justify-content: center;
             align-items: center;
-           
             display: flex;
             cursor: pointer;
             &:hover{

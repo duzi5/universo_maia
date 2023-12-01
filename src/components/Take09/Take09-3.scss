@@ -81,69 +81,68 @@
         overflow: hidden;
         display: flex;
         flex-direction: row;
-        background-color: rgb(0, 0, 0);
+        // background-color: rgb(0, 0, 0);
         width: 100vw;
         height:auto;
-        overflow-y: visible; // Evita quebra de linha dos elementos inline
-        overflow-x: scroll; 
-        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(60%, transparent), to(#ffffff90));
+        background-color: $tertiary_color;
+        box-shadow: 0px 7px 22px 1px #000000;
+
+        // -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(60%, transparent), to(#ffffff90));
 
         .container {
         display: flex;
         flex-grow: 1;
-        width: fit-content;
+        width: 100vw;
+        max-width: 1000px;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         margin: auto;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
 
  // Alinha os cards à esquerda
         // perspective: 4000px;// Adiciona algum espaço acima e abaixo dos cards
 
         .card {
-            display: flex; // Muda para inline-flex para permitir alinhamento interno
-            flex-direction: column;
-            border-radius: 5%; // Coloca o conteúdo do card em coluna 
-           max-width: 100vw;
-           min-width: 300px;
+            display: flex; 
+            filter: grayscale(0.8);
+            margin: 0.7%;
+            border-radius: 15%;
+            overflow: hidden;
+            width: 100px;
+            box-shadow: 0px 7px 22px 1px #000000;
+            // Muda para inline-flex para permitir alinhamento interno
+            flex-direction: column; // Coloca o conteúdo do card em coluna 
             height: 500px; // Adiciona espaço entre os cards
-            background-color: $quinary_color;
+            background-color: transparent;
             color: $secundary_color;
             align-items: center;
             justify-content: center;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Adiciona sombra para um efeito 3D
-            transition: transform 0.9s ease;
+
+            transition: transform 0.5s ease; // Transição suave
             position: relative;
             overflow: hidden;
-            border-radius: 5%;
-            transform: translateZ(15deg);
-            transition: 2s;
+            border-radius: 15px;
+            flex-grow: 1;
+             transition: width 0.5s ease;
             @include breakpoint(small){
-                height: 200px;
+                height: 150px;
             }
             @include breakpoint(medium){
                 height: 200px;
             }
             @include breakpoint(large){
-                height:300px
+                height:300px;
             }
             @include breakpoint(xlarge){
-                height: 400px
+                height: 600px
             }
     
-            // // -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-            // transform: rotateX(360deg) rotateY(27deg);
-// transform-style: preserve-3d;
-// transition: 2s;
-            &:hover {
-                filter:invert(1); 
-            }
-            
             &.active {
-           
-                filter:invert(1); // Efeito de zoom ao passar o mouse
-                z-index: 7;
+               width: 800px;
+               filter: grayscale(0);
                 // border-left: $quinary_color 8px solid;
                 // border-right: $quinary_color 8px solid;
 
@@ -154,8 +153,9 @@
                 height: 100%; // Ajusta a altura da imagem
                 object-fit: cover;
                 position: absolute;
+                border-radius: 15px;
                 
-                filter:  hue-rotate(160deg);
+
             }
 
             h3 {
