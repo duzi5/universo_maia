@@ -9,29 +9,31 @@ const Take07 = () => {
     // Crie uma timeline separada para a animação de piscar
     const blinkingTl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".take07",
-        start:"50% 100%",
-        end: "-10% 40%",
+        trigger: ".env-mente",
+        start:"top 100%",
+        end: "bottom 80%",
         scrub: true,
 
 
       },
     });
-    ScrollTrigger.refresh()
-    // Adicione a animação de piscar
-    blinkingTl.fromTo(
-      "#env-mente",
-      { height:0 },
-      { ease: "power1", height:'30vh' }
-    );
+
+    // blinkingTl.fromTo(
+    //   "#env-mente",
+    //   { height:0 },
+    //   { ease: "power1", height:'19vh', alignItems:'center', margin: 'auto' }
+    // );
     gsap.to("#mente", {
         x: () => `-${document.querySelector("#mente").scrollWidth - window.innerWidth}px`,
         ease: "none",
         scrollTrigger: {
             trigger: "#env-mente",
-            start: "40% 50%",
-            end: "bottom 30%",
+            start: "40% 80%",
+            end: "100% 65%",
             scrub: true,
+            markers: true,
+            // pin:true,
+            // pinSpacing: true
         }
     });
 
@@ -73,7 +75,10 @@ const Take07 = () => {
   return (
     <div className="take07">
       <div id="env-mente">
+        <div id="mente">
         <h4 id="mente">EXPANDA SUA <strong id='destaque'>MENTE</strong></h4>
+
+        </div>
       </div>
 
       <h4 scrollamount="40" id="mergulhe">

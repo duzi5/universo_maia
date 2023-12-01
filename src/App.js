@@ -79,7 +79,7 @@ gsap.registerPlugin(TextPlugin);
         <Routes>
           <Route path="/" element={<div>
             {/* Seu conteúdo principal aqui */}
-            {/* <LoadingScene /> */}
+            <LoadingScene />
             <Take02 />
             <Take03 />
             <Take04 />
