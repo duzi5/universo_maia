@@ -23,18 +23,22 @@ const Take07 = () => {
     //   { height:0 },
     //   { ease: "power1", height:'19vh', alignItems:'center', margin: 'auto' }
     // );
-    gsap.to("#mente", {
-        x: () => `-${document.querySelector("#mente").scrollWidth - window.innerWidth}px`,
+    gsap.fromTo(
+      "#mente",
+      {
+        x: () => `${window.innerWidth}px`,
+      },
+      {
+        x: `-${document.getElementById("mente").offsetWidth}px`,
         ease: "none",
         scrollTrigger: {
-            trigger: "#env-mente",
-            start: "40% 80%",
-            end: "100% 65%",
-            scrub: true,
-            // pin:true,
-            // pinSpacing: true
-        }
-    });
+          trigger: "#env-mente",
+          start: "40% 80%",
+          end: "100% 65%",
+          scrub: true,
+        },
+      }
+    );
 
     //   gsap.to('#destaque',{ 
     //     fontSize: '+=140%',
