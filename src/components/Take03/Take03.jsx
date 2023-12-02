@@ -56,7 +56,8 @@ const Take03 = () => {
 }, []);
 
 return (
-  <div style={{backgroundColor:"black"}}className="take03" id="take03" data-scroll-section>
+  <div className="data-scroll-container">
+      <div style={{backgroundColor:"black"}}className="take03" id="take03" data-scroll-section>
       <h2 id="universo" className="text">
         NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
@@ -65,6 +66,7 @@ return (
     <span key={index} className="letter">{letter}</span>
   ))}
 </h1>    </div>
+  </div>
 );
 
 

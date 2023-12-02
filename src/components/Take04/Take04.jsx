@@ -25,10 +25,11 @@ const Take04 = () => {
     });
   }, []);
   return (
-    <div className="take04">
-      <h2 id="faria">
+    <div className="take04" data-scroll-container>
+      <div data-scroll-section>
+      <h2 id="faria" data-speed-scroll="2">
         O QUE VOCÊ FARIA SE VOCÊ PUDESSE SER{" "}
-        <div id="voce">
+        <div id="voce" data-speed-scroll = "1">
           <span>V</span>
           <span>O</span>
           <span>C</span>
@@ -36,6 +37,7 @@ const Take04 = () => {
           <span>?</span>
         </div>
       </h2>
+      </div>
     </div>
   );
 };
