@@ -48,27 +48,27 @@ const Take02 = () => {
 
 
 
-gsap.to("#maia", {
-  opacity: 0,
-  scale: 1.2,
-  ease: "linear",
-  scrollTrigger: {
-        trigger: "#take02",
-        start: "60% center",
-        end: "bottom center",
+// gsap.to("#maia", {
+//   opacity: 0,
+//   scale: 1.2,
+//   ease: "linear",
+//   scrollTrigger: {
+//         trigger: "#take02",
+//         start: "60% center",
+//         end: "bottom center",
 
-        scrub: true,
-        onLeave: () => {
-          setMostrarMaia(false);
-          console.log("Entrou na área do trigger");
-        },
-        onLeaveBack: () => {
-          setMostrarMaia(true);
-          console.log("Saiu na área do trigger");
-        },
-      },
-    });
-  }, []);
+//         scrub: true,
+//         onLeave: () => {
+//           setMostrarMaia(false);
+//           console.log("Entrou na área do trigger");
+//         },
+//         onLeaveBack: () => {
+//           setMostrarMaia(true);
+//           console.log("Saiu na área do trigger");
+//         },
+//       },
+//     });
+//   }, []);
   useEffect(() => {
     gsap.to(['#folha1', '#folha2',  '#folha3', '#folha4' ], { 
       duration: 3,
