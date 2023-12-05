@@ -44,11 +44,13 @@
   }
 
   #env-mente {
-    background-blend-mode: soft-light;
-    background-image: url("./brain.svg");
+    // background-image: url("./brain.svg");
+    background-color: $quinary_color;
+background-image: url("https://www.transparenttextures.com/patterns/shley-tree-1.png");
+
     background-size: 8%;
     background-attachment: fixed;
-    background-color: $quaternary_color;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +78,7 @@
     #mente {
       display: block;
       font-family: $font1;
-      color: $tertiary_color;
+      color: $secundary_color;
       text-align: center;
 
       width: 100%;

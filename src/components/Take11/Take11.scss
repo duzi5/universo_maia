@@ -3,6 +3,9 @@
 
 #take11{
     background-color: $quinary_color;
+    background-image: url("https://www.transparenttextures.com/patterns/shley-tree-1.png");
+    background-attachment: fixed;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     overflow: hidden;
     height: fit-content;
     justify-content: center;
@@ -49,7 +52,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $primary_color;
+        background-color: $quinary_color;
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         overflow: hidden;
         border-radius: 15px;
         max-width: 1000px;

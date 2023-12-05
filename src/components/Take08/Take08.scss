@@ -1,12 +1,7 @@
 @import "../colors.scss";
 .take08 {
-  background: rgb(10, 7, 62);
-  background: linear-gradient(
-    360deg,
-    rgba(10, 7, 62, 1) 0%,
-    rgba(9, 62, 121, 1) 71%,
-    rgba(21, 91, 130, 1) 95%
-  );
+  background-color: $tertiary_color;
+background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
   justify-content: center;
   align-items: center;
   display: flex;
