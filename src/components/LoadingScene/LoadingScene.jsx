@@ -23,20 +23,18 @@ export default (props) => {
 
 
 
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
+    // var canvas = document.getElementById("canvas");
+    // var ctx = canvas.getContext("2d");
+    // canvas.height = window.innerHeight;
+    // canvas.width = window.innerWidth;
 
-    var texts = "0123456789".split("");
-    var fontSize = 16;
-    var columns = canvas.width / fontSize;
-    var drops = [];
-    for (var x = 0; x < columns; x++) {
-      drops[x] = 1;
-    }
-
-
+    // var texts = "0123456789".split("");
+    // var fontSize = 16;
+    // var columns = canvas.width / fontSize;
+    // var drops = [];
+    // for (var x = 0; x < columns; x++) {
+    //   drops[x] = 1;
+    // }
 
 
 
@@ -44,24 +42,26 @@ export default (props) => {
 
 
 
-    function draw() {
-      ctx.fillStyle = "rgba(0, 0, 0,0.5)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#4ef1f9";
-      ctx.font = fontSize + "px arial";
 
-      for (var i = 0; i < drops.length; i++) {
-        var text = texts[Math.floor(Math.random() * texts.length)];
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
-        if (drops[i] * fontSize > canvas.height || Math.random() > 0.95) {
-          drops[i] = 0;
-        }
-        drops[i]++;
-      }
+    // function draw() {
+    //   ctx.fillStyle = "#817665";
+    //   ctx.fillRect(0, 0, canvas.width, canvas.height);
+    //   ctx.fillStyle = "#1c223f";
+    //   ctx.font = fontSize + "px arial";
 
-      requestAnimationFrame(draw);
-    }
+    //   for (var i = 0; i < drops.length; i++) {
+    //     var text = texts[Math.floor(Math.random() * texts.length)];
+    //     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+    //     if (drops[i] * fontSize > canvas.height || Math.random() > 0.95) {
+    //       drops[i] = 0;
+    //     }
+    //     drops[i]++;
+    //   }
+
+    //   requestAnimationFrame(draw);
+    // }
 
     gsap.to(".borboleta1", {
       duration: 10,
@@ -80,7 +80,7 @@ export default (props) => {
 
         
         })
-    draw();
+    // draw();
   }, []);
 
   return (

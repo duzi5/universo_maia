@@ -10,7 +10,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
+  opacity: 1;
+  background-color: $primary_color;
+background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   .central-msg {
     font-family: $font1;
     color: $secundary_color;
@@ -34,32 +37,57 @@
   }
 
 
+  #bemvindo{
+    position: absolute;
+left: 50%;
+// top: 15%;
+transform: translate(-50%, -30%);
+    top: 20%;
+    z-index: 2;
+    // filter: hue-rotate(120deg);
 
+    // max-height: 80vh;
+    @include breakpoint(small) {
+      height: 20vh;
+    }
+    @include breakpoint(medium) {
+      height: 25vh;
+
+    }
+    @include breakpoint(large) {
+      height: 40vh;
+    }
+    @include breakpoint(xlarge){
+      
+      height: 50vh;
+    }
+  }
 
   #maia {
-    position: fixed;
-   bottom: 0;
-    margin-left: auto;
-    // filter: hue-rotate(120deg);
+    position: absolute;
+  margin-left: auto;
     margin-right: auto;
+    bottom: 0%;
+    // filter: hue-rotate(120deg);
+
     z-index: 0;
     // -webkit-box-reflect: below 1px  blur(20px);
     ;
 
     // max-height: 80vh;
     @include breakpoint(small) {
-      height: 100%;
+      height: 120vh;
     }
     @include breakpoint(medium) {
-      height: 180vh;
+      height: 120vh;
 
     }
     @include breakpoint(large) {
-      height: 120vh;
+      height: 125vh;
     }
     @include breakpoint(xlarge){
       
-      height: 120vh;
+      height: 130vh;
     }
   }
 }

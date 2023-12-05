@@ -83,11 +83,6 @@ const Take07 = () => {
 
         </div>
       </div>
-
-      <h4 scrollamount="40" id="mergulhe">
-        {" "}
-        Mergulhe no <strong>conhecimento ancestral</strong> que liberta o seu futuro
-      </h4>
     </div>
   );
 };

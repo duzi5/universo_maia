@@ -7,7 +7,7 @@ const Take04 = () => {
     gsap.utils.toArray("#voce span").forEach((letter, i) => {
       gsap.to(letter, {
         opacity: 0.7,
-        color: "#ba1255",
+        color: "#1c223f",
         repeat: -1,
         yoyo: true,
         ease: "power1.inOut",
@@ -15,7 +15,7 @@ const Take04 = () => {
       });
     });
     gsap.to("#faria", {
-      color: "#60a1c3",
+      color: "#E85747",
       scrollTrigger: {
         trigger: "#faria",
         scrub: true,

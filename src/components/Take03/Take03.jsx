@@ -3,7 +3,7 @@ import "./Take03.scss";
 import gsap from "gsap";
 
 import { TextPlugin } from "gsap/TextPlugin";
-import titulo from "./universoMaiaTitulo.png"
+import titulo from "./universoMaia.png"
 const Take03 = () => {
   useEffect(() => {
 
@@ -20,7 +20,7 @@ const Take03 = () => {
 
     tl.to(".letter", {
       rotateY: 720,
-      color:"#ba0c54",
+      color:"#817665",
       rotateZ: 720,
       stagger:0.1// Repete infinitamente// Faz a animação de ida e volta
     });
@@ -57,7 +57,7 @@ const Take03 = () => {
 
 return (
   <div className="data-scroll-container">
-      <div style={{backgroundColor:"black"}}className="take03" id="take03" data-scroll-section>
+      <div className="take03" id="take03" data-scroll-section>
       <h2 id="universo" className="text">
         NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>

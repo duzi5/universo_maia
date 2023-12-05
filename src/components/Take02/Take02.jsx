@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import "./bemVindo.png"
 import BorboletaCogu from "./BorboletaCogu";
+import bemvindo from "./bemVindo.png"
 import Maia from "./Maia";
 import "./Take02.scss";
 import { gsap } from "gsap";
@@ -43,11 +44,15 @@ const Take02 = () => {
 //   }
 // })
 
-    gsap.to("#maia", {
-      opacity: 0,
-      scale: 1.2,
-      ease: "linear",
-      scrollTrigger: {
+
+
+
+
+gsap.to("#maia", {
+  opacity: 0,
+  scale: 1.2,
+  ease: "linear",
+  scrollTrigger: {
         trigger: "#take02",
         start: "60% center",
         end: "bottom center",
@@ -65,6 +70,17 @@ const Take02 = () => {
     });
   }, []);
   useEffect(() => {
+    gsap.to(['#folha1', '#folha2',  '#folha3', '#folha4' ], { 
+      duration: 3,
+      stagger:0.1,
+      y: -10,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+      transformOrigin: "center center",
+      scale: 1.02,
+    
+    })
     gsap.to("#camisa", {
       duration: 2,
       fill: "#9027ba",
@@ -104,10 +120,9 @@ const Take02 = () => {
 
   return (
     <div id="take02" >
-
-        <div id="permita" className="central-msg">
-          PERMITA-SE
-        </div>
+<div>
+  <img id="bemvindo"src={bemvindo} alt="bem-vindo ao universo maia" />
+</div>
       
       
 

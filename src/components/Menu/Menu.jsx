@@ -37,9 +37,9 @@ const Menu = () => {
         gsap.fromTo(item,
             
            {borderLeft: "none"} ,{
-          backgroundColor: item.dataset.target === sectionId ? "#ba1255" : "transparent",
-          borderLeft: item.dataset.target === sectionId ? "black 10px solid" : "transparent",
-          borderRight: item.dataset.target === sectionId ? "black 10px solid" : "transparent",
+          backgroundColor: item.dataset.target === sectionId ? "#1c223f" : "transparent",
+          borderLeft: item.dataset.target === sectionId ? "#1c223f 10px solid" : "transparent",
+          borderRight: item.dataset.target === sectionId ? "#1c223f 10px solid" : "transparent",
 
           duration: 0.5, // Duração da transição
 
