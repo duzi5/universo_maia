@@ -68,7 +68,7 @@ const Take02 = () => {
 //         },
 //       },
 //     });
-//   }, []);
+  }, []);
   useEffect(() => {
     gsap.to(['#folha1', '#folha2',  '#folha3', '#folha4' ], { 
       duration: 3,
