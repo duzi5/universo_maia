@@ -1,6 +1,6 @@
 @import "../colors.scss";
 .take08 {
-  background-color: $tertiary_color;
+  background-color: $primary_color;
 background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
   justify-content: center;
   align-items: center;
@@ -9,15 +9,23 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
   width: 100vw;
   position: relative;
   height: fit-content;
+  overflow: hidden;
   #book {
     font-size: 7rem;
     color: $secundary_color;
     margin: 10%;
+    
     @include breakpoint(small){
-      font-size: 3rem;
+      font-size: 2rem;
     }
     @include breakpoint(medium){
       font-size: 3rem;
+    }
+    @include breakpoint(large){
+      font-size: 5rem;
+    }
+    @include breakpoint(xlarge){
+      font-size: 7rem;
     }
   }
   .stars-container {
@@ -45,6 +53,9 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
     padding: 2vh;
     max-width: 100vw;
     transition: 2s;
+    color: #e0dfdc;
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
  
     @include breakpoint(small) {
       font-size: 1.4rem;
@@ -80,6 +91,9 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
     margin: auto;
     max-width: 100%;
     text-align: justify;
+    color: #e0dfdc;
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
 
     @include breakpoint(small) {
       font-size: 1.1rem;
@@ -123,7 +137,7 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
       position: absolute;
       right: 5%;
     }
-
+    
     @include breakpoint(small) {
       font-size: 0.8rem;
       width: 95%;
@@ -144,8 +158,12 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
       width: 90%;
       column-count: 2;
     }
-
+    
     .btn {
+      color: #e0dfdc;
+  
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
       flex-grow: 1;
       font-family: $font1;
       color: white;
@@ -190,11 +208,11 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
     align-items: center;
     display: block;
     position: relative;
+    transform: translateY(5%);
     .cogus-azuis {
       position: relative;
       min-height: 33vh;
       min-width: 33vw;
-      filter: hue-rotate(25deg) brightness(1.2);
     }
   }
   .matriz {
@@ -221,7 +239,10 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
   // }
   h4 {
     font-family: "Barrio", cursive;
-   
+    color: #e0dfdc;
+
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
    
     max-width: 1000px;
     color: $secundary_color;

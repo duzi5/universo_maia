@@ -17,8 +17,10 @@
     width: 100vw;
     height: fit-content;
     overflow: hidden;
-    color: aliceblue;
-    background-color: $primary_color;
+    color: $secundary_color;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+padding-bottom: 5vh;
+    background-color: $tertiary_color;
 
     p{
         color: $secundary_color;

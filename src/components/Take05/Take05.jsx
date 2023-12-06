@@ -44,12 +44,8 @@ const Take05 = () => {
 
   return (
     <div className="take05" data-scroll-container>
-   <div data-scroll-section>
-   <h5 id="momento" data-scroll data-scroll-speed="1" >    E SE DE REPENTE, POR UM MOMENTO, EM UM ESPAÇO TEMPO CRIADO NO UNIVERSO, VOCÊ PUDESSE SE PERMITIR ESQUECER TUDO QUE ACONTECE AQUI FORA E FOCASSE APENAS EM VOCÊ?
-</h5>
-      <h3 id="seria" data-scroll data-scroll-speed="1">QUEM VOCÊ SERIA?</h3>
-      <h3 id="viveria" data-scroll data-scroll-speed="1">COMO VIVERIA?</h3>
-   </div>
+ 
+
     </div>
   );
 };

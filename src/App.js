@@ -5,7 +5,6 @@ import LoadingScene from "./components/LoadingScene/LoadingScene";
 import Take02 from "./components/Take02/Take02";
 import Take03 from "./components/Take03/Take03";
 import Take04 from "./components/Take04/Take04";
-import Take05 from "./components/Take05/Take05";
 import Take06 from "./components/Take06/Take06";
 import Take07 from "./components/Take07/Take07";
 import Take08 from "./components/Take08/Take08";
@@ -31,6 +30,7 @@ import Menu from './components/Menu/Menu';
 import Take11 from './components/Take11/Take11';
 import Take12 from './components/Take12/Take12';
 import Music from './Music';
+import Whatsapp from './components/Whatsapp/Whatsapp';
 
 function App() {
   useEffect(() => {
@@ -71,6 +71,20 @@ function App() {
 gsap.registerPlugin(TextPlugin);
     gsap.registerPlugin(ScrollTrigger);
   }, []);
+  const tl = gsap.timeline(
+    {
+      scrollTrigger:{
+        trigger: "#fariaDiv",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "start pause reverse pause"
+
+      }
+    }
+  )
+
+
+
 
   return (
     <Router>
@@ -82,8 +96,10 @@ gsap.registerPlugin(TextPlugin);
             <LoadingScene />
             <Take02 />
             <Take03 />
-            <Take04 />
-            <Take05 />
+
+              <Take04 />
+          
+         
             <Take06 />
             <Take07 />
             <Take08 />
@@ -92,6 +108,7 @@ gsap.registerPlugin(TextPlugin);
             <Take11 />
             {/* <Music/> */}
             <Take12 />
+            <Whatsapp/>
             {/* <VideoScroll/> */}
           </div>} />
 

@@ -3,34 +3,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-direction: column;
   background-color: $primary_color;
   background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-  overflow: hidden;
-  h2 {
-    font-family: $font2;
-    color: $secundary_color;
-    max-width: 1000px;
-
-    @include breakpoint(small) {
-      font-size: 2rem;
-    }
-    @include breakpoint(medium) {
-      font-size: 3rem;
-    }
-    @include breakpoint(large) {
-      font-size: 4rem;
-    }
-    @include breakpoint(xlarge) {
-      font-size: 5rem;
-    }
+  overflow-y: visible;
+  overflow-x: hidden;
+  max-width: 100vw;
+  .coguLateral {
+    pointer-events: none;
   }
-  #voce {
-    font-family: $font2;
-    color: $secundary_color;
-    text-align: center;
+    #voce {
+      font-family: $font2;
+      color: $secundary_color;
+      text-align: center;
     justify-content: center;
     margin: auto;
+    color: #e0dfdc;
+
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
     @include breakpoint(small) {
       font-size: 2rem;
     }
@@ -44,14 +36,24 @@
       font-size: 8rem;
     }
   }
+  #fariaDiv{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
   #faria {
-    font-size: 100px;
+    color: #e0dfdc;
+
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+    text-wrap: wrap;
     font-family: $font2;
-    max-width: 80%;
+    max-width: 40%;
     color: $secundary_color;
-    text-align: center;
     justify-content: center;
-    padding: 20%;
+    text-align: center;
     @include breakpoint(small) {
       font-size: 2rem;
     }
@@ -66,4 +68,162 @@
     }
   }
   }
+
+
+
+    #cogu1{
+        max-height: 300px;
+        position: absolute;
+        top: 0vh;
+        @include breakpoint(small){
+          max-height: 130px;
+          left: -5vw;
+
+        }
+        @include breakpoint(medium){
+          max-height: 200px;
+          left: -5vw;
+
+        }
+        @include breakpoint(large){
+          max-height: 250px;
+          left: -5vw;
+
+        }
+        @include breakpoint(xlarge){
+          max-height: 400px;
+          left: -4vw;
+
+        }
+      }
+    
+    
+      #cogu2{
+        max-height: 300px;
+        position: absolute;
+        top: 25vh;
+        transform: rotate(-60deg);
+        z-index: 122;
+        @include breakpoint(small){
+          max-height: 130px;
+          right: -8vw;
+          
+        }
+        @include breakpoint(medium){
+          max-height: 200px;
+          right: -10vw;
+          
+        }
+        @include breakpoint(large){
+          max-height: 280px;
+          right: -10vw;
+        }
+        @include breakpoint(xlarge){
+          max-height: 400px;
+          right: -12vw;
+        }
+      }
+    #cogu3{
+        max-height: 300px;
+        position: absolute;
+        transform: rotate(-60deg);
+        top: 50vh;
+        @include breakpoint(small){
+          max-height: 130px;
+          right: -3vw;
+          
+        }
+        @include breakpoint(medium){
+          max-height: 200px;
+          right: -6vw;
+          
+        }
+        @include breakpoint(large){
+          max-height: 280px;
+          right: -5vw;
+        }
+        @include breakpoint(xlarge){
+          max-height: 400px;
+          right: -7vw;
+        }
+      }
+      #cogu4{
+        max-height: 300px;
+        position: absolute;
+        top: 40vh;
+    
+        @include breakpoint(small){
+          max-height: 130px;
+          left: -12vw;
+          
+        }
+        @include breakpoint(medium){
+          max-height: 200px;
+          left: -9vw;
+          
+        }
+        @include breakpoint(large){
+          max-height: 280px;
+          left: -8vw;
+        }
+        @include breakpoint(xlarge){
+          max-height: 400px;
+          left: -10vw;
+        }
+      }
+
+
+
+
+  #momento {
+    font-family: $font2;
+    text-align: center;
+    font-weight: 300;
+    max-width: 1000px;
+    width: 80vw;
+    margin: 0%;
+    color: #e0dfdc;
+
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+    @include breakpoint(small) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 2rem;
+    }
+    @include breakpoint(large) {
+      font-size: 2.6rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 3rem;
+    }
+  }
+  h3 {
+    opacity: 1;
+    margin: 0%;
+    padding: 3%;
+    font-size: 77px;
+    text-align: center;
+    font-family: $font2;
+    color: #e0dfdc;
+
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint(large) {
+      font-size: 3rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 3.5rem;
+    }
+  
+  }
+
 
