@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./Take04.scss";
-import cogu1 from "./Cópia de carousel 01.png";
-import cogu2 from "./Cópia de carousel 02.png";
+import cogu1 from "./cogu1.png";
+import cogu2 from "./cogu2.png";
 import cogu3 from "./cogu3.png";
 import cogu4 from "./cogu4.png";
 
