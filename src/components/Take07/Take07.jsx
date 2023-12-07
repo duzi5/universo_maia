@@ -19,14 +19,14 @@ const Take07 = () => {
             x: 0
           },
           {
-            x: -width,
+            x: "-=200%",
             ease: "none",
             scrollTrigger: {
               trigger: "#mente",
               start: "0% 50%",
               end: "100% 50%",
               scrub: true,
-              pin:"mente",
+              pin:"env-mente",
               pinSpacing: true
             },
           }
@@ -37,10 +37,10 @@ const Take07 = () => {
   return (
     <div className="take07">
       <div id="env-mente">
-        <div>
+  
           <h4 id="mente"className="flutue">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
       
-        </div>
+    
       </div>
     </div>
   );
