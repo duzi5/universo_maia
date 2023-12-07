@@ -1,6 +1,7 @@
 import React from "react";
 import "./Take11.scss";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Marquee from "../Marquee/Marquee";
 
 const Take11 = () => {
   return (
@@ -25,6 +26,7 @@ const Take11 = () => {
             Medicina Naturais nos conectam com o presente.<br/> @amandabaragiola / (71)9.8270-5439
           </p>
         </div>
+        <Marquee text="No Brasil o cogumelo é descriminalizado. Para maiores informações busque suas referências e mantenha-se atualizado." />
       </div>
     </div>
   );

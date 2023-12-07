@@ -38,20 +38,14 @@ useEffect(()=>{
     <img className="folha" src={folha2} alt="" />
     <img className="folha" src={folha3} alt="" />
 
-        <h1>Desbloqueie a Magia da Vida e Transforme-se !</h1>
-        <p>
-          Você está pronto para uma jornada de transformação? Bem-vindo à
-          Imersão/Mentoria Particular "A Magia da Vida", um Protocolo
-          Visionário, desenvolvido e aperfeiçoado nos últimos 14 anos por Amanda
-          Baragiola, Mentora Esotérica e Alquimista, Kin 179.
+        <h1>Tá afim de ir mais além, e unir os cogus com terapia esotérica?</h1>
+        <p id="amandaPresentation">
+          Conheça Amanda baragiola, autora do "A magia da Vida", um Método de autoconhecimento inovador que une estudos ancestrais e universais para um despertar guiado e direcionado.
           <br />
-          Este é o segredo que muitos buscam para quebrar crenças limitantes,
-          acessar sua ancestralidade e desbloquear uma vida abundante, tudo
-          através da Magia Natural, Medicina Natural, Autoconhecimento Místico e
-          Esotérico.
-          <br />
+        
+        
         </p>
-        <h2>Essa jornada você vai viver:</h2>
+        <h2>como é o magia da vida:</h2>
         <p>
           <strong>Uma Imersão de 4 horas:</strong><br/> Este é o ponto de partida,
           uma viagem guiada para reconectar-se com sua essência, traçando um
@@ -77,17 +71,10 @@ useEffect(()=>{
           Baragiola. Isso fornecerá clareza sobre os bloqueios energéticos que
           precisam ser superados.
           <br />
-          <strong>Acesso Exclusivo: </strong><br/>
-          Você se tornará
-          um membro do Grupo de Pupilos, um ambiente para aprender sobre a Lei
-          do Tempo e outros Protocolos de Magia Natural. Além disso, terá acesso
-          ao Instagram Privado do Universo Místico de Bara, onde conteúdo
-          estimulante e fora da caixinha aguarda por você.
-          <br />
-          Nossos pupilos anteriores tiveram suas vidas transformadas por essa
-          jornada, e agora é a sua vez de embarcar nessa experiência única. Tudo
-          isso está ao seu alcance por apenas R$ 1.550,00, mais o custo dos
-          Cogumelos necessários para a sua experiência.
+        
+      
+          Para saber se é o seu momento de embarcar nessa jornada entre em contato com Amanda baragiola para agendar um encontro online.
+          São 4 meses de Mentoria Particular por apenas R$1.550,00.
           <br />
           As mentorias e a imersão podem ser realizadas tanto presencialmente
           quanto online, adaptadas para atender às suas necessidades

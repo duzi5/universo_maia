@@ -40,6 +40,8 @@ function App() {
     setShowModal(false);
   };
   useEffect(() => {
+
+
     window.addEventListener('resize', function() {
       // Recarrega a página quando a janela é redimensionada
       window.location.reload();

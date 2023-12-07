@@ -409,13 +409,10 @@ const Take08 = () => {
 
       <div id="env-poder">
         {" "}
-        <h1 id="poder">O Poder dos Cogumelos</h1>
+        <h1 id="poder" className="flutue">O Poder dos Cogumelos</h1>
       </div>
 
-      <h4 id="medicina">
-       Mas antes, deixa eu te falar quem somos. 
-       Dois amigos unidos pelo sonho de mostrar um mundo melhor, mais leve e como essa medicina ancestral te conecta com essa realidade.
-      </h4>
+   
       <div id="intro" className="text-camp">
         <h1 id="porque">Por que Cogumelos?</h1>
         <p id="text" className="text">

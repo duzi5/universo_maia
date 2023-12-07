@@ -62,7 +62,7 @@ const Take04 = () => {
   return (
     <div className="take04" >
       <div data-scroll-section id="fariaDiv">
-      <h2 id="faria" data-speed-scroll="2">
+      <h2 id="faria"  className="flutue" data-speed-scroll="2">
         O QUE VOCÊ FARIA SE VOCÊ PUDESSE SER{" "}
         <div id="voce" data-speed-scroll = "1">
           <span>V</span>
@@ -73,18 +73,18 @@ const Take04 = () => {
         </div>
       </h2>
       <div data-scroll-section>
-   <h5 id="momento" data-scroll data-scroll-speed="1" >    E SE DE REPENTE, POR UM MOMENTO, EM UM ESPAÇO TEMPO CRIADO NO UNIVERSO, VOCÊ PUDESSE SE PERMITIR ESQUECER TUDO QUE ACONTECE AQUI FORA E FOCASSE APENAS EM VOCÊ?
+   <h5 id="momento" className="flutue"  data-scroll data-scroll-speed="1" >    E SE POR UM MOMENTO, EM UM ESPAÇO TEMPO CRIADO NO UNIVERSO, VOCÊ PUDESSE SE PERMITIR ESQUECER TUDO QUE ACONTECE AQUI FORA E FOCASSE APENAS EM VOCÊ?
 </h5>
-      <h3 id="seria" data-scroll data-scroll-speed="1">QUEM VOCÊ SERIA?</h3>
-      <h3 id="viveria" data-scroll data-scroll-speed="1">COMO VIVERIA?</h3>
+      <h3 id="seria" className="flutue" data-scroll data-scroll-speed="1">QUEM VOCÊ SERIA?</h3>
+      <h3 id="viveria" className="flutue" data-scroll data-scroll-speed="1">COMO VIVERIA?</h3>
    </div>
-  <img id="realcogu"src={realcogu} alt="" />
-  <img id="realcogu2"src={realcogu2} alt="" />
    {/* <img id="cogu1" className="coguLateral" src={cogu1} alt=""  />
       <img id="cogu2" className="coguLateral" src={cogu2} alt="" />
       <img className="coguLateral" id="cogu3" src={cogu3} alt="" />
-      <img className="coguLateral" id="cogu4" src={cogu4} alt=""/> */}
+    <img className="coguLateral" id="cogu4" src={cogu4} alt=""/> */}
       </div>
+    <img id="realcogu"src={realcogu} alt="" />
+    <img id="realcogu2"src={realcogu2} alt="" />
     </div>
   );
 };

@@ -79,109 +79,39 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
   position: absolute;
   left: 0%;
   top: 10%;
+  @include breakpoint(small){
+    width:150px;
+  }
+  @include breakpoint(medium){
+    width: 200px;
+  }
+  @include breakpoint(large){
+    width: 400px;
+  }
+  @include breakpoint(x-large){
+    width: 700px;
+  }
+  }
+#realcogu2{
+  width: 35vw;
+  position: relative;
+  right:1%;
+ bottom: 0%;
+  @include breakpoint(small){
+    width: 650px;
+  }
+  @include breakpoint(medium){
+    width: 900px;
+  }
+  @include breakpoint(large){
+    width: 1200px;
+  }
+  @include breakpoint(x-large){
+    width: 1500px;
+  }
+  }
 
-}
 
-    #cogu1{
-        max-height: 300px;
-        position: absolute;
-        top: 9vh;
-        @include breakpoint(small){
-          max-height: 130px;
-          left: -5vw;
-
-        }
-        @include breakpoint(medium){
-          max-height: 200px;
-          left: -5vw;
-
-        }
-        @include breakpoint(large){
-          max-height: 250px;
-          left: -5vw;
-
-        }
-        @include breakpoint(xlarge){
-          max-height: 400px;
-          left: -4vw;
-
-        }
-      }
-    
-    
-      #cogu2{
-        max-height: 300px;
-        position: absolute;
-        top: 25vh;
-        transform: rotate(-60deg);
-        z-index: 122;
-        @include breakpoint(small){
-          max-height: 130px;
-          right: -8vw;
-          
-        }
-        @include breakpoint(medium){
-          max-height: 200px;
-          right: -10vw;
-          
-        }
-        @include breakpoint(large){
-          max-height: 280px;
-          right: -10vw;
-        }
-        @include breakpoint(xlarge){
-          max-height: 400px;
-          right: -12vw;
-        }
-      }
-    #cogu3{
-        max-height: 300px;
-        position: absolute;
-        transform: rotate(-60deg);
-        top: 50vh;
-        @include breakpoint(small){
-          max-height: 130px;
-          right: -3vw;
-          
-        }
-        @include breakpoint(medium){
-          max-height: 200px;
-          right: -6vw;
-          
-        }
-        @include breakpoint(large){
-          max-height: 280px;
-          right: -5vw;
-        }
-        @include breakpoint(xlarge){
-          max-height: 400px;
-          right: -7vw;
-        }
-      }
-      #cogu4{
-        max-height: 300px;
-        position: absolute;
-        top: 40vh;
-    
-        @include breakpoint(small){
-          max-height: 130px;
-          left: -12vw;
-          
-        }
-        @include breakpoint(medium){
-          max-height: 200px;
-          left: -9vw;
-          
-        }
-        @include breakpoint(large){
-          max-height: 280px;
-          left: -8vw;
-        }
-        @include breakpoint(xlarge){
-          max-height: 400px;
-          left: -10vw;
-        }
-      }
 
 
 

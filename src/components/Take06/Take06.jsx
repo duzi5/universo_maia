@@ -9,7 +9,11 @@ const Take06 = () => {
     <div className="take06" data-scroll-container>
 
       <div className="content">
-      <h2>Mergulhe com a gente nesse conhecimento</h2>
+      <h2 className="flutue">Mergulhe com a gente nesse conhecimento</h2>
+      <h4 id="medicina">
+       Mas antes, deixa eu te falar quem somos. 
+       Dois amigos unidos pelo sonho de mostrar um mundo melhor, mais leve e como essa medicina ancestral te conecta com essa realidade.
+      </h4>
       </div>
 
     </div>

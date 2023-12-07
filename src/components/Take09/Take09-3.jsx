@@ -199,19 +199,19 @@ const Take09 = () => {
         <div className="container scrollbar-style">
           <div className={`card1 card ${activeCard === 1 ? 'active' : ''}`} onClick={() => changeCard(1)}>
 
-          <h3>Psilocybe cubensis albino</h3>
+          <h3>Cubensis albino</h3>
           <img className="imagens"src={albino} alt="" />
           </div>
           <div className={`card2 card ${activeCard === 2 ? 'active' : ''}`} onClick={() => changeCard(2)}>
-          <h3>Kit Cultivo do Psilocybe Cubensis Albino</h3>
+          <h3>Kit Cultivo Albino</h3>
                        <img id="kit"className="imagens"src={kit} alt="" />
           </div>
           <div className={`card3 card ${activeCard === 3 ? 'active' : ''}`} onClick={() => changeCard(3)}>
-          <h3>Psilocybe cubensis Buffalo Pink</h3>
+          <h3>Buffalo Pink</h3>
                        <img className="imagens"src={buffalo} alt="" />
           </div>
           <div className={`card4 card ${activeCard === 4 ? 'active' : ''}`} onClick={() => changeCard(4)}>
-          <h3>Cogumelo Juba de Leão </h3>
+          <h3>Juba de Leão </h3>
                        <img className="imagens"src={leao} alt="" />
           </div>
         </div>

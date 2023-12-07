@@ -8,15 +8,13 @@
   display: flex;
   #scrapsContainer {
     background-color: transparent; 
-
+overflow-x: scroll;
     width: fit-content;
-    min-width: 150vw;
     min-height: 500px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 4vw;
-    padding-right: 4vw;
+
     padding-bottom: 4vw;
     .scrapsSlide {
         display: flex;

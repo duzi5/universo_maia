@@ -38,7 +38,8 @@ const Take07 = () => {
     <div className="take07">
       <div id="env-mente">
         <div>
-          <h4 id="mente">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
+          <h4 id="mente"className="flutue">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
+      
         </div>
       </div>
     </div>

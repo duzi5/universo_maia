@@ -40,29 +40,29 @@ const Scraps = () => {
   ];
   const scrapsContainerRef = useRef(null);
 
-  useEffect(() => {
-    const element = scrapsContainerRef.current;
+//   useEffect(() => {
+//     const element = scrapsContainerRef.current;
 
-    if (element) {
-        const width = element.offsetWidth - window.innerWidth;
-      gsap.fromTo(
-        element,
-        { x: 0 },
-        {
-          x: -width,
-          scrollTrigger: {
-            trigger: "#scrapsContainer",
-            ease:"power4.inOut",
-            scrub: true,
-            pin: "scrapsContainer",
-            pinSpacing: true,
-            start: "top center",
-            end:"bottom center"
-          },
-        }
-      );
-    }
-  }, []);
+//     if (element) {
+//         const width = element.offsetWidth - window.innerWidth;
+//       gsap.fromTo(
+//         element,
+//         { x: 0 },
+//         {
+//           x: -width,
+//           scrollTrigger: {
+//             trigger: "#scrapsContainer",
+//             ease:"power4.inOut",
+//             scrub: true,
+//             pin: "scrapsContainer",
+//             pinSpacing: true,
+//             start: "top center",
+//             end:"bottom center"
+//           },
+//         }
+//       );
+//     }
+//   }, []);
 
   return (
     <div id="scraps">
