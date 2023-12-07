@@ -57,7 +57,6 @@ const Scraps = () => {
             scrub: true,
             pin: "scrapsContainer",
             pinSpacing: true,
-            markers: true,
             start: "top center",
             end:"bottom center"
           },
