@@ -7,7 +7,7 @@ const Scraps = () => {
   const comentarios = [
     {
       comentario:
-        "Resolvi compartilhar com vocês porque comer os cubos foi uma virada de chave para mim. Me reanimei, voltei para academia, quero me conectar mais comigo e com a natureza. Com certeza vou comprar mais para ir fazendo experiências, também como microdosagens. Qualidade excepcional, comemos na aldeia hippie e foi a coisa mais gostosa que eu senti em anos.",
+        "Resolvi compartilhar com vocês porque comer os cugus foi uma virada de chave para mim. Me reanimei, voltei para academia, quero me conectar mais comigo e com a natureza. Com certeza vou comprar mais para ir fazendo experiências, também como microdosagens. Qualidade excepcional, comemos na aldeia hippie e foi a coisa mais gostosa que eu senti em anos.",
     },
     {
       comentario:
