@@ -1,64 +1,53 @@
 @import "../colors.scss";
 
+ #catavento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  color: $secundary_color;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  padding-bottom: 5vh;
+  background-color: $tertiary_color;
 
-
-
-
-
-
-
-
-
-#catavento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: fit-content;
-    overflow: hidden;
+  p {
     color: $secundary_color;
-    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-padding-bottom: 5vh;
-    background-color: $tertiary_color;
-
-    p{
-        color: $secundary_color;
-        font-family: $font1;
-        @include breakpoint(small){
-            font-size: 0.6rem;
-        }
-        @include breakpoint(medium){
-            font-size: 0.9rem;
-        }
-        @include breakpoint(large){
-            font-size: 1rem;
-        }
-        @include breakpoint(xlarge){
-            font-size: 1.1rem;
-        }
-        span{
-            font-family: $font2;
-            font-weight: 200;
-            color: $secundary_color;
-            @include breakpoint(small){
-                font-size: 0.6rem;
-            }
-            @include breakpoint(medium){
-                font-size: 0.9rem;
-            }
-            @include breakpoint(large){
-                font-size: 1rem;
-            }
-            @include breakpoint(xlarge){
-                font-size: 1.1rem;
-            }
-
-        }
-        
+    font-family: $font1;
+    @include breakpoint(small) {
+      font-size: 0.6rem;
     }
-    .espaco{
-        width: 100vw;
-        height: 3vh;
+    @include breakpoint(medium) {
+      font-size: 0.9rem;
     }
+    @include breakpoint(large) {
+      font-size: 1rem;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 1.1rem;
+    }
+    span {
+      font-family: $font2;
+      font-weight: 200;
+      color: $secundary_color;
+      @include breakpoint(small) {
+        font-size: 0.6rem;
+      }
+      @include breakpoint(medium) {
+        font-size: 0.9rem;
+      }
+      @include breakpoint(large) {
+        font-size: 1rem;
+      }
+      @include breakpoint(xlarge) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .espaco {
+    width: 100vw;
+    height: 3vh;
+  }
 }

@@ -53,9 +53,7 @@ const Take06 = () => {
   return (
     <div className="take06" data-scroll-container>
       <div data-scroll-section>
-      <h2  data-scroll data-scroll-speed = "1" id="acolha">ACOLHA-SE</h2>
-      <h2  data-scroll data-scroll-speed = "1" id="questione">QUESTIONE-SE</h2>
-      <h2  data-scroll data-scroll-speed = "1" id="cocrie">VIAJE PARA O PASSADO E COCRIE SEU FUTURO</h2>
+      <h2>Mergulhe com a gente nesse conhecimento</h2>
       </div>
     </div>
   );

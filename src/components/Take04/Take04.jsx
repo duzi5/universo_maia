@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./Take04.scss";
-import cogu1 from "./cogu1.png";
-import cogu2 from "./cogu2.png";
-import cogu3 from "./cogu3.png";
-import cogu4 from "./cogu4.png";
+import realcogu from "./cogu2.png"
+import realcogu2 from "./cogu1.png"
+// import cogu1 from "./cogu1.png";
+// import cogu2 from "./cogu2.png";
+// import cogu3 from "./cogu3.png";
+// import cogu4 from "./cogu4.png";
 
 const Take04 = () => {
   
@@ -76,11 +78,12 @@ const Take04 = () => {
       <h3 id="seria" data-scroll data-scroll-speed="1">QUEM VOCÊ SERIA?</h3>
       <h3 id="viveria" data-scroll data-scroll-speed="1">COMO VIVERIA?</h3>
    </div>
-  
-   <img id="cogu1" className="coguLateral" src={cogu1} alt=""  />
+  <img id="realcogu"src={realcogu} alt="" />
+  <img id="realcogu2"src={realcogu2} alt="" />
+   {/* <img id="cogu1" className="coguLateral" src={cogu1} alt=""  />
       <img id="cogu2" className="coguLateral" src={cogu2} alt="" />
       <img className="coguLateral" id="cogu3" src={cogu3} alt="" />
-      <img className="coguLateral" id="cogu4" src={cogu4} alt=""/>
+      <img className="coguLateral" id="cogu4" src={cogu4} alt=""/> */}
       </div>
     </div>
   );

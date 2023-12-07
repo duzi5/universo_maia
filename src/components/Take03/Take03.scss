@@ -1,5 +1,8 @@
 @import "../colors.scss";
-
+#take03Container{
+ 
+  background-color: $tertiary_color;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
 .take03 {
   height: fit-content;
   width: 100vw;
@@ -10,8 +13,6 @@
   overflow: hidden;// overflow-y: hidden;
 
 
-    background-color: $tertiary_color;
-    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
 
     // background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -53,16 +54,16 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
 letter-spacing: .1em;
 text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
     @include breakpoint(small) {
-      font-size: 50px;
+      font-size: 80px;
     }
     @include breakpoint(medium) {
-      font-size: 70px;
-    }
-    @include breakpoint(large) {
       font-size: 100px;
     }
+    @include breakpoint(large) {
+      font-size: 130px;
+    }
     @include breakpoint(xlarge) {
-      font-size: 120px;
+      font-size: 170px;
     }
   }
   .logo {
@@ -96,3 +97,5 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
 // .take07 {
 //   background-color: transparent; /* ou qualquer cor de fundo inicial desejada */
 // }
+ 
+}

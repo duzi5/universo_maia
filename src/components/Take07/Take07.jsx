@@ -79,7 +79,7 @@ const Take07 = () => {
     <div className="take07">
       <div id="env-mente">
         <div id="mente">
-        <h4 id="mente">EXPANDA SUA <strong id='destaque'>MENTE</strong></h4>
+        <h4 id="mente">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
 
         </div>
       </div>

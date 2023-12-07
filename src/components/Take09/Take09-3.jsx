@@ -97,7 +97,7 @@ const Take09 = () => {
                  </tbody>
              </table>
              <div className="frete">
-               <p> Mais frete.</p>
+             <p className='frete'> Entregamos para todo Brasil, consultar taxa de entrega.</p>
              </div>
          </div>)
       case 2:
@@ -114,7 +114,7 @@ const Take09 = () => {
         <p className="question">Qual é o investimento?</p>
         <p>R$ 200,00</p>
         <div className="frete">
-          <p>Mais frete.</p>
+        <p> Entregamos para todo Brasil, consultar taxa de entrega.</p>
         </div>
     </div>;
       case 3:
@@ -149,7 +149,7 @@ const Take09 = () => {
             </tbody>
         </table>
         <div className="frete">
-          <p> Mais Frete.</p>
+        <p className='frete'> Entregamos para todo Brasil, consultar taxa de entrega.</p>
         </div>
     </div>;
       case 4:
@@ -177,7 +177,7 @@ const Take09 = () => {
               </tbody>
           </table>
           <div className="frete">
-            <p> Mais frete.</p>
+          <p className='frete'> Entregamos para todo Brasil, consultar taxa de entrega.</p>
           </div>
       </div>
       default:

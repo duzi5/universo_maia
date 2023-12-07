@@ -409,7 +409,7 @@ const Take08 = () => {
 
       <div id="env-poder">
         {" "}
-        <img id="poder" src={poder} alt="O poder dos cogumelos" />
+        <h1 id="poder">O Poder dos Cogumelos</h1>
       </div>
 
       <h4 id="medicina">

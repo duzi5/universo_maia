@@ -31,6 +31,7 @@ import Take11 from './components/Take11/Take11';
 import Take12 from './components/Take12/Take12';
 import Music from './Music';
 import Whatsapp from './components/Whatsapp/Whatsapp';
+// import Scraps from './components/Scraps/Scraps';
 
 function App() {
   useEffect(() => {
@@ -51,18 +52,18 @@ function App() {
     ScrollTrigger.refresh();
   }, 3000);
   useEffect(() => {
-    // const lenis = new Lenis()
+    const lenis = new Lenis()
     
-    // lenis.on('scroll', (e) => {
-    //   console.log(e)
-    // })
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
     
-    // function raf(time) {
-    //   lenis.raf(time)
-    //   requestAnimationFrame(raf)
-    // }
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
     
-    // requestAnimationFrame(raf)
+    requestAnimationFrame(raf)
     
     
     // gsap.registerPlugin(ScrollSmoother);
@@ -71,17 +72,7 @@ function App() {
 gsap.registerPlugin(TextPlugin);
     gsap.registerPlugin(ScrollTrigger);
   }, []);
-  const tl = gsap.timeline(
-    {
-      scrollTrigger:{
-        trigger: "#fariaDiv",
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "start pause reverse pause"
 
-      }
-    }
-  )
 
 
 
@@ -97,11 +88,11 @@ gsap.registerPlugin(TextPlugin);
             <Take02 />
             <Take03 />
 
+          {/* <Scraps/> */}
               <Take04 />
-          
          
-            <Take06 />
             <Take07 />
+            <Take06 />
             <Take08 />
             <Take09 />
             <Take10 />

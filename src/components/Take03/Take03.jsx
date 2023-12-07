@@ -4,6 +4,7 @@ import gsap from "gsap";
 
 import { TextPlugin } from "gsap/TextPlugin";
 import titulo from "./universoMaia.png"
+import Scraps from "../Scraps/Scraps";
 const Take03 = () => {
   useEffect(() => {
 
@@ -56,16 +57,25 @@ const Take03 = () => {
 }, []);
 
 return (
-  <div className="data-scroll-container">
+  <div id="take03Container" className= "data-scroll-container">
       <div className="take03" id="take03" data-scroll-section>
-      <h2 id="universo" className="text">
+    <div className="frases">
+        <h2 id="universo" className="text">
         NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
       <h1 id="topa" className="reveal" data-scroll>
   {Array.from("TOPA?").map((letter, index) => (
     <span key={index} className="letter">{letter}</span>
   ))}
-</h1>    </div>
+</h1>  
+    </div>
+
+    <Scraps />
+
+  </div>
+  
+  
+  
   </div>
 );
 
