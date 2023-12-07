@@ -20,6 +20,7 @@
     padding-bottom: 4vw;
     .scrapsSlide {
         display: flex;
+        overflow: hidden;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -27,7 +28,7 @@
       margin-right: 30px;
       min-height: 400px;
       max-height: 400px;
-      max-width: 30vw;
+      max-width: 400px;
       border-radius: 50px;
       background-color: rgba(
         255,
@@ -40,8 +41,8 @@
       -moz-box-shadow: inset 1px 2px 6px 3px rgba(128, 112, 128, 1);
       box-shadow: inset 1px 2px 6px 3px rgba(128, 112, 128, 1);
       @include breakpoint(small){
-        min-width: 300px;
-        min-height: 300px;
+        min-width: 400px;
+        min-height: 400px;
         max-width: 40vw;
         max-height: 40vw;
       }

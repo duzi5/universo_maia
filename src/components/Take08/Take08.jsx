@@ -417,7 +417,7 @@ const Take08 = () => {
         CONSCIENTE, COM MENOS ANSIEDADE E MAIS DISPOSIÇÃO PARA VIVER A VIDA.
       </h4>
       <div id="intro" className="text-camp">
-        <h1 id="porque">Porquê Cogumelos?</h1>
+        <h1 id="porque">Por que Cogumelos?</h1>
         <p id="text" className="text">
           Imagine-se navegando nas ondas da mente, onde os cogumelos são como o
           barco que nos leva a destinos inexplorados do nosso próprio ser.

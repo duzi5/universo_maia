@@ -61,7 +61,7 @@ return (
       <div className="take03" id="take03" data-scroll-section>
     <div className="frases">
         <h2 id="universo" className="text">
-        NÓS, DO <img className="logo" src={titulo} data-scroll />, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
+        NÓS, DO UNIVERSO MAIA, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
       <h1 id="topa" className="reveal" data-scroll>
   {Array.from("TOPA?").map((letter, index) => (

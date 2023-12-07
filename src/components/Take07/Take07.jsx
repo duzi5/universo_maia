@@ -4,83 +4,41 @@ import gsap from "gsap";
 import Brain from "./Brain";
 import expanda from "./expanda.png";
 import ScrollTrigger from "gsap/ScrollTrigger";
+
 const Take07 = () => {
   useEffect(() => {
-    // Crie uma timeline separada para a animação de piscar
-    const blinkingTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".env-mente",
-        start:"top 100%",
-        end: "bottom 80%",
-        scrub: true,
+    const menteElement = document.getElementById("mente");
 
+    if (menteElement) {
+      const width = menteElement.offsetWidth - window.innerWidth;;
+      console.log(width); // Isto irá imprimir a largura do elemento no console
 
-      },
-    });
-
-    // blinkingTl.fromTo(
-    //   "#env-mente",
-    //   { height:0 },
-    //   { ease: "power1", height:'19vh', alignItems:'center', margin: 'auto' }
-    // );
-    gsap.fromTo(
-      "#mente",
-      {
-        x: () => `${window.innerWidth}px`,
-      },
-      {
-        x: `-${document.getElementById("mente").offsetWidth +(window.innerWidth - document.getElementById('mente'.offsetWidth))}px`,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#mente",
-          start: "50% 90%",
-          end: "80% 60%",
-          scrub: true,
+      gsap.fromTo(
+        "#mente",
+        {
+          x: 0
         },
-      }
-    );
-
-    //   gsap.to('#destaque',{ 
-    //     fontSize: '+=140%',
-    //     color:"#B90F55",
-    //     scrollTrigger:{
-    //         trigger: "#mente",
-    //         start: "top 60%",
-    //         end: "top 30%",
-    //         scrub: true
-    //     }
-    //   });
-
-
-    const tl2 = gsap.timeline({     scrollTrigger: {
-        trigger: "#mergulhe",
-        start: "0% 30%",
-        end: "100% 60%",
-        scrub: true,
-
-      }})
-    tl2.fromTo(
-      "#mergulhe",
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        ease: "power2.inOut",
-      }
-    );
-    // tl2.to('#env-mente', {
-    //     height:0,
-        
-    // }, "+=10")
+        {
+          x: `-${width}px`,
+          ease: "none",
+          scrollTrigger: {
+            trigger: "#mente",
+            start: "0% 50%",
+            end: "100% 50%",
+            scrub: true,
+            pin:"mente",
+            pinSpacing: true
+          },
+        }
+      );
+    }
   }, []);
 
   return (
     <div className="take07">
       <div id="env-mente">
-        <div id="mente">
-        <h4 id="mente">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
-
+        <div>
+          <h4 id="mente">Esse é o poder do <strong id='destaque'>cogumelo</strong></h4>
         </div>
       </div>
     </div>

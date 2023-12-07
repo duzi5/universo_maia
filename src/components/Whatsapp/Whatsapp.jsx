@@ -18,7 +18,7 @@ export default props =>{
     },[])
     return(
         <div id="whatsapp">
-        <a id="whatsappText" href="">
+        <a id="whatsappText" href="https://wa.me/5571982187183?text=Oi">
         <RiWhatsappFill />
  Fale conosco no Whats!
         </a>

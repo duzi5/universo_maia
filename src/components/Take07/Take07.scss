@@ -50,7 +50,7 @@
     background-attachment: fixed;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     position: relative;
@@ -102,7 +102,7 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
         font-size: 11rem;
       }
       @include breakpoint(xlarge) {
-        font-size: 15rem;
+        font-size: 13rem;
       }
     }
   }
