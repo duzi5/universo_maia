@@ -119,7 +119,7 @@ opacity: 0.1;
     @include breakpoint(medium){
       column-count: 1;
       column-gap: 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 90vw;
       margin: auto;
     }
@@ -136,6 +136,18 @@ opacity: 0.1;
         
       }  
     }
+    @include breakpoint(small){
+      font-size: 0.8rem;// Alinha o texto justificado para melhor leitura
+  }
+  @include breakpoint(medium){
+      font-size: 1rem;// Alinha o texto justificado para melhor leitura
+  }
+  @include breakpoint(large){
+      font-size: 1.2rem;// Alinha o texto justificado para melhor leitura
+  }
+  @include breakpoint(xlarge){
+      font-size: 1.3rem;// Alinha o texto justificado para melhor leitura
+  }
     strong{
       color: $tertiary_color;
       font-size: 1rem;

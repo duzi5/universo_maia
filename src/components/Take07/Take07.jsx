@@ -7,32 +7,33 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Take07 = () => {
   useEffect(() => {
-    const menteElement = document.getElementById("mente");
+      const menteElement = document.getElementById("mente");
 
-    if (menteElement) {
-      const width = menteElement.offsetWidth - window.innerWidth;;
-      console.log(width); // Isto irá imprimir a largura do elemento no console
+      if (menteElement) {
+        const width = window.innerWidth;
+        console.log(width); // Isto irá imprimir a largura do elemento no console
 
-      gsap.fromTo(
-        "#mente",
-        {
-          x: 0
-        },
-        {
-          x: -width,
-          ease: "none",
-          scrollTrigger: {
-            trigger: "#mente",
-            start: "0% 50%",
-            end: "100% 50%",
-            scrub: true,
-            pin:"mente",
-            pinSpacing: true
+        gsap.fromTo(
+          "#mente",
+          {
+            x: 0
           },
-        }
-      );
-    }
+          {
+            x: -width,
+            ease: "none",
+            scrollTrigger: {
+              trigger: "#mente",
+              start: "0% 50%",
+              end: "100% 50%",
+              scrub: true,
+              pin:"mente",
+              pinSpacing: true
+            },
+          }
+        );
+      }
   }, []);
+
 
   return (
     <div className="take07">
