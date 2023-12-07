@@ -10,6 +10,10 @@
   overflow-y: hidden;
   overflow-x: hidden;
   max-width: 100vw;
+  -webkit-box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+  box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+
   .coguLateral {
     pointer-events: none;
   }

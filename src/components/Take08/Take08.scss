@@ -10,6 +10,10 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
   position: relative;
   height: fit-content;
   overflow: hidden;
+  -webkit-box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+  box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
+
   #book {
     font-size: 7rem;
     color: $secundary_color;

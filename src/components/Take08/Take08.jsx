@@ -772,9 +772,9 @@ const Take08 = () => {
           </div>
         </div>
       </div>
-      <div id="env-cogus">
+      {/* <div id="env-cogus">
         <img className="cogus-azuis" src={CogusAzuis}></img>
-      </div>
+      </div> */}
       {/* <Mandala /> */}
       {/* <img className="matriz" src={matrix} /> */}
     </div>
