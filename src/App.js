@@ -36,11 +36,14 @@ import Whatsapp from './components/Whatsapp/Whatsapp';
 
 function App() {
   const [showModal, setShowModal] = useState(true);
-
   const handleCloseModal = () => {
     setShowModal(false);
   };
   useEffect(() => {
+    window.addEventListener('resize', function() {
+      // Recarrega a página quando a janela é redimensionada
+      window.location.reload();
+    });
     const handleFocus = (event) => {
       if (event.target.tagName === 'IFRAME') {
         event.preventDefault();

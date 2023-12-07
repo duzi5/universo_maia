@@ -413,8 +413,8 @@ const Take08 = () => {
       </div>
 
       <h4 id="medicina">
-        A MEDICINA ANCESTRAL QUE TE DESPERTA PARA UM AQUI E AGORA MAIS
-        CONSCIENTE, COM MENOS ANSIEDADE E MAIS DISPOSIÇÃO PARA VIVER A VIDA.
+       Mas antes, deixa eu te falar quem somos. 
+       Dois amigos unidos pelo sonho de mostrar um mundo melhor, mais leve e como essa medicina ancestral te conecta com essa realidade.
       </h4>
       <div id="intro" className="text-camp">
         <h1 id="porque">Por que Cogumelos?</h1>
