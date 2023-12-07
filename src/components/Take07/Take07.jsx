@@ -34,7 +34,6 @@ const Take07 = () => {
       }
   }, []);
 
-
   return (
     <div className="take07">
       <div id="env-mente">

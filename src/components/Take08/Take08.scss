@@ -52,17 +52,17 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
     position: relative;
     text-wrap: nowrap;
     justify-content: center;
-    @include breakpoint(small) {
-      font-size: 1.6rem;
+    @include breakpoint(small){
+      font-size: 2rem;
     }
-    @include breakpoint(medium) {
-      font-size: 2.4rem;
+    @include breakpoint(medium){
+      font-size: 3rem;
     }
-    @include breakpoint(large) {
-      font-size: 3.3rem;
-    }
-    @include breakpoint(xlarge) {
+    @include breakpoint(large){
       font-size: 4rem;
+    }
+    @include breakpoint(xlarge){
+      font-size: 5rem;
     }
   }
   h1 {
