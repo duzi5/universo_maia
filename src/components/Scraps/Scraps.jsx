@@ -15,11 +15,11 @@ const Scraps = () => {
     },
     {
       comentario:
-        "Oi Gugu, tudo bem? Ainda tem como para hoje ou amanhã cedo? Pois esqueci de dar o feedback antes, mas adorei a experiência e gostei mais ainda do cuidado de vocês mandarem um docinho para a gente.",
+        "Oi Cogu, tudo bem? Já quero mais uma experiência. Pow esqueci de dar o feedback antes, mas adorei a experiência e gostei mais ainda do cuidado de vocês mandarem um docinho para a gente.",
     },
     {
       comentario:
-        "Salve irmão, bom dia. Foi interessante para caramba, não estava esperando. Quando começou, comi metade do pacote de duas gramas. Por incrível que pareça, na sexta foi quando eu senti mais, sábado também, bem leve. O pacote de 3 gramas comi a minha maior parte no domingo. Senti bem mais suave, foi o Albino. Foi muito interessante, vamos preparar para uma segunda experiência em breve. O Kit Kat foi massa.",
+        "Salve irmão, bom dia. Foi interessante para caramba, não estava esperando. No primeiro dia, comi menos de 2g, e comecei a sentir a brisa. Por incrível que pareça, no dia seguinte foi quando eu senti mais, sábado também, bem leve. No domingo comi 3g. Senti bem mais suave, foi o Albino. Foi muito interessante, vamos preparar para uma segunda experiência em breve. O Kit Kat foi massa.",
     },
     {
       comentario:
