@@ -3,6 +3,9 @@
 #menu-container{
     overflow: hidden;
     border-radius: 10%;
+    position: sticky;
+    top: 100vh;
+    z-index: 100;
 
 #menu{
     color: $secundary_color;

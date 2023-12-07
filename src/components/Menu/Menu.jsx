@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TiHome } from "react-icons/ti";
 import { FaBookOpen } from "react-icons/fa";
 import { GiSlicedMushroom, GiBrain } from "react-icons/gi";
@@ -18,6 +18,31 @@ const Menu = () => {
     let scrolled = (winScroll / height) * 100;
     document.getElementById("progressBar").style.width = scrolled + "%";
   };
+
+
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const checkScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener('scroll', checkScroll);
+
+      return () => {
+        window.removeEventListener('scroll', checkScroll);
+      };
+    }, []);
+
+  
+  
+
+ 
   useEffect(() => {
     // Configuração do ScrollTrigger para cada seção
     const sections = ["take02", "take08", "take09", "take10", "take11"];
@@ -67,6 +92,7 @@ const Menu = () => {
       targetSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
 
 
   
@@ -75,7 +101,7 @@ const Menu = () => {
 
 
   return ( <>
-<div id="menu-container">
+<div style={{ display: isVisible ? 'block' : 'none' }} id="menu-container">
 <div id="menu" ref={menuRef}>
 
       <ul id="m">
