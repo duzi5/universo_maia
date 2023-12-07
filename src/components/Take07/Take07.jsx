@@ -19,7 +19,7 @@ const Take07 = () => {
           x: 0
         },
         {
-          x: `-${width}px`,
+          x: -width,
           ease: "none",
           scrollTrigger: {
             trigger: "#mente",

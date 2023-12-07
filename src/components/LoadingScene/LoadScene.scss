@@ -41,6 +41,14 @@
     .conteudo{ 
         @include uma-tela;
     }
+    .central{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
     
     h5 {
         font-size: 7vh;
@@ -69,6 +77,8 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+
+
 
     }
     .borboleta1{ 

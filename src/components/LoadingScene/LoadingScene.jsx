@@ -87,7 +87,7 @@ export default (props) => {
     <div className="scene scene1" ref={scene1Ref}>
       {/* <canvas id="canvas"></canvas> */}
        <div className="central">
-       <h5 id="initial"> Você conhecer o nosso mundo?</h5>
+       <h5 id="initial"> Venha conhecer o nosso mundo.</h5>
         {/* <img className="borboleta1" src={whitebutterfly} /> */}
       <LoadingBar onProgressComplete={() => handleProgressComplete()} />
        </div>

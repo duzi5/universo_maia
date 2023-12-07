@@ -44,13 +44,12 @@ const Scraps = () => {
     const element = scrapsContainerRef.current;
 
     if (element) {
-      const width = element.scrollWidth - element.offsetWidth;
-
+        const width = element.offsetWidth - window.innerWidth;
       gsap.fromTo(
         element,
         { x: 0 },
         {
-          x: -width - 950,
+          x: -width,
           scrollTrigger: {
             trigger: "#scrapsContainer",
             ease:"power4.inOut",

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import LoadingScene from "./components/LoadingScene/LoadingScene";
@@ -12,6 +12,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import AgeVerificationModal from './components/AgeVerificationModal/AgeVerificationModal';
 
 // import Take09 from "./components/Take09/Take09";
 import InfoPage from './components/InfoPage/InfoPage'; // Supondo que você tenha um componente InfoPage
@@ -34,6 +35,11 @@ import Whatsapp from './components/Whatsapp/Whatsapp';
 // import Scraps from './components/Scraps/Scraps';
 
 function App() {
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   useEffect(() => {
     const handleFocus = (event) => {
       if (event.target.tagName === 'IFRAME') {
@@ -85,6 +91,8 @@ gsap.registerPlugin(TextPlugin);
           <Route path="/" element={<div>
             {/* Seu conteúdo principal aqui */}
             <LoadingScene />
+            {showModal && <AgeVerificationModal onClose={handleCloseModal} />}
+
             <Take02 />
             <Take03 />
 
