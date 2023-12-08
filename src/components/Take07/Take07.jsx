@@ -7,31 +7,41 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Take07 = () => {
   useEffect(() => {
-      const menteElement = document.getElementById("mente");
-
-      if (menteElement) {
-        const width = window.innerWidth;
-        console.log(width); // Isto irá imprimir a largura do elemento no console
-
-        gsap.fromTo(
-          "#mente",
-          {
-            x: 0
-          },
-          {
-            x: "-=200%",
-            ease: "none",
-            scrollTrigger: {
-              trigger: "#mente",
-              start: "0% 50%",
-              end: "100% 50%",
-              scrub: true,
-              pin:"env-mente",
-              pinSpacing: true
-            },
-          }
-        );
+    const envMenteElement = document.querySelector('#env-mente');
+    const menteElement = document.querySelector('#mente');
+    const envMenteHeight = envMenteElement.offsetHeight;
+    const menteWidth = menteElement.offsetWidth - window.innerWidth;
+    
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".take07",
+        start: "0% 70%",
+        end: "0% 20%",
+        scrub: true,
+  
+      },
+    });
+    
+    tl.fromTo(
+      "#env-mente",
+      {
+        height: 0,
+      },
+      {
+        height: envMenteHeight, // Ajuste a duração conforme necessário
       }
+    )
+    .fromTo(
+      "#mente",
+      {
+        x: 0,
+      },
+      {
+        x: -menteWidth,
+        ease: "none",
+      }
+    );
+  
   }, []);
 
   return (
