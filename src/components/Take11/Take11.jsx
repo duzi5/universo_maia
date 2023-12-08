@@ -7,7 +7,7 @@ const Take11 = () => {
   return (
     <div id="take11">
       <IoLogoWhatsapp id="whats" />
-      <h2>CONECTE-SE COM NOSSA COMUNIDADE:</h2>
+      <h1>CONECTE-SE COM NOSSA COMUNIDADE:</h1>
       <div className="contain">
         <div className="universo-maia contato">
           <h3>Universo Maia</h3>

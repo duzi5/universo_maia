@@ -40,12 +40,38 @@ function App() {
     setShowModal(false);
   };
   useEffect(() => {
+    const handleResize = () => {
+      gsap.to(".flutue", {
+        scale: 1.1,
+        duration: 0.5,
+        yoyo: true,
+        repeat: 1,
+        ease: "power1.inOut"
+      });
+    };
 
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  useEffect(() => {
+
+
+    let previousWidth = window.innerWidth;
 
     window.addEventListener('resize', function() {
-      // Recarrega a página quando a janela é redimensionada
-      window.location.reload();
+      // Verifica se a mudança no tamanho da janela é maior que 100 pixels
+      if (Math.abs(window.innerWidth - previousWidth) > 100) {
+        // Recarrega a página quando a janela é redimensionada
+        window.location.reload();
+      }
+
+      // Atualiza o valor anterior da largura da janela
+      previousWidth = window.innerWidth;
     });
+
     const handleFocus = (event) => {
       if (event.target.tagName === 'IFRAME') {
         event.preventDefault();

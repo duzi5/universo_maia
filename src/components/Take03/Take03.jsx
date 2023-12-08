@@ -60,7 +60,7 @@ return (
   <div id="take03Container" className= "data-scroll-container">
       <div className="take03" id="take03" data-scroll-section>
     <div className="frases">
-        <h2 id="universo" className="text flutue" >
+        <h2 id="universo" className="text flutue "  >
         NÓS, DO UNIVERSO MAIA, TE CONVIDAMOS A DESPERTAR PARA UM NOVO MUNDO AGORA MESMO.
       </h2>
       <h1 id="topa" className="reveal" data-scroll>

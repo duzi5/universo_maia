@@ -43,7 +43,7 @@
         font-size: 4rem;
       }
     }
-    h4 {
+    #medicina {
       font-family: "Barrio", cursive;
       color: #e0dfdc;
   
@@ -63,10 +63,10 @@
         font-size: 2.6rem;
       }
       @include breakpoint(large) {
-        font-size: 3.5;
+        font-size: 3rem;
       }
       @include breakpoint(xlarge){
-        font-size: 4rem;
+        font-size: 3.4rem;
       }
     }
   }

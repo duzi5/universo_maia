@@ -56,13 +56,13 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
       font-size: 2rem;
     }
     @include breakpoint(medium){
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     @include breakpoint(large){
-      font-size: 4rem;
+      font-size: 3rem;
     }
     @include breakpoint(xlarge){
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
   }
   h1 {

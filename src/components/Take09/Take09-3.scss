@@ -69,13 +69,13 @@
                 font-size: 2rem;
               }
               @include breakpoint(medium){
-                font-size: 3rem;
+                font-size: 2.5rem;
               }
               @include breakpoint(large){
-                font-size: 4rem;
+                font-size: 3rem;
               }
               @include breakpoint(xlarge){
-                font-size: 5rem;
+                font-size: 4.5rem;
               }
         }
         #cogu{
@@ -125,20 +125,22 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        align-items: center;
         margin: auto;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         @include breakpoint(small){
-            width: 100vw;
+            height: 150px;
         }
         @include breakpoint(medium){
-
+            height: 200px;
         }
         @include breakpoint(large){
-
+            height:300px;
         }
         @include breakpoint(xlarge){
-
+            height: 600px;
+            width: 300px;
         }
 
  // Alinha os cards à esquerda
@@ -153,7 +155,7 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
             box-shadow: 0px 7px 22px 1px #000000;
             // Muda para inline-flex para permitir alinhamento interno
             flex-direction: column; // Coloca o conteúdo do card em coluna 
-            height: 500px; // Adiciona espaço entre os cards
+            height: 100%; // Adiciona espaço entre os cards
             background-color: transparent;
             color: $secundary_color;
             align-items: center;
