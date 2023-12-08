@@ -9,9 +9,9 @@ const Take07 = () => {
   useEffect(() => {
     const envMenteElement = document.querySelector('#env-mente');
     const menteElement = document.querySelector('#mente');
-    const envMenteHeight = envMenteElement.offsetHeight;
-    const menteWidth = menteElement.offsetWidth - window.innerWidth;
-    
+    const envMenteHeight = "400px" ;
+    const menteWidth = menteElement.offsetWidth - window.innerWidth ;
+    console.log("sdsdsasd" + menteWidth)
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".take07",
@@ -25,7 +25,7 @@ const Take07 = () => {
     tl.fromTo(
       "#env-mente",
       {
-        height: 0,
+        height: '0px',
       },
       {
         height: envMenteHeight, // Ajuste a duração conforme necessário

@@ -74,12 +74,14 @@
     // }
   
     #mente {
-      display: block;
+      display: inline-block;
+
       font-family: $font1;
       color: $secundary_color;
       text-align: center;
-      border: solid RED 5PX;
-      width: fit-content;
+
+      width:fit-content;
+
       z-index: 10;
       text-wrap: nowrap;
       justify-content: center;
