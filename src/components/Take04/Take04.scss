@@ -98,16 +98,16 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
   right:1%;
  bottom: 0%;
   @include breakpoint(small){
-    width: 650px;
+    width: 350px;
   }
   @include breakpoint(medium){
-    width: 900px;
+    width: 500px;
   }
   @include breakpoint(large){
-    width: 1200px;
+    width: 700px;
   }
   @include breakpoint(x-large){
-    width: 1500px;
+    width: 1000px;
   }
   }
 

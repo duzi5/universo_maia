@@ -40,7 +40,7 @@ useEffect(()=>{
 
         <h1>Tá afim de ir mais além, e unir os cogus com terapia esotérica?</h1>
         <p id="amandaPresentation">
-          Conheça Amanda baragiola, autora do "A magia da Vida", um Método de autoconhecimento inovador que une estudos ancestrais e universais para um despertar guiado e direcionado.
+          Conheça <span>Amanda baragiola</span>, autora do "A magia da Vida", um Método de autoconhecimento inovador que une estudos ancestrais e universais para um despertar guiado e direcionado.
           <br />
         
         

@@ -16,6 +16,103 @@ const Take04 = () => {
   
   
   useEffect(() => {
+
+
+      // ... restante do código ...
+    
+      gsap.fromTo("#faria", 
+        { opacity: 0, y: -50 },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: "#faria",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          ease: "power1.inOut",
+          duration: 2,
+        }
+      );
+  
+    gsap.fromTo("#momento", 
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#momento",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        ease: "power1.inOut",
+        duration: 2,
+      }
+    );
+
+    gsap.fromTo("#seria", 
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#seria",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        ease: "power1.inOut",
+        duration: 2,
+      }
+    );
+
+    gsap.fromTo("#viveria", 
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#viveria",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        ease: "power1.inOut",
+        duration: 2,
+      }
+    );
+
+    gsap.to("#realcogu", {
+      y: 20,
+      repeat: 1,
+      yoyo: true,
+      scrollTrigger: {
+        trigger: "#realcogu",
+        start: "top center",
+        end: "bottom center",
+        scrub: false,
+      },
+      ease: "power1.inOut",
+      duration: 2,
+    });
+
+    gsap.to("#realcogu2", {
+      x: 20,
+      repeat: 1,
+      yoyo: true,
+      scrollTrigger: {
+        trigger: "#realcogu2",
+        start: "top center",
+        end: "bottom center",
+        scrub: false,
+      },
+      ease: "power1.inOut",
+      duration: 2,
+    });
+  }, []);
+  useEffect(() => {
     
     
     //criar movimento para os .coguLateral via scrolltrigger com muita suavidade
@@ -34,7 +131,6 @@ const Take04 = () => {
       ease: "power4.inOut",
     });
     
-  
 
 
 

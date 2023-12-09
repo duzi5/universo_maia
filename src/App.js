@@ -40,23 +40,6 @@ function App() {
     setShowModal(false);
   };
   useEffect(() => {
-    const handleResize = () => {
-      gsap.to(".flutue", {
-        scale: 1.1,
-        duration: 0.5,
-        yoyo: true,
-        repeat: 1,
-        ease: "power1.inOut"
-      });
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  useEffect(() => {
 
 
     let previousWidth = window.innerWidth;

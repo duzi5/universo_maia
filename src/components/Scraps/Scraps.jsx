@@ -39,7 +39,28 @@ const Scraps = () => {
     },
   ];
   const scrapsContainerRef = useRef(null);
+useEffect(() => {
+  // ... restante do código ...
 
+  gsap.utils.toArray('.scrapsSlide').forEach((slide, i) => {
+    gsap.fromTo(slide, 
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: slide,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        ease: "power1.inOut",
+        duration: 2,
+        delay: i * 0.7, // Adiciona um delay entre cada animação
+      }
+    );
+  });
+}, []);
 //   useEffect(() => {
 //     const element = scrapsContainerRef.current;
 

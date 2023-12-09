@@ -171,7 +171,9 @@ opacity: 0.1;
     @include breakpoint(xlarge){
       font-size: 3rem;
     }  
-
+    span{
+      color: $quinary_color;
+    }
 
   }
 }

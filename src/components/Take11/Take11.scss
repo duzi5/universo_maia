@@ -64,11 +64,14 @@
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         overflow: hidden;
-        border-radius: 15px;
+
         max-width: 1000px;
         margin: auto;
         width: 100%;
         margin-bottom: 100px;
+        @include breakpoint(large){
+            border-radius: 15px;
+        }
         .contato{
             padding: 15px;
         }
