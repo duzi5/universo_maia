@@ -15,21 +15,21 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-gray-p
   box-shadow: inset 6px 10px 58px 8px rgba(0, 0, 0, 0.61);
 
   #book {
-    font-size: 7rem;
-    color: $secundary_color;
-    margin: 10%;
-    
+    margin-top: 5vh;
+    color:$secundary_color;
+    text-align: center;
+    width: 100%;
     @include breakpoint(small){
-      font-size: 2rem;
+        font-size: 6rem
     }
     @include breakpoint(medium){
-      font-size: 3rem;
+        font-size: 7rem
     }
     @include breakpoint(large){
-      font-size: 5rem;
+        font-size: 8rem
     }
     @include breakpoint(xlarge){
-      font-size: 7rem;
+        font-size: 9rem
     }
   }
   .stars-container {
