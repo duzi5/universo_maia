@@ -7,41 +7,57 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Take07 = () => {
   useEffect(() => {
-    const envMenteElement = document.querySelector('#env-mente');
-    const menteElement = document.querySelector('#mente');
-    const envMenteHeight = "400px" ;
-    const menteWidth = menteElement.offsetWidth - window.innerWidth ;
-    console.log("sdsdsasd" + menteWidth)
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".take07",
-        start: "0% 70%",
-        end: "0% 20%",
-        scrub: true,
-  
-      },
-    });
-    
-    tl.fromTo(
-      "#env-mente",
-      {
-        height: '0px',
-      },
-      {
-        height: envMenteHeight, // Ajuste a duração conforme necessário
-      }
-    )
-    .fromTo(
-      "#mente",
-      {
-        x: 0,
-      },
-      {
-        x: -menteWidth,
-        ease: "none",
-      }
-    );
-  
+    let menteWidth = 0;
+
+    const measureElement = () => {
+      const menteElement = document.querySelector('#mente');
+      const currentWidth = menteElement.offsetWidth - window.innerWidth;
+      menteWidth = Math.max(menteWidth, currentWidth);
+    };
+
+    // Medir imediatamente
+    measureElement();
+
+    // Medir após 1 segundo
+    setTimeout(measureElement, 1000);
+
+    // Medir após 2 segundos
+    setTimeout(measureElement, 2000);
+
+    // Agendar a animação após todas as medições
+    setTimeout(() => {
+      const envMenteElement = document.querySelector('#env-mente');
+      const envMenteHeight = envMenteElement.offsetHeight;
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".take07",
+          start: "0% 70%",
+          end: "0% 20%",
+          scrub: true,
+        },
+      });
+
+      tl.fromTo(
+        "#env-mente",
+        {
+          height: '0px',
+        },
+        {
+          height: envMenteHeight, // Ajuste a duração conforme necessário
+        }
+      )
+      .fromTo(
+        "#mente",
+        {
+          x: 0,
+        },
+        {
+          x: -menteWidth,
+          ease: "none",
+        }
+      );
+    }, 2000);
   }, []);
 
   return (

@@ -39,7 +39,7 @@ overflow-x: scroll;
       backdrop-filter: blur(2px); // Desfoque do fundo
       -webkit-box-shadow: inset 1px 2px 6px 3px rgba(128, 112, 128, 1);
       -moz-box-shadow: inset 1px 2px 6px 3px rgba(128, 112, 128, 1);
-      box-shadow: inset 1px 2px 6px 3px rgba(128, 112, 128, 1);
+
       @include breakpoint(small){
         min-width: 400px;
         min-height: 400px;

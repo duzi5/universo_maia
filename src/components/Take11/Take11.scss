@@ -59,18 +59,19 @@
         flex-direction: column;
         background-color: $tertiary_color;
         background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         overflow: hidden;
-
+        
         max-width: 1000px;
         margin: auto;
         width: 100%;
         margin-bottom: 100px;
         @include breakpoint(large){
-            border-radius: 15px;
+            border-radius: 200px 124px 200px 44px;
+            -moz-border-radius: 200px 124px 200px 44px;
+            -webkit-border-radius: 200px 124px 200px 44px;
+            border: 3px outset #ab46ab;
         }
         .contato{
             padding: 15px;

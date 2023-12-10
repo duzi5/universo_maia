@@ -147,9 +147,13 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
         // perspective: 4000px;// Adiciona algum espaço acima e abaixo dos cards
 
         .card {
+            border-radius: 200px 124px 200px 44px;
+-moz-border-radius: 200px 124px 200px 44px;
+-webkit-border-radius: 200px 124px 200px 44px;
+border: 3px outset #ab46ab;
             display: flex; 
             margin: 0.7%;
-            border-radius: 15%;
+
             overflow: hidden;
             width: 100px;
             box-shadow: 0px 7px 22px 1px #000000;
@@ -165,7 +169,7 @@ text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0
             transition: transform 0.5s ease; // Transição suave
             position: relative;
             overflow: hidden;
-            border-radius: 15px;
+
             flex-grow: 1;
              transition: width 0.5s ease;
             @include breakpoint(small){
