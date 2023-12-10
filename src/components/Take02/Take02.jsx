@@ -70,18 +70,18 @@ const Take02 = () => {
 //     });
   }, []);
   useEffect(() => {
-    gsap.fromTo(".nuvem", 
-      { x: '0%' }, // Posição inicial (direita da tela)
-      { 
-        x: '100%', // Posição final (esquerda da tela)
-        duration: 150, // A duração da animação em segundos
-        repeat: -1, // Quantas vezes a animação deve se repetir (-1 para infinito)
-        ease: "none", // Tipo de easing para a animação
-        stagger: { // Inicia a animação de cada nuvem em momentos diferentes
-          amount: 15,
-        },
-      }
-    );
+    // gsap.fromTo(".nuvem", 
+    //   { x: '25%' }, // Posição inicial (direita da tela)
+    //   { 
+    //     x: '100%', // Posição final (esquerda da tela)
+    //     duration: 150, // A duração da animação em segundos
+    //     repeat: -1, // Quantas vezes a animação deve se repetir (-1 para infinito)
+    //     ease: "none", // Tipo de easing para a animação
+    //     stagger: { // Inicia a animação de cada nuvem em momentos diferentes
+    //       amount: 15,
+    //     },
+    //   }
+    // );
     gsap.to(['#folha1', '#folha2',  '#folha3', '#folha4' ], { 
       duration: 3,
       stagger:0.1,
@@ -132,11 +132,11 @@ const Take02 = () => {
 
   return (
     <div id="take02" >
-<div className="nuvens">
+{/* <div className="nuvens">
   {Array.from({ length: 2 }).map((_, i) => (
     <img key={i} src={nuvemImage} alt="nuvem" className={`nuvem nuvem-${i}`} />
   ))}
-</div>
+</div> */}
 <div>
   <img id="bemvindo"src={bemvindo} alt="bem-vindo ao universo maia" />
 </div>

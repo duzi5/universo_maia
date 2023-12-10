@@ -43,7 +43,7 @@ const Take08 = () => {
 
 
   useEffect(() => {
-      gsap.to(['#take08', "take03Container","#take02", "#take03", ".take04", "#take06", "#take08", "#take09", "#take10" ,"#take11", "#take12"], {
+      gsap.to(['#take08', "take03Container", "#take03", "#take11", "#take12"], {
         backgroundPositionX: "+=5000", // A cor de fundo para a qual você quer animar
         duration: 500, // A duração da animação em segundos
         repeat: -1, // Quantas vezes a animação deve se repetir (-1 para infinito)
