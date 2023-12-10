@@ -90,4 +90,37 @@ transform: translate(-50%, -30%);
       height: 130vh;
     }
   }
+
+.nuvens {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+
+  height: 80%;
+  width: 100%;
+  opacity: 0.7;
+  top: 0%;
+  transform: rotatex(180deg);
+  filter: hue-rotate(130deg);
+}
+
+.nuvem {
+  position: absolute;
+  right: -200px; /* Inicia fora da tela */
+}
+
+.nuvem:nth-child(odd) {
+  top: 0%;
+}
+
+.nuvem:nth-child(even) {
+  top: 10%;
+}
+
+
+
+
+
+
+
 }
