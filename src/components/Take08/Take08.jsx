@@ -43,14 +43,13 @@ const Take08 = () => {
 
 
   useEffect(() => {
-    useEffect(() => {
-      gsap.to('body', {
+      gsap.to(['#take08', "take03Container","#take02", "#take03", ".take04", "#take06", "#take08", "#take09", "#take10" ,"#take11", "#take12"], {
         backgroundPositionX: "+=5000", // A cor de fundo para a qual você quer animar
-        duration: 25, // A duração da animação em segundos
+        duration: 500, // A duração da animação em segundos
         repeat: -1, // Quantas vezes a animação deve se repetir (-1 para infinito)
         yoyo: true, // Se a animação deve voltar ao estado original após cada repetição
       });
-    }, []);
+
     // Função para atualizar a rotação do ícone
     const updateIconRotation = (iconId, shouldRotate) => {
       const iconElement = document.getElementById(iconId);
